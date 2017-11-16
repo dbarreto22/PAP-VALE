@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is JAX-WS RI 2.2.9-b130926.1035 svn-revision#5f6196f2b90e9460065a4c2f4e30e065b245e51e. --><xs:schema xmlns:tns="http://ws.test.tpgr.tprogwsserver/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://ws.test.tpgr.tprogwsserver/">
+
+<xs:element name="getPeople" type="tns:getPeople"></xs:element>
+
+<xs:element name="getPeopleNotFixedLenght" type="tns:getPeopleNotFixedLenght"></xs:element>
+
+<xs:element name="getPeopleNotFixedLenghtResponse" type="tns:getPeopleNotFixedLenghtResponse"></xs:element>
+
+<xs:element name="getPeopleResponse" type="tns:getPeopleResponse"></xs:element>
+
+<xs:element name="sayHi" type="tns:sayHi"></xs:element>
+
+<xs:element name="sayHiResponse" type="tns:sayHiResponse"></xs:element>
+
+<xs:complexType name="sayHi">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="sayHiResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPeople">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPeopleResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:infoPersona" nillable="true" minOccurs="0" maxOccurs="unbounded"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="infoPersona">
+<xs:sequence>
+<xs:element name="nombre" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="apellido" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="cedula" type="xs:int"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPeopleNotFixedLenght">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPeopleNotFixedLenghtResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:infoPersona" minOccurs="0" maxOccurs="unbounded"></xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

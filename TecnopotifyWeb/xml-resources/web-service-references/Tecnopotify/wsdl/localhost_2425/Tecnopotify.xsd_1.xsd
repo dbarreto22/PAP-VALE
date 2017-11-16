@@ -1,0 +1,885 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is JAX-WS RI 2.2.9-b130926.1035 svn-revision#5f6196f2b90e9460065a4c2f4e30e065b245e51e. --><xs:schema xmlns:tns="http://interfaces.tecnopotify.edu/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://interfaces.tecnopotify.edu/">
+
+<xs:element name="agregarFavorito" type="tns:agregarFavorito"></xs:element>
+
+<xs:element name="agregarFavoritoResponse" type="tns:agregarFavoritoResponse"></xs:element>
+
+<xs:element name="agregarTemaLista" type="tns:agregarTemaLista"></xs:element>
+
+<xs:element name="agregarTemaListaResponse" type="tns:agregarTemaListaResponse"></xs:element>
+
+<xs:element name="altaGenero" type="tns:altaGenero"></xs:element>
+
+<xs:element name="altaGeneroResponse" type="tns:altaGeneroResponse"></xs:element>
+
+<xs:element name="altaTema" type="tns:altaTema"></xs:element>
+
+<xs:element name="altaTemaResponse" type="tns:altaTemaResponse"></xs:element>
+
+<xs:element name="buscarAlbum" type="tns:buscarAlbum"></xs:element>
+
+<xs:element name="buscarAlbumResponse" type="tns:buscarAlbumResponse"></xs:element>
+
+<xs:element name="buscarGenero" type="tns:buscarGenero"></xs:element>
+
+<xs:element name="buscarGeneroResponse" type="tns:buscarGeneroResponse"></xs:element>
+
+<xs:element name="buscarUsrMail" type="tns:buscarUsrMail"></xs:element>
+
+<xs:element name="buscarUsrMailResponse" type="tns:buscarUsrMailResponse"></xs:element>
+
+<xs:element name="crearAlbum" type="tns:crearAlbum"></xs:element>
+
+<xs:element name="crearAlbumResponse" type="tns:crearAlbumResponse"></xs:element>
+
+<xs:element name="crearArtista" type="tns:crearArtista"></xs:element>
+
+<xs:element name="crearArtistaResponse" type="tns:crearArtistaResponse"></xs:element>
+
+<xs:element name="crearCliente" type="tns:crearCliente"></xs:element>
+
+<xs:element name="crearClienteResponse" type="tns:crearClienteResponse"></xs:element>
+
+<xs:element name="crearListaDefecto" type="tns:crearListaDefecto"></xs:element>
+
+<xs:element name="crearListaDefectoResponse" type="tns:crearListaDefectoResponse"></xs:element>
+
+<xs:element name="crearListaParticular" type="tns:crearListaParticular"></xs:element>
+
+<xs:element name="crearListaParticularResponse" type="tns:crearListaParticularResponse"></xs:element>
+
+<xs:element name="dejarDeSeguirUsuario" type="tns:dejarDeSeguirUsuario"></xs:element>
+
+<xs:element name="dejarDeSeguirUsuarioResponse" type="tns:dejarDeSeguirUsuarioResponse"></xs:element>
+
+<xs:element name="eliminarFavorito" type="tns:eliminarFavorito"></xs:element>
+
+<xs:element name="eliminarFavoritoResponse" type="tns:eliminarFavoritoResponse"></xs:element>
+
+<xs:element name="getCli" type="tns:getCli"></xs:element>
+
+<xs:element name="getCliResponse" type="tns:getCliResponse"></xs:element>
+
+<xs:element name="getListGenero" type="tns:getListGenero"></xs:element>
+
+<xs:element name="getListGeneroResponse" type="tns:getListGeneroResponse"></xs:element>
+
+<xs:element name="getTema" type="tns:getTema"></xs:element>
+
+<xs:element name="getTemaResponse" type="tns:getTemaResponse"></xs:element>
+
+<xs:element name="getUsuario" type="tns:getUsuario"></xs:element>
+
+<xs:element name="getUsuarioResponse" type="tns:getUsuarioResponse"></xs:element>
+
+<xs:element name="getlr" type="tns:getlr"></xs:element>
+
+<xs:element name="getlrResponse" type="tns:getlrResponse"></xs:element>
+
+<xs:element name="listarAlbum" type="tns:listarAlbum"></xs:element>
+
+<xs:element name="listarAlbumResponse" type="tns:listarAlbumResponse"></xs:element>
+
+<xs:element name="listarArtistas" type="tns:listarArtistas"></xs:element>
+
+<xs:element name="listarArtistasResponse" type="tns:listarArtistasResponse"></xs:element>
+
+<xs:element name="listarClientes" type="tns:listarClientes"></xs:element>
+
+<xs:element name="listarClientesResponse" type="tns:listarClientesResponse"></xs:element>
+
+<xs:element name="listarDefecto" type="tns:listarDefecto"></xs:element>
+
+<xs:element name="listarDefectoResponse" type="tns:listarDefectoResponse"></xs:element>
+
+<xs:element name="listarGeneros" type="tns:listarGeneros"></xs:element>
+
+<xs:element name="listarGenerosResponse" type="tns:listarGenerosResponse"></xs:element>
+
+<xs:element name="listarListaRepr" type="tns:listarListaRepr"></xs:element>
+
+<xs:element name="listarListaReprResponse" type="tns:listarListaReprResponse"></xs:element>
+
+<xs:element name="listarTemas" type="tns:listarTemas"></xs:element>
+
+<xs:element name="listarTemasResponse" type="tns:listarTemasResponse"></xs:element>
+
+<xs:element name="listarUsuarios" type="tns:listarUsuarios"></xs:element>
+
+<xs:element name="listarUsuariosResponse" type="tns:listarUsuariosResponse"></xs:element>
+
+<xs:element name="modificarSuscripcion" type="tns:modificarSuscripcion"></xs:element>
+
+<xs:element name="modificarSuscripcionResponse" type="tns:modificarSuscripcionResponse"></xs:element>
+
+<xs:element name="mostrarListaGenero" type="tns:mostrarListaGenero"></xs:element>
+
+<xs:element name="mostrarListaGeneroResponse" type="tns:mostrarListaGeneroResponse"></xs:element>
+
+<xs:element name="obtenerEstadoSuscripcion" type="tns:obtenerEstadoSuscripcion"></xs:element>
+
+<xs:element name="obtenerEstadoSuscripcionResponse" type="tns:obtenerEstadoSuscripcionResponse"></xs:element>
+
+<xs:element name="obtenerPagoSuscripcion" type="tns:obtenerPagoSuscripcion"></xs:element>
+
+<xs:element name="obtenerPagoSuscripcionResponse" type="tns:obtenerPagoSuscripcionResponse"></xs:element>
+
+<xs:element name="publicar" type="tns:publicar"></xs:element>
+
+<xs:element name="publicarLista" type="tns:publicarLista"></xs:element>
+
+<xs:element name="publicarListaResponse" type="tns:publicarListaResponse"></xs:element>
+
+<xs:element name="publicarResponse" type="tns:publicarResponse"></xs:element>
+
+<xs:element name="quitarTemaLista" type="tns:quitarTemaLista"></xs:element>
+
+<xs:element name="quitarTemaListaResponse" type="tns:quitarTemaListaResponse"></xs:element>
+
+<xs:element name="seguirUsuario" type="tns:seguirUsuario"></xs:element>
+
+<xs:element name="seguirUsuarioResponse" type="tns:seguirUsuarioResponse"></xs:element>
+
+<xs:element name="seleccionarAlbum" type="tns:seleccionarAlbum"></xs:element>
+
+<xs:element name="seleccionarAlbumResponse" type="tns:seleccionarAlbumResponse"></xs:element>
+
+<xs:element name="seleccionarArtista" type="tns:seleccionarArtista"></xs:element>
+
+<xs:element name="seleccionarArtistaPorNombre" type="tns:seleccionarArtistaPorNombre"></xs:element>
+
+<xs:element name="seleccionarArtistaPorNombreResponse" type="tns:seleccionarArtistaPorNombreResponse"></xs:element>
+
+<xs:element name="seleccionarArtistaResponse" type="tns:seleccionarArtistaResponse"></xs:element>
+
+<xs:element name="seleccionarCliente" type="tns:seleccionarCliente"></xs:element>
+
+<xs:element name="seleccionarClienteResponse" type="tns:seleccionarClienteResponse"></xs:element>
+
+<xs:element name="seleccionarLista" type="tns:seleccionarLista"></xs:element>
+
+<xs:element name="seleccionarListaResponse" type="tns:seleccionarListaResponse"></xs:element>
+
+<xs:element name="setImage" type="tns:setImage"></xs:element>
+
+<xs:element name="setImageArt" type="tns:setImageArt"></xs:element>
+
+<xs:element name="setImageArtResponse" type="tns:setImageArtResponse"></xs:element>
+
+<xs:element name="setImageCli" type="tns:setImageCli"></xs:element>
+
+<xs:element name="setImageCliResponse" type="tns:setImageCliResponse"></xs:element>
+
+<xs:element name="setImageResponse" type="tns:setImageResponse"></xs:element>
+
+<xs:element name="setTema" type="tns:setTema"></xs:element>
+
+<xs:element name="setTemaResponse" type="tns:setTemaResponse"></xs:element>
+
+<xs:complexType name="buscarUsrMail">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarUsrMailResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:usuario" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="usuario">
+<xs:sequence>
+<xs:element name="apellido" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="contrasenia" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="f_nac" type="tns:dataFecha" minOccurs="0"></xs:element>
+<xs:element name="imagen" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="lstSeguidos" type="tns:usuario" nillable="true" minOccurs="0" maxOccurs="unbounded"></xs:element>
+<xs:element name="mail" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="nickname" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="nombre" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="dataFecha">
+<xs:sequence>
+<xs:element name="anio" type="xs:int"></xs:element>
+<xs:element name="dia" type="xs:int"></xs:element>
+<xs:element name="mes" type="xs:int"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setImage">
+<xs:sequence>
+<xs:element name="arg0" type="tns:album" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="album">
+<xs:sequence>
+<xs:element name="nombre" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="anioCreado" type="xs:int"></xs:element>
+<xs:element name="imagenAlbum" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="listTemas" type="tns:temas" nillable="true" minOccurs="0" maxOccurs="unbounded"></xs:element>
+<xs:element name="listGenero" type="tns:genero" nillable="true" minOccurs="0" maxOccurs="unbounded"></xs:element>
+<xs:element name="listFavoritos" type="tns:favoritos" nillable="true" minOccurs="0" maxOccurs="unbounded"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="temas">
+<xs:sequence>
+<xs:element name="nombre" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="duracion" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="posicion" type="xs:int"></xs:element>
+<xs:element name="archivo" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="genero">
+<xs:sequence>
+<xs:element name="listAlbum" type="tns:album" nillable="true" minOccurs="0" maxOccurs="unbounded"></xs:element>
+<xs:element name="listHijos" type="tns:genero" nillable="true" minOccurs="0" maxOccurs="unbounded"></xs:element>
+<xs:element name="listasReprGenero">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="entry" minOccurs="0" maxOccurs="unbounded">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="key" minOccurs="0" type="xs:string"></xs:element>
+<xs:element name="value" minOccurs="0" type="tns:listaDefecto"></xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="nombre" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="padre" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaDefecto">
+<xs:complexContent>
+<xs:extension base="tns:listaReproduccion">
+<xs:sequence>
+<xs:element name="genero" type="tns:genero" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="listaReproduccion">
+<xs:sequence>
+<xs:element name="imagen" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="listaTemas" type="tns:temas" nillable="true" minOccurs="0" maxOccurs="unbounded"></xs:element>
+<xs:element name="nombre" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="favoritos">
+<xs:sequence>
+<xs:element name="cliente" type="tns:cliente" minOccurs="0"></xs:element>
+<xs:element name="id" type="xs:long" minOccurs="0"></xs:element>
+<xs:element name="listAlbum" type="tns:album" nillable="true" minOccurs="0" maxOccurs="unbounded"></xs:element>
+<xs:element name="listRep" type="tns:listaReproduccion" nillable="true" minOccurs="0" maxOccurs="unbounded"></xs:element>
+<xs:element name="listTemas" type="tns:temas" nillable="true" minOccurs="0" maxOccurs="unbounded"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="cliente">
+<xs:complexContent>
+<xs:extension base="tns:usuario">
+<xs:sequence>
+<xs:element name="fav" type="tns:favoritos" minOccurs="0"></xs:element>
+<xs:element name="listasReprParticular" type="tns:listaParticular" nillable="true" minOccurs="0" maxOccurs="unbounded"></xs:element>
+<xs:element name="suscripcion" type="tns:suscripcion" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="listaParticular">
+<xs:complexContent>
+<xs:extension base="tns:listaReproduccion">
+<xs:sequence>
+<xs:element name="cliente" type="tns:cliente" minOccurs="0"></xs:element>
+<xs:element name="esPrivada" type="xs:boolean"></xs:element>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="suscripcion">
+<xs:sequence>
+<xs:element name="id" type="xs:long" minOccurs="0"></xs:element>
+<xs:element name="f_vence" type="tns:dataFecha" minOccurs="0"></xs:element>
+<xs:element name="status" type="tns:estado" minOccurs="0"></xs:element>
+<xs:element name="cuota" type="tns:pago" minOccurs="0"></xs:element>
+<xs:element name="suscripto" type="tns:cliente" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setImageResponse">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="agregarFavorito">
+<xs:sequence>
+<xs:element name="arg0" type="xs:boolean"></xs:element>
+<xs:element name="arg1" type="xs:boolean"></xs:element>
+<xs:element name="arg2" type="xs:boolean"></xs:element>
+<xs:element name="arg3" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="arg4" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="agregarFavoritoResponse">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getTema">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getTemaResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:temas" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarGenero">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarGeneroResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:genero" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="seleccionarArtistaPorNombre">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="seleccionarArtistaPorNombreResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:artista" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="artista">
+<xs:complexContent>
+<xs:extension base="tns:usuario">
+<xs:sequence>
+<xs:element name="biografia" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="link" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="listAlbum" type="tns:album" nillable="true" minOccurs="0" maxOccurs="unbounded"></xs:element>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="mostrarListaGenero">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="mostrarListaGeneroResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:genero" minOccurs="0" maxOccurs="unbounded"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="crearArtista">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="arg1" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="arg2" type="tns:dataUsuario" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="dataUsuario">
+<xs:sequence>
+<xs:element name="apellido" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="contrasenia" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="f_nac" type="tns:dataFecha" minOccurs="0"></xs:element>
+<xs:element name="imagen" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="lstSeguidos" type="tns:usuario" nillable="true" minOccurs="0" maxOccurs="unbounded"></xs:element>
+<xs:element name="mail" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="nickname" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="nombre" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="crearArtistaResponse">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="crearListaParticular">
+<xs:sequence>
+<xs:element name="arg0" type="xs:boolean"></xs:element>
+<xs:element name="arg1" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="arg2" type="tns:dataListaReproduccion" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="dataListaReproduccion">
+<xs:sequence>
+<xs:element name="imagen" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="listaTemas" type="tns:temas" nillable="true" minOccurs="0" maxOccurs="unbounded"></xs:element>
+<xs:element name="nombre" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="crearListaParticularResponse">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getListGenero">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getListGeneroResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:genero" minOccurs="0" maxOccurs="unbounded"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="seleccionarAlbum">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="seleccionarAlbumResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:album" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="obtenerEstadoSuscripcion">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="obtenerEstadoSuscripcionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="seguirUsuario">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="arg1" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="seguirUsuarioResponse">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="eliminarFavorito">
+<xs:sequence>
+<xs:element name="arg0" type="xs:boolean"></xs:element>
+<xs:element name="arg1" type="xs:boolean"></xs:element>
+<xs:element name="arg2" type="xs:boolean"></xs:element>
+<xs:element name="arg3" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="arg4" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="eliminarFavoritoResponse">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="altaGenero">
+<xs:sequence>
+<xs:element name="arg0" type="tns:dataGenero" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="dataGenero">
+<xs:sequence>
+<xs:element name="nombre" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="padre" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="altaGeneroResponse">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="crearAlbum">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="arg1" type="tns:dataAlbum" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="dataAlbum">
+<xs:sequence>
+<xs:element name="anioCreado" type="xs:int"></xs:element>
+<xs:element name="imagenAlbum" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="listGeneros" type="tns:genero" nillable="true" minOccurs="0" maxOccurs="unbounded"></xs:element>
+<xs:element name="listTemas" type="tns:temas" nillable="true" minOccurs="0" maxOccurs="unbounded"></xs:element>
+<xs:element name="listdataGeneros" type="tns:dataGenero" nillable="true" minOccurs="0" maxOccurs="unbounded"></xs:element>
+<xs:element name="nombre" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="crearAlbumResponse">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listarDefecto">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listarDefectoResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:listaDefecto" minOccurs="0" maxOccurs="unbounded"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listarClientes">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listarClientesResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:cliente" minOccurs="0" maxOccurs="unbounded"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getCli">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getCliResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:cliente" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="publicarLista">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="arg1" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="publicarListaResponse">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setImageArt">
+<xs:sequence>
+<xs:element name="arg0" type="tns:artista" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setImageArtResponse">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="altaTema">
+<xs:sequence>
+<xs:element name="arg0" type="tns:dataTemas" minOccurs="0"></xs:element>
+<xs:element name="arg1" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="dataTemas">
+<xs:sequence>
+<xs:element name="archivo" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="duracion" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="listaR">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="entry" minOccurs="0" maxOccurs="unbounded">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="key" minOccurs="0" type="xs:string"></xs:element>
+<xs:element name="value" minOccurs="0" type="tns:listaReproduccion"></xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="nombre" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="posicion" type="xs:int"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="altaTemaResponse">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listarGeneros">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listarGenerosResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:genero" minOccurs="0" maxOccurs="unbounded"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="seleccionarArtista">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="seleccionarArtistaResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:artista" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listarUsuarios">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listarUsuariosResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:usuario" minOccurs="0" maxOccurs="unbounded"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getUsuario">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getUsuarioResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:usuario" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="dejarDeSeguirUsuario">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="arg1" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="dejarDeSeguirUsuarioResponse">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setTema">
+<xs:sequence>
+<xs:element name="arg0" type="tns:temas" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setTemaResponse">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="quitarTemaLista">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="arg1" type="tns:dataListaReproduccion" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="quitarTemaListaResponse">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="obtenerPagoSuscripcion">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="obtenerPagoSuscripcionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setImageCli">
+<xs:sequence>
+<xs:element name="arg0" type="tns:cliente" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setImageCliResponse">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listarAlbum">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listarAlbumResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:album" minOccurs="0" maxOccurs="unbounded"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="crearCliente">
+<xs:sequence>
+<xs:element name="arg0" type="tns:dataUsuario" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="crearClienteResponse">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="agregarTemaLista">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="arg1" type="tns:dataListaReproduccion" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="agregarTemaListaResponse">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="seleccionarCliente">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="seleccionarClienteResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:cliente" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="modificarSuscripcion">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="arg1" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="arg2" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="modificarSuscripcionResponse">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listarTemas">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listarTemasResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:temas" minOccurs="0" maxOccurs="unbounded"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="seleccionarLista">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="seleccionarListaResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:listaParticular" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listarArtistas">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listarArtistasResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:artista" minOccurs="0" maxOccurs="unbounded"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getlr">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getlrResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:listaReproduccion" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarAlbum">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarAlbumResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:album" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="crearListaDefecto">
+<xs:sequence>
+<xs:element name="arg0" type="tns:dataListaReproduccion" minOccurs="0"></xs:element>
+<xs:element name="arg1" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="crearListaDefectoResponse">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listarListaRepr">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listarListaReprResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:listaReproduccion" minOccurs="0" maxOccurs="unbounded"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="publicar">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="publicarResponse">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:simpleType name="estado">
+<xs:restriction base="xs:string">
+<xs:enumeration value="PENDIENTE"></xs:enumeration>
+<xs:enumeration value="VENCIDA"></xs:enumeration>
+<xs:enumeration value="VIGENTE"></xs:enumeration>
+<xs:enumeration value="CANCELADA"></xs:enumeration>
+</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="pago">
+<xs:restriction base="xs:string">
+<xs:enumeration value="SUSCRIPCION_PENDIENTE"></xs:enumeration>
+<xs:enumeration value="SEMANAL"></xs:enumeration>
+<xs:enumeration value="MENSUAL"></xs:enumeration>
+<xs:enumeration value="ANUAL"></xs:enumeration>
+</xs:restriction>
+</xs:simpleType>
+</xs:schema>

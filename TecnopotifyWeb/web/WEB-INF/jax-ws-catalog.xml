@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8280/salutator?wsdl" uri="wsdl/localhost_8280/salutator.wsdl"/>
+    <system systemId="http://localhost:8280/salutator?xsd=1" uri="wsdl/localhost_8280/salutator.xsd_1.xsd"/>
+    <system systemId="http://localhost:2425/Tecnopotify?wsdl" uri="wsdl/localhost_2425/Tecnopotify.wsdl"/>
+    <system systemId="http://localhost:2425/Tecnopotify?xsd=1" uri="wsdl/localhost_2425/Tecnopotify.xsd_1.xsd"/>
+</catalog>

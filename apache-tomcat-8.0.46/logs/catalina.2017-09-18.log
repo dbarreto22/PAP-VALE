@@ -1,0 +1,106 @@
+18-Sep-2017 21:57:31.123 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.46
+18-Sep-2017 21:57:31.159 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 10 2017 10:10:31 UTC
+18-Sep-2017 21:57:31.159 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.46.0
+18-Sep-2017 21:57:31.159 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+18-Sep-2017 21:57:31.160 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.10.0-33-generic
+18-Sep-2017 21:57:31.160 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+18-Sep-2017 21:57:31.160 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /home/diego-lucia/jdk1.8.0_141/jre
+18-Sep-2017 21:57:31.160 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_141-b15
+18-Sep-2017 21:57:31.160 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+18-Sep-2017 21:57:31.161 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/diego-lucia/Descargas/apache-tomcat-8.0.46
+18-Sep-2017 21:57:31.161 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/diego-lucia/Descargas/apache-tomcat-8.0.46
+18-Sep-2017 21:57:31.162 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/diego-lucia/Descargas/apache-tomcat-8.0.46/conf/logging.properties
+18-Sep-2017 21:57:31.162 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+18-Sep-2017 21:57:31.162 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+18-Sep-2017 21:57:31.163 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+18-Sep-2017 21:57:31.163 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=/home/diego-lucia/Descargas/apache-tomcat-8.0.46/endorsed
+18-Sep-2017 21:57:31.163 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/diego-lucia/Descargas/apache-tomcat-8.0.46
+18-Sep-2017 21:57:31.163 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/diego-lucia/Descargas/apache-tomcat-8.0.46
+18-Sep-2017 21:57:31.164 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/diego-lucia/Descargas/apache-tomcat-8.0.46/temp
+18-Sep-2017 21:57:31.164 INFORMACIÓN [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: /home/diego-lucia/jdk1.8.0_141/jre/lib/amd64:/home/diego-lucia/jdk1.8.0_141/jre/lib/i386::/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+18-Sep-2017 21:57:32.113 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+18-Sep-2017 21:57:32.284 INFORMACIÓN [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+18-Sep-2017 21:57:32.314 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+18-Sep-2017 21:57:32.320 INFORMACIÓN [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+18-Sep-2017 21:57:32.331 INFORMACIÓN [main] org.apache.catalina.startup.Catalina.load Initialization processed in 3202 ms
+18-Sep-2017 21:57:32.568 INFORMACIÓN [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio Catalina
+18-Sep-2017 21:57:32.584 INFORMACIÓN [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.46
+18-Sep-2017 21:57:32.696 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Despliegue del directorio /home/diego-lucia/Descargas/apache-tomcat-8.0.46/webapps/examples de la aplicación web
+18-Sep-2017 21:57:36.673 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/diego-lucia/Descargas/apache-tomcat-8.0.46/webapps/examples has finished in 3.961 ms
+18-Sep-2017 21:57:36.673 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Despliegue del directorio /home/diego-lucia/Descargas/apache-tomcat-8.0.46/webapps/ROOT de la aplicación web
+18-Sep-2017 21:57:36.859 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/diego-lucia/Descargas/apache-tomcat-8.0.46/webapps/ROOT has finished in 185 ms
+18-Sep-2017 21:57:36.859 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Despliegue del directorio /home/diego-lucia/Descargas/apache-tomcat-8.0.46/webapps/manager de la aplicación web
+18-Sep-2017 21:57:37.121 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/diego-lucia/Descargas/apache-tomcat-8.0.46/webapps/manager has finished in 262 ms
+18-Sep-2017 21:57:37.123 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Despliegue del directorio /home/diego-lucia/Descargas/apache-tomcat-8.0.46/webapps/host-manager de la aplicación web
+18-Sep-2017 21:57:37.258 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/diego-lucia/Descargas/apache-tomcat-8.0.46/webapps/host-manager has finished in 134 ms
+18-Sep-2017 21:57:37.260 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Despliegue del directorio /home/diego-lucia/Descargas/apache-tomcat-8.0.46/webapps/docs de la aplicación web
+18-Sep-2017 21:57:37.422 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/diego-lucia/Descargas/apache-tomcat-8.0.46/webapps/docs has finished in 162 ms
+18-Sep-2017 21:57:37.467 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+18-Sep-2017 21:57:37.624 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+18-Sep-2017 21:57:37.697 INFORMACIÓN [main] org.apache.catalina.startup.Catalina.start Server startup in 5366 ms
+18-Sep-2017 21:57:39.475 INFORMACIÓN [http-nio-8080-exec-5] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración /home/diego-lucia/Descargas/apache-tomcat-8.0.46/conf/Catalina/localhost/WebApplicationPrueba.xml
+18-Sep-2017 21:57:44.947 INFORMACIÓN [http-nio-8080-exec-5] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+18-Sep-2017 21:57:45.257 INFORMACIÓN [http-nio-8080-exec-5] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+18-Sep-2017 21:57:45.939 INFORMACIÓN [http-nio-8080-exec-5] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Mon Sep 18 21:57:45 UYT 2017]; root of context hierarchy
+18-Sep-2017 21:57:46.117 INFORMACIÓN [http-nio-8080-exec-5] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+18-Sep-2017 21:57:46.622 INFORMACIÓN [http-nio-8080-exec-5] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 1364 ms
+18-Sep-2017 21:57:46.790 INFORMACIÓN [http-nio-8080-exec-5] com.sun.faces.config.ConfigureListener.contextInitialized Inicializando Mojarra 2.2.7 ( 20140610-1547 https://svn.java.net/svn/mojarra~svn/tags/2.2.7@13362) para el contexto '/WebApplicationPrueba'
+18-Sep-2017 21:57:47.293 INFORMACIÓN [http-nio-8080-exec-5] com.sun.faces.spi.InjectionProviderFactory.createInstance JSF1048: hay presentes anotaciones PostConstruct/PreDestroy.  Los métodos de beans administrados marcados con estas anotaciones procesarán dichas anotaciones.
+18-Sep-2017 21:57:47.932 INFORMACIÓN [http-nio-8080-exec-5] org.apache.struts.faces.application.ActionListenerImpl.<init> Create ActionListener wrapping instance of type 'com.sun.faces.application.ActionListenerImpl'
+18-Sep-2017 21:57:48.961 INFORMACIÓN [http-nio-8080-exec-5] org.apache.struts.action.ActionServlet.initChain Loading chain catalog from jar:file:/home/diego-lucia/Escritorio/WebApplicationPrueba/build/web/WEB-INF/lib/struts-core-1.3.10.jar!/org/apache/struts/chain/chain-config.xml
+18-Sep-2017 21:57:49.707 INFORMACIÓN [http-nio-8080-exec-5] org.apache.struts.tiles.TilesPlugin.initDefinitionsFactory Tiles definition factory loaded for module ''.
+18-Sep-2017 21:57:49.717 INFORMACIÓN [http-nio-8080-exec-5] org.apache.struts.validator.ValidatorPlugIn.initResources Loading validation rules file from '/WEB-INF/validator-rules.xml'
+18-Sep-2017 21:57:49.717 INFORMACIÓN [http-nio-8080-exec-5] org.apache.struts.validator.ValidatorPlugIn.initResources Loading validation rules file from '/WEB-INF/validation.xml'
+18-Sep-2017 21:57:50.078 INFORMACIÓN [http-nio-8080-exec-5] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization started
+18-Sep-2017 21:57:50.089 INFORMACIÓN [http-nio-8080-exec-5] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon Sep 18 21:57:50 UYT 2017]; parent: Root WebApplicationContext
+18-Sep-2017 21:57:50.097 INFORMACIÓN [http-nio-8080-exec-5] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+18-Sep-2017 21:57:50.518 INFORMACIÓN [http-nio-8080-exec-5] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler Mapped URL path [/index.htm] onto handler 'indexController'
+18-Sep-2017 21:57:51.284 INFORMACIÓN [http-nio-8080-exec-5] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'dispatcher': initialization completed in 1204 ms
+18-Sep-2017 21:57:51.289 INFORMACIÓN [http-nio-8080-exec-5] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor /home/diego-lucia/Descargas/apache-tomcat-8.0.46/conf/Catalina/localhost/WebApplicationPrueba.xml has finished in 11.813 ms
+18-Sep-2017 21:57:51.308 INFORMACIÓN [http-nio-8080-exec-6] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/WebApplicationPrueba]] after start() had already been called. The second call will be ignored.
+18-Sep-2017 21:58:21.949 1100 [http-nio-8080-exec-9] com.sun.faces.context.ExceptionHandlerImpl.log JSF1073: se ha interceptado javax.faces.FacesException durante el procesamiento de RESTORE_VIEW 1 : UIComponent-ClientId=, Mensaje=java.lang.NullPointerException
+18-Sep-2017 21:58:21.950 1100 [http-nio-8080-exec-9] com.sun.faces.context.ExceptionHandlerImpl.log java.lang.NullPointerException
+ javax.faces.FacesException: java.lang.NullPointerException
+	at com.sun.faces.lifecycle.RestoreViewPhase.execute(RestoreViewPhase.java:264)
+	at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:101)
+	at com.sun.faces.lifecycle.RestoreViewPhase.doPhase(RestoreViewPhase.java:121)
+	at com.sun.faces.lifecycle.LifecycleImpl.execute(LifecycleImpl.java:198)
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:646)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.NullPointerException
+	at com.sun.faces.application.view.FaceletViewHandlingStrategy.createView(FaceletViewHandlingStrategy.java:822)
+	at com.sun.faces.application.view.MultiViewHandler.createView(MultiViewHandler.java:168)
+	at org.apache.struts.faces.application.ViewHandlerImpl.createView(ViewHandlerImpl.java:157)
+	at com.sun.faces.lifecycle.RestoreViewPhase.execute(RestoreViewPhase.java:254)
+	... 25 more
+
+18-Sep-2017 22:01:41.609 INFORMACIÓN [main] org.apache.catalina.core.StandardServer.await Se ha recibido un comando de apagado a través del puerto de apagado. Parando la instancia del Servidor.
+18-Sep-2017 22:01:41.609 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+18-Sep-2017 22:01:41.624 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+18-Sep-2017 22:01:41.626 INFORMACIÓN [main] org.apache.catalina.core.StandardService.stopInternal Parando servicio Catalina
+18-Sep-2017 22:01:41.799 INFORMACIÓN [localhost-startStop-2] org.springframework.context.support.AbstractApplicationContext.doClose Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon Sep 18 21:57:50 UYT 2017]; parent: Root WebApplicationContext
+18-Sep-2017 22:01:41.850 INFORMACIÓN [localhost-startStop-2] org.springframework.context.support.AbstractApplicationContext.doClose Closing Root WebApplicationContext: startup date [Mon Sep 18 21:57:45 UYT 2017]; root of context hierarchy
+18-Sep-2017 22:01:41.973 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+18-Sep-2017 22:01:42.035 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+18-Sep-2017 22:01:42.039 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+18-Sep-2017 22:01:42.042 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]

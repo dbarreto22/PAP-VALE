@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="EjemploJPAPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>edu.tecnopotify.entidades.Album</class>
+    <class>edu.tecnopotify.entidades.Cliente</class>
+    <class>edu.tecnopotify.entidades.Temas</class>
+    <class>edu.tecnopotify.entidades.Artista</class>
+    <class>edu.tecnopotify.entidades.Usuario</class>
+    <class>edu.tecnopotify.entidades.ListaReproduccion</class>
+    <class>edu.tecnopotify.entidades.ListaDefecto</class>
+    <class>edu.tecnopotify.entidades.ListaParticular</class>
+    <class>edu.tecnopotify.entidades.Favoritos</class>
+    <class>edu.tecnopotify.entidades.Genero</class>
+    <class>edu.tecnopotify.entidades.Suscripcion</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:hsqldb:hsql://localhost/tecnopotify"/>
+      <property name="javax.persistence.jdbc.user" value="sa"/>
+      <property name="javax.persistence.jdbc.driver" value="org.hsqldb.jdbcDriver"/>
+      <property name="javax.persistence.jdbc.password" value=""/>
+      <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
+    </properties>
+  </persistence-unit>
+</persistence>
