@@ -25,14 +25,15 @@
                         <li><a href="<%= request.getContextPath()%>/altaArtista.jsp">Crear Artista</a></li>
                         <li><a href="<%= request.getContextPath()%>/cboArtistas?comando=<%="CargarUsuarios"%>">Mostrar datos de Usuarios</a></li>
                             <% String comando = "mostrarCliente"; 
+                                String tipo = (String) session.getAttribute("tipoUser");
                                     
-                                    if(session.getAttribute("tipo") != null && session.getAttribute("tipo").equals("Cliente")){
+                                    if(tipo != null && tipo.contains("Cliente")){
                                         Cliente cli = (Cliente) session.getAttribute("user");
                                     
                                             if (cli.getSuscripcion().getStatus().equals("VIGENTE")) {%>
                         <li><a href="<%= request.getContextPath()%>/crearListaReproduccion.jsp"  >Crear Lista Particular</a></li>
                             <%}%>                           
-                        <li><a href="<%= request.getContextPath()%>/usuarios?comando=<%=comando%>"  >Dats Usuario Logueado</a></li>                
+                        <li><a href="<%= request.getContextPath()%>/usuarios?comando=<%=comando%>"  >Datos Usuario Logueado</a></li>                
                         <li><a href="<%= request.getContextPath()%>/seguirUsuario.jsp">Seguir/Dejar de seguir Usuario</a></li>
                         <li><a href="<%= request.getContextPath()%>/contratarSuscripcion.jsp">Contratar Suscripción</a></li>
                         <li><a href="<%= request.getContextPath()%>/actualizarSuscripcion.jsp">Actualizar Suscripción</a></li>
@@ -46,7 +47,7 @@
                        role="button" aria-haspopup="true" aria-expanded="false">Album <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <% %>
-                        <% if (session.getAttribute("tipo") != null && session.getAttribute("tipo").equals("Artista")) {%>
+                        <% if (tipo != null && tipo.contains("Artista")) {%>
                         <li><a href="<%= request.getContextPath()%>/Album/AltaAlbum.jsp">Crear album</a></li>
                             <%}
                              %>   
@@ -58,7 +59,7 @@
                        role="button" aria-haspopup="true" aria-expanded="false">Temas <span class="caret"></span></a>
                         <% %>
                     <ul class="dropdown-menu">
-                        <% if (session.getAttribute("tipo") != null && session.getAttribute("tipo").equals("Cliente")) {%>
+                        <% if (tipo != null && tipo.contains("Cliente")) {%>
                         <li><a href="<%= request.getContextPath()%>/Tema">Agregar tema a lista</a></li>
                             <%}%>
                             <%%>                                                    

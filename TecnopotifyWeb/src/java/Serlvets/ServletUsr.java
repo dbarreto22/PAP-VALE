@@ -5,47 +5,21 @@
  */
 package Serlvets;
 
-import static Webservices.ControladorWeb.crearArtista;
-import static Webservices.ControladorWeb.crearCliente;
-import static Webservices.ControladorWeb.crearListaParticular;
-import static Webservices.ControladorWeb.getCli;
-import static Webservices.ControladorWeb.getUsuario;
-import static Webservices.ControladorWeb.seleccionarArtista;
-
-import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.PrintWriter;
-import java.net.URLDecoder;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
-import javax.servlet.GenericServlet;
 import javax.servlet.RequestDispatcher;
-import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
-import javax.servlet.ServletOutputStream;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
-import org.apache.commons.fileupload.FileUploadException;
-import org.apache.tomcat.util.http.fileupload.FileItem;
-import org.apache.tomcat.util.http.fileupload.FileItemIterator;
-import org.apache.tomcat.util.http.fileupload.FileItemStream;
-import org.apache.tomcat.util.http.fileupload.FileUpload;
-import org.apache.tomcat.util.http.fileupload.RequestContext;
-import org.apache.tomcat.util.http.fileupload.disk.DiskFileItemFactory;
 import org.apache.tomcat.util.http.fileupload.servlet.ServletFileUpload;
 
 
 //**************************WEB**************************
 import edu.tecnopotify.interfaces.DataArtista;
 import edu.tecnopotify.interfaces.DataFecha;
-import edu.tecnopotify.interfaces.DataListaParticular;
 import edu.tecnopotify.interfaces.DataListaReproduccion;
 import edu.tecnopotify.interfaces.DataUsuario;
 import edu.tecnopotify.interfaces.Album;
@@ -54,8 +28,13 @@ import edu.tecnopotify.interfaces.Cliente;
 import edu.tecnopotify.interfaces.Favoritos;
 import edu.tecnopotify.interfaces.ListaParticular;
 import edu.tecnopotify.interfaces.ListaReproduccion;
-import edu.tecnopotify.interfaces.Temas;
 import edu.tecnopotify.interfaces.Usuario;
+import static Webservices.ControladorWeb.crearArtista;
+import static Webservices.ControladorWeb.crearCliente;
+import static Webservices.ControladorWeb.crearListaParticular;
+import static Webservices.ControladorWeb.getSeguidos;
+import static Webservices.ControladorWeb.getUsuario;
+import static Webservices.ControladorWeb.seleccionarArtista;
 
 public class ServletUsr extends HttpServlet {
 
@@ -97,10 +76,10 @@ public class ServletUsr extends HttpServlet {
         String comando = request.getParameter("comando");
         if (comando != null && comando.equals("mostrarCliente")) {
 
-            String nick = (String) request.getSession().getAttribute("user");
-            Usuario usr = getUsuario(nick);
+         //   String nick = (String) request.getSession().getAttribute("user").;
+            Usuario usr = (Usuario) request.getSession().getAttribute("user");
             if (usr.getClass().getName().contains("Cliente")) {
-                Cliente cli = getCli(nick);
+                Cliente cli = getCli(usr.getNickname());
 
                 request.setAttribute("nickName", cli.getNickname());
                 request.setAttribute("nombre", cli.getNombre());
@@ -112,7 +91,7 @@ public class ServletUsr extends HttpServlet {
                 request.setAttribute("anio", cli.getFNac().getAnio());
 
                 if (cli.getSuscripcion().getStatus().equals("VIGENTE")) {
-                    List<Usuario> seguidores = cli.getLstSeguidos();
+                    List<Usuario> seguidores = getSeguidos(cli.getNickname());
                     Iterator<Usuario> itS = seguidores.iterator();
                     List<String> nickSeg = new ArrayList<>();
                     while (itS.hasNext()) {
@@ -153,7 +132,7 @@ public class ServletUsr extends HttpServlet {
                 despachador.forward(request, response);
 
             } else if (usr.getClass().getName().contains("Artista")) {
-                Artista art = seleccionarArtista(nick);
+                Artista art = seleccionarArtista(usr.getNickname());
 
                 request.setAttribute("nickName", art.getNickname());
                 request.setAttribute("nombre", art.getNombre());
@@ -336,5 +315,13 @@ public class ServletUsr extends HttpServlet {
     public String getServletInfo() {
         return "Short description";
     }// </editor-fold>
+
+    private static Cliente getCli(java.lang.String arg0) {
+        edu.tecnopotify.interfaces.ControladorService service = new edu.tecnopotify.interfaces.ControladorService();
+        edu.tecnopotify.interfaces.Controlador port = service.getControladorPort();
+        return port.getCli(arg0);
+    }
+
+   
 
 }

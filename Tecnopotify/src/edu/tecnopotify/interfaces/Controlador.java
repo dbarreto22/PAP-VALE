@@ -55,9 +55,8 @@ import javax.jws.soap.SOAPBinding;
 import javax.jws.soap.SOAPBinding.Style;
 import javax.xml.ws.Endpoint;
 
-
 @WebService
-@SOAPBinding(style=Style.DOCUMENT)
+@SOAPBinding(style = Style.DOCUMENT)
 public class Controlador implements IControlador {
 
     EntityManagerFactory fact = Persistence.createEntityManagerFactory("EjemploJPAPU");
@@ -65,11 +64,12 @@ public class Controlador implements IControlador {
     public Controlador() {
 
     }
-@WebMethod(exclude = true)
+
+    @WebMethod(exclude = true)
     public EntityManagerFactory getEntityManagerFactory() {
         return this.fact;
     }
-    
+
     @WebMethod
     public void crearCliente(dataUsuario usuario) {
         Cliente cli = new Cliente(usuario);
@@ -85,6 +85,7 @@ public class Controlador implements IControlador {
             Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
+
     @WebMethod
     public void crearArtista(String biografia, String link,
             dataUsuario usuario) {
@@ -96,38 +97,40 @@ public class Controlador implements IControlador {
             Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
+
     @WebMethod
-    public String obtenerEstadoSuscripcion(String nickCliente){
+    public String obtenerEstadoSuscripcion(String nickCliente) {
         Cliente cliS = this.seleccionarCliente(nickCliente);
         String retorno = null;
-        if (cliS.getSuscripcion().status == PENDIENTE){
+        if (cliS.getSuscripcion().status == PENDIENTE) {
             retorno = "PENDIENTE";
-        } 
-        if (cliS.getSuscripcion().status == VIGENTE){
+        }
+        if (cliS.getSuscripcion().status == VIGENTE) {
             retorno = "VIGENTE";
-        } 
-        if (cliS.getSuscripcion().status == VENCIDA){
+        }
+        if (cliS.getSuscripcion().status == VENCIDA) {
             retorno = "VENCIDA";
-        } 
-        if (cliS.getSuscripcion().status == CANCELADA){
+        }
+        if (cliS.getSuscripcion().status == CANCELADA) {
             retorno = "CANCELADA";
         }
-        
+
         return retorno;
     }
+
     @WebMethod
-    public String obtenerPagoSuscripcion(String nickCliente){
+    public String obtenerPagoSuscripcion(String nickCliente) {
         Cliente cliS = this.seleccionarCliente(nickCliente);
         String retorno = null;
-        if (cliS.getSuscripcion().cuota == SEMANAL){
+        if (cliS.getSuscripcion().cuota == SEMANAL) {
             retorno = "SEMANAL";
-        } 
-        if (cliS.getSuscripcion().cuota == MENSUAL){
+        }
+        if (cliS.getSuscripcion().cuota == MENSUAL) {
             retorno = "MENSUAL";
-        } 
-        if (cliS.getSuscripcion().cuota == ANUAL){
+        }
+        if (cliS.getSuscripcion().cuota == ANUAL) {
             retorno = "ANUAL";
-        } 
+        }
         return retorno;
     }
 
@@ -141,34 +144,34 @@ public class Controlador implements IControlador {
         Suscripcion sus = c.getSuscripcion();
         boolean modificacionValida = false;
         /*desde el estado “Pendiente” a "Cancelada" y desde el estado "Vencida" a "Cancelada" o "Vigente" para el caso actualizarSuscripcion*/
-        
-        if (sus.status == PENDIENTE && (estadoSuscripcion.equals("VIGENTE") || estadoSuscripcion.equals("CANCELADA"))){
+
+        if (sus.status == PENDIENTE && (estadoSuscripcion.equals("VIGENTE") || estadoSuscripcion.equals("CANCELADA"))) {
             modificacionValida = true;
         }
-        if (sus.status == VIGENTE && (estadoSuscripcion.equals("VENCIDA"))){
+        if (sus.status == VIGENTE && (estadoSuscripcion.equals("VENCIDA"))) {
             modificacionValida = true;
         }
         if (sus.status == VENCIDA && (estadoSuscripcion.equals("VIGENTE") || estadoSuscripcion.equals("CANCELADA"))) {
             modificacionValida = true;
-        }     
+        }
         if (sus.status == CANCELADA && (estadoSuscripcion.equals("PENDIENTE"))) {
             modificacionValida = true;
-        } 
+        }
         if (modificacionValida) {
             sus.setStatus(estadoSuscripcion);
         }
-        
+
         //Si la suscripción pasa a vigente se setea el modo de pago
-        if (estadoSuscripcion.equals("VIGENTE")){
-            if (pago.equals("SEMANAL")){
+        if (estadoSuscripcion.equals("VIGENTE")) {
+            if (pago.equals("SEMANAL")) {
                 sus.cuota = SEMANAL;
-            } else if (pago.equals("MENSUAL")){
+            } else if (pago.equals("MENSUAL")) {
                 sus.cuota = MENSUAL;
-            } else if (pago.equals("ANUAL")){
+            } else if (pago.equals("ANUAL")) {
                 sus.cuota = ANUAL;
             }
         }
-        
+
         //persistiendo gente
         try {
             suscrl.edit(sus);
@@ -181,6 +184,7 @@ public class Controlador implements IControlador {
             Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
+
     @WebMethod
     public void altaTema(dataTemas tema, String album) {
         ExtJpaAlbum crlAlbum = new ExtJpaAlbum(fact);
@@ -193,6 +197,7 @@ public class Controlador implements IControlador {
             Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
+
     @WebMethod
     public void crearListaDefecto(dataListaReproduccion listaD, String nombreGenero) {
         ListaDefectoJpaController crlListaD = new ListaDefectoJpaController(fact);
@@ -207,6 +212,7 @@ public class Controlador implements IControlador {
             Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
+
     @WebMethod
     public void crearListaParticular(boolean privado, String nickCliente, dataListaReproduccion listaP) {
 
@@ -222,6 +228,7 @@ public class Controlador implements IControlador {
             Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
+
     @WebMethod
     public void altaGenero(dataGenero oDtGenero) {
         Genero oGeneroPadre;
@@ -241,30 +248,35 @@ public class Controlador implements IControlador {
             Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
+
     @WebMethod
     public Artista seleccionarArtista(String nickname) {
         ArtistaJpaController ctrArtista = new ArtistaJpaController(fact);
         Artista aux = ctrArtista.findArtista(nickname);
         return aux;
     }
+
     @WebMethod
     public Cliente seleccionarCliente(String nickname) {
         ClienteJpaController ctrCliente = new ClienteJpaController(fact);
         Cliente aux = ctrCliente.findCliente(nickname);
         return aux;
     }
+
     @WebMethod
     public Album seleccionarAlbum(String id) {
         AlbumJpaController ctrAlbum = new AlbumJpaController(fact);
         Album aux = ctrAlbum.findAlbum(id);
         return aux;
     }
+
     @WebMethod
     public ListaParticular seleccionarLista(String id) {
         ListaParticularJpaController ctrListaParticular = new ListaParticularJpaController(fact);
         ListaParticular aux = ctrListaParticular.findListaParticular(id);
         return aux;
     }
+
     @WebMethod
     public void agregarTemaLista(String idTema, dataListaReproduccion listaR) {
 
@@ -280,6 +292,7 @@ public class Controlador implements IControlador {
         }
 
     }
+
     @WebMethod
     public void quitarTemaLista(String idTema, dataListaReproduccion listaR) {
         TemasJpaController ctrTema = new TemasJpaController(fact);
@@ -293,6 +306,7 @@ public class Controlador implements IControlador {
             Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
+
     @WebMethod
     public void crearAlbum(String nickNameArtista, dataAlbum dtAlbum) {
         //Crea un album y lo agrega a su artista
@@ -317,14 +331,14 @@ public class Controlador implements IControlador {
         }
     }
 
-
     //debe devolver Dts?
-        @WebMethod
+    @WebMethod
     public ArrayList<Genero> mostrarListaGenero() {
         GeneroJpaController ctrGenero = new GeneroJpaController(fact);
         return new ArrayList(ctrGenero.findGeneroEntities());
     }
 //    @WebMethod
+
     @WebMethod
     //sirven para consultar Album, se le pregunta al usuario por que quiere consultar
     public ArrayList<Album> consultarAlbumPorArtista(dataArtista artista) {
@@ -335,6 +349,7 @@ public class Controlador implements IControlador {
 //        return listAlbumArtista;
     }
 //    @WebMethod
+
     @WebMethod
     public ArrayList<Album> consultarAlbumPorGenero(dataGenero genero) {
         //Funcion que obtiene los albums que pertenecen a un genero
@@ -348,7 +363,7 @@ public class Controlador implements IControlador {
     /*
     public void seleccionarLista(String a) {
 
-    }*/    
+    }*/
 //    @WebMethod
     @WebMethod
     public ArrayList<ListaReproduccion> consultarListaRep(boolean cliente, String id) {
@@ -369,6 +384,7 @@ public class Controlador implements IControlador {
         }
         return lista;
     }
+
     @WebMethod
     public void eliminarFavorito(boolean tema, boolean lista, boolean album, String nickCliente, String idElemento) {
         //eliminar tema/lista/album de los favoritos de un cliente
@@ -406,6 +422,7 @@ public class Controlador implements IControlador {
             }
         }
     }
+
     @WebMethod
     public void agregarFavorito(boolean tema, boolean lista, boolean album, String idCliente, String idElemento) {
         ExtJpaFavoritos fav = new ExtJpaFavoritos(fact);
@@ -447,6 +464,7 @@ public class Controlador implements IControlador {
             }
         }
     }
+
     @WebMethod
     public void dejarDeSeguirUsuario(String nickCliente, String nickUsr) {
         try {
@@ -464,6 +482,7 @@ public class Controlador implements IControlador {
         }
 
     }
+
     @WebMethod
     public void seguirUsuario(String nickCliente, String nickUsr) {
 
@@ -479,6 +498,7 @@ public class Controlador implements IControlador {
         }
 
     }
+
     @WebMethod
     public void publicarLista(String idUsr, String nombreLista) {
         ListaParticularJpaController listCtrl = new ListaParticularJpaController(fact);
@@ -491,24 +511,28 @@ public class Controlador implements IControlador {
         }
     }
 //    @WebMethod
+
     @WebMethod
     public ArrayList<Cliente> listarClientes() {
         ClienteJpaController cliCtrl = new ClienteJpaController(fact);
         return new ArrayList(cliCtrl.findClienteEntities());
     }
 //    @WebMethod
+
     @WebMethod
     public ArrayList<Artista> listarArtistas() {
         ArtistaJpaController cliCtrl = new ArtistaJpaController(fact);
-        return  new ArrayList(cliCtrl.findArtistaEntities());
+        return new ArrayList(cliCtrl.findArtistaEntities());
     }
 //    @WebMethod
+
     @WebMethod
     public ArrayList<Genero> listarGeneros() {
         GeneroJpaController gCtrl = new GeneroJpaController(fact);
         return new ArrayList(gCtrl.findGeneroEntities());
     }
 //    @WebMethod
+
     @WebMethod
     public ArrayList<Genero> getListGenero(String nombre) {
         Genero g = new Genero();
@@ -516,6 +540,7 @@ public class Controlador implements IControlador {
         g = genCtrl.findGenero(nombre);
         return new ArrayList(g.getListHijos());
     }
+
     @WebMethod
     public Album buscarAlbum(String nombre) {
         Album a = null;
@@ -524,17 +549,20 @@ public class Controlador implements IControlador {
         return a;
     }
 //    @WebMethod
+
     @WebMethod
     public ArrayList<Album> listarAlbum() {
         AlbumJpaController crlA = new AlbumJpaController(fact);
         return new ArrayList(crlA.findAlbumEntities());
     }
 //    @WebMethod
+
     @WebMethod
     public ArrayList<Usuario> listarUsuarios() {
         UsuarioJpaController crlU = new UsuarioJpaController(fact);
         return new ArrayList(crlU.findUsuarioEntities());
     }
+
     @WebMethod
     public Cliente getCli(String nickname) {
         Cliente c = null;
@@ -542,6 +570,7 @@ public class Controlador implements IControlador {
         c = crlU.findCliente(nickname);
         return c;
     }
+
     @WebMethod
     public Usuario getUsuario(String nickname) {
         Usuario c = null;
@@ -550,11 +579,13 @@ public class Controlador implements IControlador {
         return c;
     }
 //    @WebMethod
+
     @WebMethod
     public ArrayList<Temas> listarTemas() {
         TemasJpaController crlT = new TemasJpaController(fact);
         return new ArrayList(crlT.findTemasEntities());
     }
+
     @WebMethod
     public Temas getTema(String name) {
         Temas t = null;
@@ -562,6 +593,7 @@ public class Controlador implements IControlador {
         t = crlT.findTemas(name);
         return t;
     }
+
     @WebMethod
     public ListaReproduccion getlr(String name) {
         ListaReproduccion lr = null;
@@ -569,23 +601,28 @@ public class Controlador implements IControlador {
         lr = crllr.findListaReproduccion(name);
         return lr;
     }
+
     @WebMethod
     public Genero buscarGenero(String nombre) {
         ExtJpaGenero crl = new ExtJpaGenero(fact);
         return crl.findGenero(nombre);
     }
 //    @WebMethod
+
     @WebMethod
     public ArrayList<ListaDefecto> listarDefecto() {
         ListaDefectoJpaController crlld = new ListaDefectoJpaController(fact);
         return new ArrayList(crlld.findListaDefectoEntities());
     }
 //    @WebMethod
+
     @WebMethod
     public ArrayList<ListaReproduccion> listarListaRepr() {
         ListaReproduccionJpaController ctrl = new ListaReproduccionJpaController(fact);
         return new ArrayList(ctrl.findListaReproduccionEntities());
+
     }
+
     @WebMethod
     public Usuario buscarUsrMail(String mail) {
         String nick = null;
@@ -602,6 +639,7 @@ public class Controlador implements IControlador {
 
         return aux = this.getUsuario(nick);
     }
+
     @WebMethod
     public Artista seleccionarArtistaPorNombre(String name) {
         ArtistaJpaController ctrArtista = new ArtistaJpaController(fact);
@@ -615,6 +653,7 @@ public class Controlador implements IControlador {
         return retorno;
 
     }
+
     @WebMethod
     public void setImageCli(Cliente cli) {
         ClienteJpaController ctrCli = new ClienteJpaController(fact);
@@ -624,6 +663,7 @@ public class Controlador implements IControlador {
             Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
+
     @WebMethod
     public void setImageArt(Artista art) {
         ArtistaJpaController ctrCli = new ArtistaJpaController(fact);
@@ -633,7 +673,8 @@ public class Controlador implements IControlador {
             Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-        @WebMethod
+
+    @WebMethod
     public void setImage(Album aux) {
         AlbumJpaController ctr = new AlbumJpaController(fact);
         try {
@@ -641,7 +682,8 @@ public class Controlador implements IControlador {
         } catch (Exception ex) {
             Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, ex);
         }
-    }    
+    }
+
     @WebMethod
     public void setTema(Temas aux) {
         TemasJpaController ctr = new TemasJpaController(fact);
@@ -650,9 +692,30 @@ public class Controlador implements IControlador {
         } catch (Exception ex) {
             Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, ex);
         }
-    }  
-    
-        @WebMethod(exclude = true)
+    }
+
+    @WebMethod
+    public ArrayList<Usuario> getSeguidos(String nick) {
+        UsuarioJpaController ctr = new UsuarioJpaController(fact);
+        Usuario u = ctr.findUsuario(nick);
+        return new ArrayList<Usuario>(u.getLstSeguidos());
+    }
+
+    @WebMethod
+    public ArrayList<Genero> getGenerosHijos(String nombre) {
+        GeneroJpaController ctr = new GeneroJpaController(fact);
+        Genero g = ctr.findGenero(nombre);
+        return new ArrayList<Genero>(g.getListHijos());
+    }
+
+    @WebMethod
+    public ArrayList<Album> getAlbumsdeGeneros(String nombre) {
+        GeneroJpaController ctr = new GeneroJpaController(fact);
+        Genero g = ctr.findGenero(nombre);
+        return new ArrayList<Album>(g.getListAlbum());
+    }
+
+    @WebMethod(exclude = true)
     public void cargarDatos() {
 
         dataFecha fecha = new dataFecha(1, 1, 1980);
@@ -676,9 +739,9 @@ public class Controlador implements IControlador {
         Genero G1 = new Genero(g1);
         Genero G2 = new Genero(g2);
         Genero G3 = new Genero(g3);
-        
-        Cliente cliPrueba  = new Cliente(u7);
-        Artista uPrueba = new Artista("axaxaxa", "www.ji.com",u1);
+
+        Cliente cliPrueba = new Cliente(u7);
+        Artista uPrueba = new Artista("axaxaxa", "www.ji.com", u1);
         cliPrueba.addToSeguidos(uPrueba);
 
         altaGenero(g1);
@@ -706,9 +769,9 @@ public class Controlador implements IControlador {
         Album A2 = new Album(a2);
         A2.getListGenero().add(G2);
         Album A3 = new Album(a3);
-         A3.getListGenero().add(G3);
+        A3.getListGenero().add(G3);
         Album A4 = new Album(a4);
-         A4.getListGenero().add(G3);
+        A4.getListGenero().add(G3);
 
         altaTema(t1, A1.getNombre());
         altaTema(t2, A1.getNombre());
@@ -726,21 +789,20 @@ public class Controlador implements IControlador {
         agregarFavorito(false, false, true, "db", "album3");
 
         agregarFavorito(true, false, false, "md", "tema3");
-        
+
         dataListaReproduccion listaRep = new dataListaReproduccion("lista1", "");
         ListaParticular listapar1 = new ListaParticular(true, cliPrueba, listaRep);
         dataListaReproduccion listaRep2 = new dataListaReproduccion("lista2", "");
         ListaParticular listapar2 = new ListaParticular(true, cliPrueba, listaRep2);
-        
+
         crearListaParticular(true, cliPrueba.getNickname(), listaRep);
         crearListaParticular(true, cliPrueba.getNickname(), listaRep2);
 
     }
 
 //    @WebMethod(exclude=true)
-    public void publicar()
-    {
-        Endpoint.publish("http://localhost:2425/Tecnopotify",this);
+    public void publicar() {
+        Endpoint.publish("http://localhost:2425/Tecnopotify", this);
     }
-    
+
 }

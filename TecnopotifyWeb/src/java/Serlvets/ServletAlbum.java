@@ -28,6 +28,7 @@ import static Webservices.ControladorWeb.seleccionarArtista;
 import static Webservices.ControladorWeb.buscarAlbum;
 import static Webservices.ControladorWeb.buscarGenero;
 import static Webservices.ControladorWeb.crearAlbum;
+import static Webservices.ControladorWeb.getAlbumsdeGeneros;
 import static Webservices.ControladorWeb.listarArtistas;
 
 /**
@@ -136,7 +137,7 @@ public class ServletAlbum extends HttpServlet {
                 List<Album> lstAlbum=null;
                 if (genero != null && genero != "") {
                     Genero oGenero=buscarGenero(genero);
-                    lstAlbum=oGenero.getListAlbum();
+                    lstAlbum=getAlbumsdeGeneros(oGenero.getNombre());
                 } else{
                     Artista oArtista = seleccionarArtista(artista);
                     lstAlbum=oArtista.getListAlbum();

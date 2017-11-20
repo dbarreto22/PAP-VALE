@@ -213,5 +213,19 @@ public class ControladorWeb {
         port.setTema(arg0);
     }
 
+    public static java.util.List<edu.tecnopotify.interfaces.Genero> getGenerosHijos(java.lang.String arg0) {
+        return port.getGenerosHijos(arg0);
+    }
+
+    public static java.util.List<edu.tecnopotify.interfaces.Album> getAlbumsdeGeneros(java.lang.String arg0) {
+        return port.getAlbumsdeGeneros(arg0);
+    }
+
+    public static java.util.List<edu.tecnopotify.interfaces.Usuario> getSeguidos(java.lang.String arg0) {
+        return port.getSeguidos(arg0);
+    }
+
+    
+    
     
 }

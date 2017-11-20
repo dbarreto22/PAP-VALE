@@ -6,15 +6,15 @@ import edu.tecnopotify.datatypes.dataFecha;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
-import javax.persistence.NamedQueries;
-import javax.persistence.NamedQuery;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlTransient;
 
 @Entity
-
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Usuario implements Serializable {
 
     @Id
@@ -26,6 +26,7 @@ public class Usuario implements Serializable {
     private String imagen;
     private String contrasenia;
     
+    @XmlTransient
     @ManyToMany
     private List<Usuario> lstSeguidos;
 

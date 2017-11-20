@@ -6,10 +6,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 import javax.xml.bind.annotation.XmlAccessType;
@@ -25,25 +22,19 @@ public class Temas implements Serializable {
 //    @GeneratedValue(strategy = GenerationType.AUTO)
     @Id
     private String nombre;
-
     private String duracion;
- 
     private int posicion;
-
     private String archivo;
-    
-
     
     @XmlTransient
     @ManyToMany
     public Map<String, ListaReproduccion> listaR = new HashMap<String,ListaReproduccion>();
     
-    
     @XmlTransient
     @ManyToMany
     private List<Favoritos> listFavoritos = new  ArrayList<Favoritos>();
     
-    @XmlTransient
+
     public Map<String, ListaReproduccion> getListaR() {
         return listaR;
     }

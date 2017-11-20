@@ -1,13 +1,8 @@
 package edu.tecnopotify.entidades;
 
-import edu.tecnopotify.controladores.SuscripcionJpaController;
-import edu.tecnopotify.datatypes.dataCliente;
 import edu.tecnopotify.datatypes.dataUsuario;
 import java.io.Serializable;
-import java.util.Collection;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import javax.persistence.Entity;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
@@ -24,13 +19,9 @@ public class Cliente extends Usuario implements Serializable {
     private List<ListaParticular> listasReprParticular;
     /* @OneToMany
     public List<Usuario> seguidos;*/
-
     @OneToOne
-    @XmlTransient
     private Favoritos fav;
-
     @OneToOne
-    @XmlTransient
     private Suscripcion suscripcion;
 
     public Cliente(dataUsuario usuario) {

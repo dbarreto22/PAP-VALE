@@ -6,33 +6,30 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlTransient;
 
+@XmlAccessorType(XmlAccessType.FIELD)
 @Entity
 public class Genero implements Serializable{
-    
     //private static final long serialVersionUID = 1L;
     @Id
     private String nombre;
-
     private String padre;
-
-    
+    @XmlTransient
     @OneToMany
     private Map<String, ListaDefecto> listasReprGenero = new HashMap<String, ListaDefecto>();
- 
+    @XmlTransient    
     @OneToMany
     private List<Genero> listHijos=null;
-  
+    @XmlTransient    
     @ManyToMany
     private List<Album> listAlbum;
-    
     
     public Genero(dataGenero genero) {
         this.nombre = genero.getNombre();

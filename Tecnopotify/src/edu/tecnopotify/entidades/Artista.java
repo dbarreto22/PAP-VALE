@@ -2,13 +2,13 @@ package edu.tecnopotify.entidades;
 
 import edu.tecnopotify.datatypes.dataUsuario;
 import java.io.Serializable;
-import java.util.Collection;
-import java.util.Date;
 import java.util.List;
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.OneToMany;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
 
+@XmlAccessorType(XmlAccessType.FIELD)
 @Entity
 public class Artista extends Usuario implements Serializable {
 

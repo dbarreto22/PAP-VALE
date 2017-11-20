@@ -12,7 +12,8 @@
 <%
     
   String comando = "mostrarCliente";
-  if(session.getAttribute("tipo") != null && session.getAttribute("tipo").equals("Cliente")){
+  String tipo = (String) session.getAttribute("tipoUser");
+  if(tipo != null && tipo.contains("Cliente")){
      Cliente cliente = (Cliente) session.getAttribute("user");%>
     <li><a href="<%= request.getContextPath()%>/usuarios?comando=<%=comando%>">Bienvenido <%= cliente.getNickname() %>!</a></li>
     <li><a href="<%= request.getContextPath()%>/autenticar?comando=logout">LogOut</a></li><%
@@ -40,7 +41,7 @@
     %>
 
 <%     
-    }else if(session.getAttribute("tipo") != null && session.getAttribute("tipo").equals("Artista")){
+    }else if(tipo != null && tipo.contains("Artista")){
       Artista artista = (Artista) session.getAttribute("user");%>
         <li><a href="<%= request.getContextPath()%>/usuarios?comando=<%=comando%>">Bienvenido <%= artista.getNickname() %>!</a></li>
     <li><a href="<%= request.getContextPath()%>/autenticar?comando=logout">LogOut</a></li>

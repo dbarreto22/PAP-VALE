@@ -1,0 +1,51 @@
+Usuario	//-Usuario --Crear Funcion
+
+Temas 	//-ListaReproducción 	-Temas
+				-Favoritos
+	//-Favoritos -Cliente	-ListaParticular
+	  	   -Temas
+	   	   -Album
+	  	   -ListaReproduccion
+
+Suscripción //-Cliente	-Favoritos -Cliente
+			-ListaReproduccion
+			-Suscripción -Cliente
+
+ListaReproducción //-Favoritos -Cliente
+	 	 	   -Temas
+	   		   -Album
+	  	 	   -ListaReproduccion
+
+ListaParticular	  //-Cliente	-ListaParticular
+
+ListaDefecto	-Genero	-ListaDefecto
+			-Genero
+			-Album 
+
+Genero	//-ListaDefecto -Genero
+	//-Genero -Album --Crear Funcion 
+
+	//-Album  -Temas --Crear Funcion
+		-Genero	-ListaDefecto -Genero
+		-Favoritos -Cliente
+
+Favoritos //-Cliente
+	  -Temas 
+	  -Album
+	  -ListaReproduccion -Temas
+			     
+Cliente	-ListaParticular
+	-Favoritos -Temas
+		   -Album
+		   -ListaReproduccion
+	-Suscripción
+
+Artista	-Album  -Temas
+		-Genero
+		-Favoritos
+
+Album 	-Temas 	
+	-Genero	
+	//-Favoritos-Temas
+	   	   -Album
+	  	   -ListaReproduccion

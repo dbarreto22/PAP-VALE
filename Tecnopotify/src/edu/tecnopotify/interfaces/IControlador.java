@@ -120,5 +120,11 @@ public interface IControlador {
     public void setTema(Temas aux);
 
     public void publicar();    
+    
+    public ArrayList<Usuario> getSeguidos(String nick);
+    
+    public ArrayList<Genero> getGenerosHijos(String nombre);
+    
+    public ArrayList<Album> getAlbumsdeGeneros(String nombre);
 }
 
