@@ -4,8 +4,8 @@
     Author     : Carlox
 --%>
 
-<%@page import="edu.tecnopotify.entidades.Temas"%>
-<%@page import="edu.tecnopotify.entidades.Album"%>
+<%@page import="edu.tecnopotify.interfaces.Temas"%>
+<%@page import="edu.tecnopotify.interfaces.Album"%>
 <%@page import="java.util.List"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -26,7 +26,7 @@
                     </li>
                 <%}
             }else{%>
-                 <label for="male">No existen temas para mostrar</label>
+                 <h1>No existen temas para mostrar</h1>
              <%}%>    
         </ol>   
         </div>

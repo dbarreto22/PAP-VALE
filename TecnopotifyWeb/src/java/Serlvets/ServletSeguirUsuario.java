@@ -6,9 +6,7 @@
 package Serlvets;
 
 
-import static Webservices.ControladorWeb.dejarDeSeguirUsuario;
-import static Webservices.ControladorWeb.seguirUsuario;
-import static Webservices.ControladorWeb.seleccionarCliente;
+
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -17,14 +15,14 @@ import javax.servlet.http.HttpServletResponse;
 //*************************WEB***********************
 import edu.tecnopotify.interfaces.Cliente;
 import static edu.tecnopotify.interfaces.Estado.VIGENTE;
-//import edu.tecnopotify.interfaces.Suscripcion.estado.VIGENTE;
+import Webservices.ControladorWeb;
 
 /**
  *
  * @author menan
  */
 public class ServletSeguirUsuario extends HttpServlet {
-
+    private ControladorWeb webCtr;
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
@@ -36,17 +34,17 @@ public class ServletSeguirUsuario extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        webCtr=new ControladorWeb();
         response.setContentType("text/html;charset=UTF-8");
         String comando = request.getParameter("comando");
-        String nickUsr = (String) request.getSession().getAttribute("user");
-
-        Cliente cliente = seleccionarCliente(nickUsr);
+        Cliente cliente = (Cliente) request.getSession().getAttribute("user");
+        String nickUsr = cliente.getNickname();
         if (comando != null && comando.equals("seguirUsuario") && (cliente.getSuscripcion().getStatus() == VIGENTE)) {
             String usrSeguido = request.getParameter("usrASeguir");
             if (request.getParameter("Dejar de seguir") != null) {
-                dejarDeSeguirUsuario(nickUsr, usrSeguido);
+                webCtr.dejarDeSeguirUsuario(nickUsr, usrSeguido);
             } else {
-                seguirUsuario(nickUsr, usrSeguido);
+                webCtr.seguirUsuario(nickUsr, usrSeguido);
             }
         }
         request.getRequestDispatcher("/ppal.jsp").forward(request, response);

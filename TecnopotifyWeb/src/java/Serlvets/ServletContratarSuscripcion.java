@@ -6,19 +6,21 @@
 package Serlvets;
 
 
+
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 //******************WEB****************************
-import static Webservices.ControladorWeb.modificarSuscripcion;
+import Webservices.ControladorWeb;
+import edu.tecnopotify.interfaces.Cliente;
 /**
  *
  * @author menan
  */
 public class ServletContratarSuscripcion extends HttpServlet {
-
+    private ControladorWeb webCtr;
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
@@ -31,11 +33,13 @@ public class ServletContratarSuscripcion extends HttpServlet {
     
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        webCtr = new ControladorWeb();
         response.setContentType("text/html;charset=UTF-8");
         //Solo se puede entrar con suscripcion pendiente o vencida, son los únicos estados que permiten pasar a una suscripción vigente
         //FALTA CONTROL PREVIO DE SUSCRIPCIÓN PERO NO ME TOMA LA OPCIÓN DEL COMBO
         String comando = request.getParameter("comando");
-        String nickUsr = (String) request.getSession().getAttribute("user");
+        Cliente cliente = (Cliente) request.getSession().getAttribute("user");
+        String nickUsr = cliente.getNickname();
         
         String suscrContratar = "VIGENTE";
         String pago = "";
@@ -49,7 +53,7 @@ public class ServletContratarSuscripcion extends HttpServlet {
             pago = "ANUAL";
         }
         if (comando != null && comando.equals("contratarSuscripcion")){
-            modificarSuscripcion(nickUsr, suscrContratar, pago); 
+            webCtr.modificarSuscripcion(nickUsr, suscrContratar, pago); 
         }
         request.getRequestDispatcher("/ppal.jsp").forward(request, response);
     }

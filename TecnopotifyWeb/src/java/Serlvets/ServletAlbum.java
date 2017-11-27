@@ -7,6 +7,7 @@ package Serlvets;
 
 
 
+import Webservices.ControladorWeb;
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -23,13 +24,7 @@ import edu.tecnopotify.interfaces.DataAlbum;
 import edu.tecnopotify.interfaces.Album;
 import edu.tecnopotify.interfaces.Artista;
 import edu.tecnopotify.interfaces.Genero;
-import static Webservices.ControladorWeb.listarGeneros;
-import static Webservices.ControladorWeb.seleccionarArtista;
-import static Webservices.ControladorWeb.buscarAlbum;
-import static Webservices.ControladorWeb.buscarGenero;
-import static Webservices.ControladorWeb.crearAlbum;
-import static Webservices.ControladorWeb.getAlbumsdeGeneros;
-import static Webservices.ControladorWeb.listarArtistas;
+
 
 /**
  *
@@ -40,7 +35,7 @@ public class ServletAlbum extends HttpServlet {
     private static final long serialVersionUID = 1L;
     private ServletFileUpload uploader = null;
     private String fileDirStr = null;
-
+    private ControladorWeb webCtr;
     @Override
     public void init() throws ServletException {
         String rootPath = System.getProperty("user.home");
@@ -77,6 +72,7 @@ public class ServletAlbum extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        webCtr=new ControladorWeb();
         response.setContentType("text/html;charset=UTF-8");
         String comando = request.getParameter("comando");
         String path = "";
@@ -84,13 +80,13 @@ public class ServletAlbum extends HttpServlet {
         if (comando != null && comando.equals("altaAlbum")) {
         }else if (comando != null && comando.equals("mostrarAlbum")) {
             String album = (String)request.getParameter("idAlbum");
-            edu.tecnopotify.interfaces.Album oAlbum = buscarAlbum(album);
+            edu.tecnopotify.interfaces.Album oAlbum = webCtr.buscarAlbum(album);
             List<edu.tecnopotify.interfaces.Temas> lstTemas = oAlbum.getListTemas();
             destino="/Album/MostrarAlbum.jsp";
             request.setAttribute("lstTemas", lstTemas);
         } else {// Es mostrar album
-            List<Genero> lstGenero = listarGeneros();
-            List<Artista> lstArtista = listarArtistas();
+            List<Genero> lstGenero = webCtr.listarGeneros();
+            List<Artista> lstArtista = webCtr.listarArtistas();
             request.setAttribute("lstGenero", lstGenero);
             request.setAttribute("lstArtista", lstArtista);
             destino="/Album/ConsultarAlbum.jsp";
@@ -110,6 +106,7 @@ public class ServletAlbum extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        webCtr=new ControladorWeb();
         response.setContentType("text/html");
         String comando = request.getParameter("comando");
         String path = "";
@@ -123,8 +120,8 @@ public class ServletAlbum extends HttpServlet {
             oDtAlbum.setImagenAlbum(idAlbum);
             oDtAlbum.setAnioCreado(anio);
             oDtAlbum.setImagenAlbum(path);
-            artista = seleccionarArtista(usr);
-            crearAlbum(artista.getNickname(), oDtAlbum);
+            artista = webCtr.seleccionarArtista(usr);
+            webCtr.crearAlbum(artista.getNickname(), oDtAlbum);
             request.setAttribute("comando", comando);
             request.setAttribute("id", idAlbum);
             destino="/subirImg.jsp";
@@ -136,10 +133,10 @@ public class ServletAlbum extends HttpServlet {
             }else{  
                 List<Album> lstAlbum=null;
                 if (genero != null && genero != "") {
-                    Genero oGenero=buscarGenero(genero);
-                    lstAlbum=getAlbumsdeGeneros(oGenero.getNombre());
+                    Genero oGenero=webCtr.buscarGenero(genero);
+                    lstAlbum=webCtr.getAlbumsdeGeneros(oGenero.getNombre());
                 } else{
-                    Artista oArtista = seleccionarArtista(artista);
+                    Artista oArtista = webCtr.seleccionarArtista(artista);
                     lstAlbum=oArtista.getListAlbum();
                 }
                 request.setAttribute("lstAlbum", lstAlbum);

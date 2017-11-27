@@ -6,13 +6,13 @@
 package Serlvets;
 
 import com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type;
+import edu.tecnopotify.interfaces.Cliente;
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import edu.tecnopotify.interfaces.ObtenerEstadoSuscripcion;
 
 /**
  *
@@ -33,8 +33,10 @@ public class ServletActualizarSuscripcion extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        String suscripcion = obtenerEstadoSuscripcion((String) request.getSession().getAttribute("user"));
-        String pago = obtenerPagoSuscripcion((String) request.getSession().getAttribute("user"));
+        Cliente cliente = (Cliente) request.getSession().getAttribute("user");
+        String nickUsr = cliente.getNickname();
+        String suscripcion = obtenerEstadoSuscripcion(nickUsr);
+        String pago = obtenerPagoSuscripcion(nickUsr);
         request.setAttribute("susc", suscripcion);
         request.setAttribute("pago", pago);
         request.getRequestDispatcher("actualizarSuscripcion.jsp").forward(request, response);
@@ -94,10 +96,6 @@ public class ServletActualizarSuscripcion extends HttpServlet {
     public String getServletInfo() {
         return "Short description";
     }// </editor-fold>
-
-    private java.lang.String nickCliente(Type String) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
 
     private static String obtenerEstadoSuscripcion(java.lang.String arg0) {
         edu.tecnopotify.interfaces.ControladorService service = new edu.tecnopotify.interfaces.ControladorService();

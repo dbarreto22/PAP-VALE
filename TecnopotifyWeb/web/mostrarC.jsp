@@ -25,14 +25,20 @@
             <h3>Datos Cliente</h3>
         </div>
         <%
+            Iterator<String> itA = null;
+            Iterator<String> itLR = null;
             //List<String> seguidores = (ArrayList) request.getAttribute("litseg");
             //Iterator<String> itS = seguidores.iterator();
             List<String> listPart = (ArrayList) request.getAttribute("repPropia");
             Iterator<String> itR = listPart.iterator();
             List<String> album = (ArrayList) request.getAttribute("album");
-            Iterator<String> itA = album.iterator();
+            if(album!=null){
+                itA = album.iterator();
+            }
             List<String> lisRep = (ArrayList) request.getAttribute("listRep");
-            Iterator<String> itLR = lisRep.iterator();
+            if(lisRep!= null){
+                itLR = lisRep.iterator();
+            }
         %>
 
 
@@ -79,7 +85,7 @@
                 <%}%>
 
                 <h6>Lista de Reproduccione Favoritas: </h6>
-                <% if (!lisRep.isEmpty()) {
+                <% if (lisRep!= null && !lisRep.isEmpty()) {
                         while (itLR.hasNext()) {%> 
                 <ol>
                     <li> <a href="<%= request.getContextPath()%>/mostrarListaReproduccion.jsp"> <%out.print(itLR.next()); %></a></li>
@@ -91,7 +97,7 @@
 
 
                 <h6>Lista de Album Favoritos: </h6>
-                <% if (!album.isEmpty()) {
+                <% if (album!=null && !album.isEmpty()) {
                     String nom;
                         while (itA.hasNext()) {
                             nom = itA.next();                     %> 

@@ -5,9 +5,7 @@
  */
 package Serlvets;
 
-import Webservices.ControladorWeb;
-import static Webservices.ControladorWeb.getUsuario;
-import static Webservices.ControladorWeb.seleccionarCliente;
+
 import edu.tecnopotify.interfaces.Artista;
 import edu.tecnopotify.interfaces.Cliente;
 import edu.tecnopotify.interfaces.SeleccionarArtista;
@@ -18,13 +16,14 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 //*********WEB***********************
 import edu.tecnopotify.interfaces.Usuario;
+import Webservices.ControladorWeb;
 
 /**
  *
  * @author menan
  */
 public class ServletLogin extends HttpServlet {
-
+    private ControladorWeb webCtr;
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
@@ -39,18 +38,19 @@ public class ServletLogin extends HttpServlet {
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+                webCtr=new ControladorWeb();
         response.setContentType("text/html;charset=UTF-8");
         String comando = request.getParameter("comando");
         if ((comando != null) && (comando.equals("login"))) {
             //obtener parametros y autenticar
             String user = request.getParameter("user");
             String pass = request.getParameter("pass");
-            Usuario usr = getUsuario(user);
+            Usuario usr = webCtr.getUsuario(user);
             //consultar a la logica
             if (pass.equals(usr.getContrasenia())) {
                 
                 if(user.getClass().getName().contains("Cliente")){
-                    Cliente cli = seleccionarCliente(usr.getNickname());
+                    Cliente cli = webCtr.seleccionarCliente(usr.getNickname());
                     request.getSession().setAttribute("user", cli);
                     request.getSession().setAttribute("tipo", "Cliente");
                 }else{

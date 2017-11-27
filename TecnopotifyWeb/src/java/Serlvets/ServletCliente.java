@@ -6,7 +6,7 @@
 package Serlvets;
 
 
-import static Webservices.ControladorWeb.crearCliente;
+import Webservices.ControladorWeb;
 import java.io.IOException;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -24,7 +24,7 @@ import edu.tecnopotify.interfaces.DataUsuario;
  * @author Carlox
  */
 public class ServletCliente extends HttpServlet {
-
+    private ControladorWeb webCtr;
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
@@ -63,7 +63,7 @@ public class ServletCliente extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-
+        webCtr=new ControladorWeb();
         response.setContentType("text/html");
         String comando = request.getParameter("comando");
         if (comando != null && comando.equals("altaCliente")) {
@@ -89,7 +89,7 @@ public class ServletCliente extends HttpServlet {
             cli.setContrasenia(contrasenia);
             cli.setFNac(fecha);
             cli.setImagen("");
-            crearCliente(cli);
+            webCtr.crearCliente(cli);
             request.setAttribute("nickName",nickName);
         }
         

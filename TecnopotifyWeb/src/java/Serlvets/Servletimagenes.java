@@ -5,45 +5,31 @@
  */
 package Serlvets;
 
-import static Webservices.ControladorWeb.getCli;
-import static Webservices.ControladorWeb.getTema;
-import static Webservices.ControladorWeb.seleccionarAlbum;
-import static Webservices.ControladorWeb.seleccionarArtista;
-import static Webservices.ControladorWeb.setImage;
-import static Webservices.ControladorWeb.setImageArt;
-import static Webservices.ControladorWeb.setImageCli;
-import static Webservices.ControladorWeb.setTema;
+import Webservices.ControladorWeb;
 import edu.tecnopotify.interfaces.Album;
 import edu.tecnopotify.interfaces.Artista;
 import edu.tecnopotify.interfaces.Cliente;
 import edu.tecnopotify.interfaces.Temas;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.PrintWriter;
 import java.net.URLDecoder;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Map;
 import javax.servlet.RequestDispatcher;
-
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.ServletOutputStream;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
 import org.apache.commons.fileupload.FileItem;
-import org.apache.commons.fileupload.FileUploadException;
 import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
 
 public class Servletimagenes extends HttpServlet {
-
+    private ControladorWeb webCtr;
     private static final long serialVersionUID = 1L;
     private ServletFileUpload uploader = null;
     private String fileDirStr = null;
@@ -103,6 +89,7 @@ public class Servletimagenes extends HttpServlet {
         if (!ServletFileUpload.isMultipartContent(request)) {
             throw new ServletException("Content type is not multipart/form-data");
         }
+        webCtr=new ControladorWeb();
 
         response.setContentType("text/html");
 
@@ -120,29 +107,29 @@ public class Servletimagenes extends HttpServlet {
                 Album album=null;
                 switch (comando) {
                     case "altaCli":
-                        Cliente cli = getCli((String) request.getParameter("id"));
+                        Cliente cli = webCtr.getCli((String) request.getParameter("id"));
                         cli.setImagen(file.getAbsolutePath());
-                        setImageCli(cli);
+                        webCtr.setImageCli(cli);
                         break;
                     case "altaArt":
-                        Artista art = seleccionarArtista((String) request.getParameter("id"));
+                        Artista art = webCtr.seleccionarArtista((String) request.getParameter("id"));
                         art.setImagen(file.getAbsolutePath());
-                        setImageArt(art);
+                        webCtr.setImageArt(art);
                         break;
                     case "altaAlbum":
-                        album = seleccionarAlbum((String) request.getParameter("id"));
+                        album = webCtr.seleccionarAlbum((String) request.getParameter("id"));
                         album.setImagenAlbum(file.getAbsolutePath());
-                        setImage(album);
+                        webCtr.setImage(album);
                         request.setAttribute("id", album.getNombre());
                         request.setAttribute("comando", "altaTema");
                         despachador = request.getRequestDispatcher("/Temas/altaTema.jsp");
                         despachador.forward(request, response);
                         break;
                     case "altaTema":
-                        Temas tema = getTema(request.getParameter("id"));
+                        Temas tema = webCtr.getTema(request.getParameter("id"));
                         String idAlbum = request.getParameter("idAlbum");
                         tema.setArchivo(file.getAbsolutePath());
-                        setTema(tema);
+                        webCtr.setTema(tema);
                         request.setAttribute("id", idAlbum);
                         request.setAttribute("comando", "altaTema");
                         despachador = request.getRequestDispatcher("/Temas/altaTema.jsp");

@@ -5,6 +5,7 @@
  */
 package Serlvets;
 
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -29,12 +30,7 @@ import edu.tecnopotify.interfaces.Favoritos;
 import edu.tecnopotify.interfaces.ListaParticular;
 import edu.tecnopotify.interfaces.ListaReproduccion;
 import edu.tecnopotify.interfaces.Usuario;
-import static Webservices.ControladorWeb.crearArtista;
-import static Webservices.ControladorWeb.crearCliente;
-import static Webservices.ControladorWeb.crearListaParticular;
-import static Webservices.ControladorWeb.getSeguidos;
-import static Webservices.ControladorWeb.getUsuario;
-import static Webservices.ControladorWeb.seleccionarArtista;
+import Webservices.ControladorWeb;
 
 public class ServletUsr extends HttpServlet {
 
@@ -51,10 +47,10 @@ public class ServletUsr extends HttpServlet {
     private static final long serialVersionUID = 1L;
     private ServletFileUpload uploader = null;
     private String fileDirStr = null;
+    private ControladorWeb webCtr;
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException, org.apache.tomcat.util.http.fileupload.FileUploadException {
-
         response.setContentType("text/html;charset=UTF-8");
     }
 
@@ -72,7 +68,7 @@ public class ServletUsr extends HttpServlet {
             throws ServletException, IOException {
 
         response.setContentType("text/html");
-
+        webCtr=new ControladorWeb();
         String comando = request.getParameter("comando");
         if (comando != null && comando.equals("mostrarCliente")) {
 
@@ -91,7 +87,7 @@ public class ServletUsr extends HttpServlet {
                 request.setAttribute("anio", cli.getFNac().getAnio());
 
                 if (cli.getSuscripcion().getStatus().equals("VIGENTE")) {
-                    List<Usuario> seguidores = getSeguidos(cli.getNickname());
+                    List<Usuario> seguidores = webCtr.getSeguidos(cli.getNickname());
                     Iterator<Usuario> itS = seguidores.iterator();
                     List<String> nickSeg = new ArrayList<>();
                     while (itS.hasNext()) {
@@ -132,7 +128,7 @@ public class ServletUsr extends HttpServlet {
                 despachador.forward(request, response);
 
             } else if (usr.getClass().getName().contains("Artista")) {
-                Artista art = seleccionarArtista(usr.getNickname());
+                Artista art = webCtr.seleccionarArtista(usr.getNickname());
 
                 request.setAttribute("nickName", art.getNickname());
                 request.setAttribute("nombre", art.getNombre());
@@ -163,7 +159,7 @@ public class ServletUsr extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        webCtr=new ControladorWeb();
         response.setContentType("text/html");
 
         String comando = request.getParameter("comando");
@@ -227,7 +223,7 @@ public class ServletUsr extends HttpServlet {
             cli.setImagen("");
             cli.setContrasenia(contrasenia);
             
-            crearArtista(biografia, link, cli);
+            webCtr.crearArtista(biografia, link, cli);
             String altaArt = "altaArt";
 
             request.setAttribute("id", nickName);
@@ -240,9 +236,9 @@ public class ServletUsr extends HttpServlet {
         if (comando != null && comando.equals("mostrarClienteGuest")) {
 
             String nick = request.getParameter("ArtistaSelect");
-            Usuario usr = getUsuario(nick);
+            Usuario usr = webCtr.getUsuario(nick);
             if (usr.getClass().getName().contains("Artista")) {
-                Artista art = seleccionarArtista(nick);
+                Artista art = webCtr.seleccionarArtista(nick);
 
                 request.setAttribute("nickName", art.getNickname());
                 request.setAttribute("nombre", art.getNombre());
@@ -295,7 +291,7 @@ public class ServletUsr extends HttpServlet {
             DataListaReproduccion listaP = new DataListaReproduccion();
             listaP.setNombre(nombreL);
             listaP.setImagen("");
-            crearListaParticular(true, nick, listaP);
+            webCtr.crearListaParticular(true, nick, listaP);
 
             request.setAttribute("id", nombreL);
 
@@ -320,6 +316,12 @@ public class ServletUsr extends HttpServlet {
         edu.tecnopotify.interfaces.ControladorService service = new edu.tecnopotify.interfaces.ControladorService();
         edu.tecnopotify.interfaces.Controlador port = service.getControladorPort();
         return port.getCli(arg0);
+    }
+
+    private static void crearCliente(edu.tecnopotify.interfaces.DataUsuario arg0) {
+        edu.tecnopotify.interfaces.ControladorService service = new edu.tecnopotify.interfaces.ControladorService();
+        edu.tecnopotify.interfaces.Controlador port = service.getControladorPort();
+        port.crearCliente(arg0);
     }
 
    

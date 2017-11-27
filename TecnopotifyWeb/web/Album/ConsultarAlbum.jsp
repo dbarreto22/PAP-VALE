@@ -5,9 +5,9 @@
 --%>
 
 
-<%@page import="edu.tecnopotify.entidades.Artista"%>
+<%@page import="edu.tecnopotify.interfaces.Artista"%>
 <%@page import="java.util.ArrayList"%>
-<%@page import="edu.tecnopotify.entidades.Genero"%>
+<%@page import="edu.tecnopotify.interfaces.Genero"%>
 <%@page import="java.util.List"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>

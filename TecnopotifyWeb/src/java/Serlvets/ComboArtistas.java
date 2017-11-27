@@ -7,6 +7,7 @@ package Serlvets;
 
 
 
+import Webservices.ControladorWeb;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
@@ -19,8 +20,6 @@ import javax.servlet.http.HttpServletResponse;
 
 //*******************web***********************
 import edu.tecnopotify.interfaces.Artista;
-import static Webservices.ControladorWeb.listarArtistas;
-import static Webservices.ControladorWeb.listarUsuarios;
 import edu.tecnopotify.interfaces.Usuario;
 
 /**
@@ -29,7 +28,7 @@ import edu.tecnopotify.interfaces.Usuario;
  */
 @WebServlet(name = "ComboArtistas", urlPatterns = {"/ComboArtistas"})
 public class ComboArtistas extends HttpServlet {
-
+  private ControladorWeb webCtr;
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
@@ -41,19 +40,20 @@ public class ComboArtistas extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        webCtr=new ControladorWeb();
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
           RequestDispatcher despachador;
           if(request.getParameter("comando").equals("CargarUsuarios"))
           {
-              List<Usuario> lstUsuarios = listarUsuarios();
+              List<Usuario> lstUsuarios = webCtr.listarUsuarios();
               request.setAttribute("usuarios", lstUsuarios);
               despachador = request.getRequestDispatcher("Guest.jsp");//
               despachador.forward(request, response);              
           }
           else{
 //********************************************************************************************************
-          List<Artista> lstArtista = listarArtistas();
+          List<Artista> lstArtista = webCtr.listarArtistas();
 //********************************************************************************************************
           request.setAttribute("lstArtista", lstArtista);
           despachador = request.getRequestDispatcher("Album/AltaAlbum.jsp");//
