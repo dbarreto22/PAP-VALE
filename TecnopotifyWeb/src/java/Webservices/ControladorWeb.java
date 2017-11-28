@@ -232,8 +232,18 @@ public class ControladorWeb {
     }
 
     public  void crearListaParticularClase(boolean arg0, java.lang.String arg1, edu.tecnopotify.interfaces.ListaParticular arg2) {
-       
         port.crearListaParticularClase(arg0, arg1, arg2);
     }
+    public void registroUsuariosCount(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2) {
+        port.registroUsuariosCount(arg0, arg1, arg2);
+    }
 
+
+
+
+
+
+    
+    
+    
 }

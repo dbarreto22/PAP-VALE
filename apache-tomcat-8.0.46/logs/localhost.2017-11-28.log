@@ -1,0 +1,71 @@
+28-Nov-2017 00:12:21.858 INFO [http-nio-8080-exec-54] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:Initializing filter
+28-Nov-2017 00:12:29.277 INFO [http-nio-8080-exec-51] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:Initializing filter
+28-Nov-2017 00:18:53.987 INFO [http-nio-8080-exec-58] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:Initializing filter
+28-Nov-2017 00:19:15.415 INFO [http-nio-8080-exec-65] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:Initializing filter
+28-Nov-2017 00:19:20.273 INFO [http-nio-8080-exec-63] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:Initializing filter
+28-Nov-2017 00:22:22.945 INFO [http-nio-8080-exec-77] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:Initializing filter
+28-Nov-2017 00:22:48.225 INFO [http-nio-8080-exec-74] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:Initializing filter
+28-Nov-2017 00:22:54.803 INFO [http-nio-8080-exec-72] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:Initializing filter
+28-Nov-2017 00:27:07.927 INFO [http-nio-8080-exec-75] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:Initializing filter
+28-Nov-2017 00:36:41.898 INFO [http-nio-8080-exec-100] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:Initializing filter
+28-Nov-2017 00:37:31.339 INFO [http-nio-8080-exec-93] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:Initializing filter
+28-Nov-2017 00:38:12.549 INFO [http-nio-8080-exec-98] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:Initializing filter
+28-Nov-2017 00:42:28.721 INFO [http-nio-8080-exec-108] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:Initializing filter
+28-Nov-2017 00:43:27.671 INFO [http-nio-8080-exec-109] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:Initializing filter
+28-Nov-2017 00:45:00.313 INFO [http-nio-8080-exec-116] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:Initializing filter
+28-Nov-2017 00:47:26.207 INFO [http-nio-8080-exec-122] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:Initializing filter
+28-Nov-2017 00:51:19.948 INFO [http-nio-8080-exec-132] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+28-Nov-2017 00:51:21.804 INFO [http-nio-8080-exec-132] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+28-Nov-2017 00:52:29.732 INFO [http-nio-8080-exec-132] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+28-Nov-2017 00:52:32.208 INFO [http-nio-8080-exec-133] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+28-Nov-2017 00:52:32.208 INFO [http-nio-8080-exec-133] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+28-Nov-2017 00:52:32.208 INFO [http-nio-8080-exec-133] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+28-Nov-2017 00:59:29.611 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+28-Nov-2017 00:59:29.691 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+28-Nov-2017 18:01:56.197 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:Initializing filter
+28-Nov-2017 18:01:57.457 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+28-Nov-2017 18:01:57.458 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+28-Nov-2017 18:37:33.923 INFO [http-nio-8080-exec-7] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:Initializing filter
+28-Nov-2017 18:37:54.710 INFO [http-nio-8080-exec-3] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:Initializing filter
+28-Nov-2017 18:53:23.545 INFO [http-nio-8080-exec-14] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:Initializing filter
+28-Nov-2017 18:53:34.966 INFO [http-nio-8080-exec-19] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+28-Nov-2017 18:53:34.967 INFO [http-nio-8080-exec-19] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+28-Nov-2017 18:53:38.449 INFO [http-nio-8080-exec-19] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+28-Nov-2017 18:53:43.300 INFO [http-nio-8080-exec-23] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+28-Nov-2017 18:53:43.300 INFO [http-nio-8080-exec-23] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+28-Nov-2017 18:53:43.300 INFO [http-nio-8080-exec-23] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+28-Nov-2017 18:54:08.308 INFO [http-nio-8080-exec-22] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+28-Nov-2017 18:54:08.308 INFO [http-nio-8080-exec-22] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+28-Nov-2017 18:54:08.752 INFO [60] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+28-Nov-2017 18:54:08.906 INFO [http-nio-8080-exec-15] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+28-Nov-2017 18:54:08.906 INFO [http-nio-8080-exec-15] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+28-Nov-2017 18:54:08.916 INFO [http-nio-8080-exec-15] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+28-Nov-2017 18:54:08.930 INFO [http-nio-8080-exec-16] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+28-Nov-2017 18:54:08.930 INFO [http-nio-8080-exec-16] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+28-Nov-2017 18:54:08.931 INFO [http-nio-8080-exec-16] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+28-Nov-2017 18:54:08.999 INFO [http-nio-8080-exec-21] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+28-Nov-2017 18:54:08.999 INFO [http-nio-8080-exec-21] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+28-Nov-2017 18:54:09.000 INFO [http-nio-8080-exec-21] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+28-Nov-2017 18:54:09.089 INFO [http-nio-8080-exec-18] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+28-Nov-2017 18:54:09.089 INFO [http-nio-8080-exec-18] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+28-Nov-2017 18:54:09.089 INFO [http-nio-8080-exec-18] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+28-Nov-2017 18:55:54.567 INFO [http-nio-8080-exec-24] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:Initializing filter
+28-Nov-2017 18:56:00.385 INFO [http-nio-8080-exec-18] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+28-Nov-2017 18:56:00.390 INFO [http-nio-8080-exec-18] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+28-Nov-2017 18:56:01.896 INFO [http-nio-8080-exec-18] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+28-Nov-2017 18:56:08.673 INFO [http-nio-8080-exec-31] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+28-Nov-2017 18:56:08.673 INFO [http-nio-8080-exec-31] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+28-Nov-2017 18:56:08.673 INFO [http-nio-8080-exec-31] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+28-Nov-2017 18:56:13.948 INFO [http-nio-8080-exec-28] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+28-Nov-2017 18:56:13.948 INFO [http-nio-8080-exec-28] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+28-Nov-2017 18:56:14.465 INFO [http-nio-8080-exec-28] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+28-Nov-2017 18:57:03.958 INFO [http-nio-8080-exec-33] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:Initializing filter
+28-Nov-2017 18:57:09.928 INFO [http-nio-8080-exec-40] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+28-Nov-2017 18:57:09.928 INFO [http-nio-8080-exec-40] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+28-Nov-2017 18:57:11.808 INFO [http-nio-8080-exec-40] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+28-Nov-2017 18:57:18.113 INFO [http-nio-8080-exec-42] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+28-Nov-2017 18:57:18.113 INFO [http-nio-8080-exec-42] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+28-Nov-2017 18:57:18.114 INFO [http-nio-8080-exec-42] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+28-Nov-2017 18:57:29.619 INFO [http-nio-8080-exec-36] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+28-Nov-2017 18:57:29.619 INFO [http-nio-8080-exec-36] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+28-Nov-2017 18:57:29.904 INFO [http-nio-8080-exec-36] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing

@@ -13,6 +13,7 @@
     <class>edu.tecnopotify.entidades.Favoritos</class>
     <class>edu.tecnopotify.entidades.Genero</class>
     <class>edu.tecnopotify.entidades.Suscripcion</class>
+    <class>edu.tecnopotify.entidades.RegistroUsuarios</class>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:hsqldb:hsql://localhost/tecnopotify"/>
       <property name="javax.persistence.jdbc.user" value="sa"/>

@@ -1,4 +1,8 @@
 
+<%@page import="java.util.GregorianCalendar"%>
+<%@page import="java.util.Calendar"%>
+<%@page import="java.util.Date"%>
+<%@page import="Webservices.ControladorWeb"%>
 <%@page import="edu.tecnopotify.interfaces.Cliente"%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -13,6 +17,16 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="#">Tecnopotify!</a>
+            <%
+                String ip, browser, url, SO;
+                
+                ControladorWeb ctr = new ControladorWeb();
+                ip = request.getRemoteAddr();
+                url = request.getRequestURL().toString();
+                browser = request.getHeader("user-agent");             
+                ctr.registroUsuariosCount(ip, url, browser);    
+            %>
+            
         </div>
         <div id="navbar" class="navbar-collapse collapse">
  
