@@ -128,5 +128,7 @@ public interface IControlador {
     public ArrayList<Genero> getGenerosHijos(String nombre);
     
     public ArrayList<Album> getAlbumsdeGeneros(String nombre);
+    
+    public void crearListaParticularClase(boolean privado, String nickCliente, ListaParticular listaP);
 }
 

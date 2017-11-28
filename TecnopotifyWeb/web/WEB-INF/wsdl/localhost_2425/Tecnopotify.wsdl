@@ -4,12 +4,24 @@
 <xsd:import namespace="http://interfaces.tecnopotify.edu/" schemaLocation="http://localhost:2425/Tecnopotify?xsd=1"></xsd:import>
 </xsd:schema>
 </types>
+<<<<<<< HEAD
 <message name="publicar">
 <part name="parameters" element="tns:publicar"></part>
+=======
+<message name="seleccionarLista">
+<part name="parameters" element="tns:seleccionarLista"></part>
 </message>
-<message name="publicarResponse">
-<part name="parameters" element="tns:publicarResponse"></part>
+<message name="seleccionarListaResponse">
+<part name="parameters" element="tns:seleccionarListaResponse"></part>
 </message>
+<message name="getTema">
+<part name="parameters" element="tns:getTema"></part>
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
+</message>
+<message name="getTemaResponse">
+<part name="parameters" element="tns:getTemaResponse"></part>
+</message>
+<<<<<<< HEAD
 <message name="crearArtista">
 <part name="parameters" element="tns:crearArtista"></part>
 </message>
@@ -57,19 +69,27 @@
 </message>
 <message name="seleccionarArtistaResponse">
 <part name="parameters" element="tns:seleccionarArtistaResponse"></part>
+=======
+<message name="obtenerPagoSuscripcion">
+<part name="parameters" element="tns:obtenerPagoSuscripcion"></part>
 </message>
-<message name="listarClientes">
-<part name="parameters" element="tns:listarClientes"></part>
+<message name="obtenerPagoSuscripcionResponse">
+<part name="parameters" element="tns:obtenerPagoSuscripcionResponse"></part>
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
 </message>
-<message name="listarClientesResponse">
-<part name="parameters" element="tns:listarClientesResponse"></part>
+<message name="consultarListaRep">
+<part name="parameters" element="tns:consultarListaRep"></part>
 </message>
-<message name="listarGeneros">
-<part name="parameters" element="tns:listarGeneros"></part>
+<message name="consultarListaRepResponse">
+<part name="parameters" element="tns:consultarListaRepResponse"></part>
 </message>
-<message name="listarGenerosResponse">
-<part name="parameters" element="tns:listarGenerosResponse"></part>
+<message name="listarListaRepr">
+<part name="parameters" element="tns:listarListaRepr"></part>
 </message>
+<message name="listarListaReprResponse">
+<part name="parameters" element="tns:listarListaReprResponse"></part>
+</message>
+<<<<<<< HEAD
 <message name="agregarFavorito">
 <part name="parameters" element="tns:agregarFavorito"></part>
 </message>
@@ -99,13 +119,39 @@
 </message>
 <message name="seleccionarClienteResponse">
 <part name="parameters" element="tns:seleccionarClienteResponse"></part>
+=======
+<message name="eliminarFavorito">
+<part name="parameters" element="tns:eliminarFavorito"></part>
 </message>
-<message name="mostrarListaGenero">
-<part name="parameters" element="tns:mostrarListaGenero"></part>
+<message name="eliminarFavoritoResponse">
+<part name="parameters" element="tns:eliminarFavoritoResponse"></part>
 </message>
-<message name="mostrarListaGeneroResponse">
-<part name="parameters" element="tns:mostrarListaGeneroResponse"></part>
+<message name="consultarAlbumPorArtista">
+<part name="parameters" element="tns:consultarAlbumPorArtista"></part>
 </message>
+<message name="consultarAlbumPorArtistaResponse">
+<part name="parameters" element="tns:consultarAlbumPorArtistaResponse"></part>
+</message>
+<message name="consultarAlbumPorGenero">
+<part name="parameters" element="tns:consultarAlbumPorGenero"></part>
+</message>
+<message name="consultarAlbumPorGeneroResponse">
+<part name="parameters" element="tns:consultarAlbumPorGeneroResponse"></part>
+</message>
+<message name="seleccionarArtistaPorNombre">
+<part name="parameters" element="tns:seleccionarArtistaPorNombre"></part>
+</message>
+<message name="seleccionarArtistaPorNombreResponse">
+<part name="parameters" element="tns:seleccionarArtistaPorNombreResponse"></part>
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
+</message>
+<message name="getUsuario">
+<part name="parameters" element="tns:getUsuario"></part>
+</message>
+<message name="getUsuarioResponse">
+<part name="parameters" element="tns:getUsuarioResponse"></part>
+</message>
+<<<<<<< HEAD
 <message name="crearListaParticular">
 <part name="parameters" element="tns:crearListaParticular"></part>
 </message>
@@ -135,19 +181,104 @@
 </message>
 <message name="publicarListaResponse">
 <part name="parameters" element="tns:publicarListaResponse"></part>
+=======
+<message name="buscarUsrMail">
+<part name="parameters" element="tns:buscarUsrMail"></part>
 </message>
-<message name="crearAlbum">
-<part name="parameters" element="tns:crearAlbum"></part>
+<message name="buscarUsrMailResponse">
+<part name="parameters" element="tns:buscarUsrMailResponse"></part>
 </message>
-<message name="crearAlbumResponse">
-<part name="parameters" element="tns:crearAlbumResponse"></part>
+<message name="setImageCli">
+<part name="parameters" element="tns:setImageCli"></part>
 </message>
+<message name="setImageCliResponse">
+<part name="parameters" element="tns:setImageCliResponse"></part>
+</message>
+<message name="setImageArt">
+<part name="parameters" element="tns:setImageArt"></part>
+</message>
+<message name="setImageArtResponse">
+<part name="parameters" element="tns:setImageArtResponse"></part>
+</message>
+<message name="setTema">
+<part name="parameters" element="tns:setTema"></part>
+</message>
+<message name="setTemaResponse">
+<part name="parameters" element="tns:setTemaResponse"></part>
+</message>
+<message name="getSeguidos">
+<part name="parameters" element="tns:getSeguidos"></part>
+</message>
+<message name="getSeguidosResponse">
+<part name="parameters" element="tns:getSeguidosResponse"></part>
+</message>
+<message name="getGenerosHijos">
+<part name="parameters" element="tns:getGenerosHijos"></part>
+</message>
+<message name="getGenerosHijosResponse">
+<part name="parameters" element="tns:getGenerosHijosResponse"></part>
+</message>
+<message name="getAlbumsdeGeneros">
+<part name="parameters" element="tns:getAlbumsdeGeneros"></part>
+</message>
+<message name="getAlbumsdeGenerosResponse">
+<part name="parameters" element="tns:getAlbumsdeGenerosResponse"></part>
+</message>
+<message name="crearListaParticularClase">
+<part name="parameters" element="tns:crearListaParticularClase"></part>
+</message>
+<message name="crearListaParticularClaseResponse">
+<part name="parameters" element="tns:crearListaParticularClaseResponse"></part>
+</message>
+<message name="setImage">
+<part name="parameters" element="tns:setImage"></part>
+</message>
+<message name="setImageResponse">
+<part name="parameters" element="tns:setImageResponse"></part>
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
+</message>
+<message name="listarClientes">
+<part name="parameters" element="tns:listarClientes"></part>
+</message>
+<message name="listarClientesResponse">
+<part name="parameters" element="tns:listarClientesResponse"></part>
+</message>
+<message name="seleccionarCliente">
+<part name="parameters" element="tns:seleccionarCliente"></part>
+</message>
+<message name="seleccionarClienteResponse">
+<part name="parameters" element="tns:seleccionarClienteResponse"></part>
+</message>
+<<<<<<< HEAD
 <message name="getlr">
 <part name="parameters" element="tns:getlr"></part>
+=======
+<message name="agregarFavorito">
+<part name="parameters" element="tns:agregarFavorito"></part>
+</message>
+<message name="agregarFavoritoResponse">
+<part name="parameters" element="tns:agregarFavoritoResponse"></part>
+</message>
+<message name="getCli">
+<part name="parameters" element="tns:getCli"></part>
+</message>
+<message name="getCliResponse">
+<part name="parameters" element="tns:getCliResponse"></part>
+</message>
+<message name="listarTemas">
+<part name="parameters" element="tns:listarTemas"></part>
+</message>
+<message name="listarTemasResponse">
+<part name="parameters" element="tns:listarTemasResponse"></part>
+</message>
+<message name="listarAlbum">
+<part name="parameters" element="tns:listarAlbum"></part>
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
 </message>
 <message name="getlrResponse">
 <part name="parameters" element="tns:getlrResponse"></part>
 </message>
+<<<<<<< HEAD
 <message name="listarDefecto">
 <part name="parameters" element="tns:listarDefecto"></part>
 </message>
@@ -156,15 +287,39 @@
 </message>
 <message name="listarArtistas">
 <part name="parameters" element="tns:listarArtistas"></part>
+=======
+<message name="crearListaParticular">
+<part name="parameters" element="tns:crearListaParticular"></part>
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
 </message>
-<message name="listarArtistasResponse">
-<part name="parameters" element="tns:listarArtistasResponse"></part>
+<message name="crearListaParticularResponse">
+<part name="parameters" element="tns:crearListaParticularResponse"></part>
 </message>
+<<<<<<< HEAD
 <message name="seleccionarAlbum">
 <part name="parameters" element="tns:seleccionarAlbum"></part>
 </message>
 <message name="seleccionarAlbumResponse">
 <part name="parameters" element="tns:seleccionarAlbumResponse"></part>
+=======
+<message name="crearListaDefecto">
+<part name="parameters" element="tns:crearListaDefecto"></part>
+</message>
+<message name="crearListaDefectoResponse">
+<part name="parameters" element="tns:crearListaDefectoResponse"></part>
+</message>
+<message name="seleccionarArtista">
+<part name="parameters" element="tns:seleccionarArtista"></part>
+</message>
+<message name="seleccionarArtistaResponse">
+<part name="parameters" element="tns:seleccionarArtistaResponse"></part>
+</message>
+<message name="listarGeneros">
+<part name="parameters" element="tns:listarGeneros"></part>
+</message>
+<message name="listarGenerosResponse">
+<part name="parameters" element="tns:listarGenerosResponse"></part>
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
 </message>
 <message name="altaGenero">
 <part name="parameters" element="tns:altaGenero"></part>
@@ -178,6 +333,7 @@
 <message name="buscarGeneroResponse">
 <part name="parameters" element="tns:buscarGeneroResponse"></part>
 </message>
+<<<<<<< HEAD
 <message name="quitarTemaLista">
 <part name="parameters" element="tns:quitarTemaLista"></part>
 </message>
@@ -195,13 +351,21 @@
 </message>
 <message name="altaTemaResponse">
 <part name="parameters" element="tns:altaTemaResponse"></part>
+=======
+<message name="publicar">
+<part name="parameters" element="tns:publicar"></part>
 </message>
-<message name="setImage">
-<part name="parameters" element="tns:setImage"></part>
+<message name="publicarResponse">
+<part name="parameters" element="tns:publicarResponse"></part>
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
 </message>
-<message name="setImageResponse">
-<part name="parameters" element="tns:setImageResponse"></part>
+<message name="crearCliente">
+<part name="parameters" element="tns:crearCliente"></part>
 </message>
+<message name="crearClienteResponse">
+<part name="parameters" element="tns:crearClienteResponse"></part>
+</message>
+<<<<<<< HEAD
 <message name="obtenerPagoSuscripcion">
 <part name="parameters" element="tns:obtenerPagoSuscripcion"></part>
 </message>
@@ -213,25 +377,44 @@
 </message>
 <message name="seleccionarArtistaPorNombreResponse">
 <part name="parameters" element="tns:seleccionarArtistaPorNombreResponse"></part>
+=======
+<message name="crearArtista">
+<part name="parameters" element="tns:crearArtista"></part>
 </message>
-<message name="consultarAlbumPorGenero">
-<part name="parameters" element="tns:consultarAlbumPorGenero"></part>
+<message name="crearArtistaResponse">
+<part name="parameters" element="tns:crearArtistaResponse"></part>
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
 </message>
-<message name="consultarAlbumPorGeneroResponse">
-<part name="parameters" element="tns:consultarAlbumPorGeneroResponse"></part>
+<message name="listarArtistas">
+<part name="parameters" element="tns:listarArtistas"></part>
 </message>
+<message name="listarArtistasResponse">
+<part name="parameters" element="tns:listarArtistasResponse"></part>
+</message>
+<<<<<<< HEAD
 <message name="consultarListaRep">
 <part name="parameters" element="tns:consultarListaRep"></part>
+=======
+<message name="crearAlbum">
+<part name="parameters" element="tns:crearAlbum"></part>
 </message>
-<message name="consultarListaRepResponse">
-<part name="parameters" element="tns:consultarListaRepResponse"></part>
+<message name="crearAlbumResponse">
+<part name="parameters" element="tns:crearAlbumResponse"></part>
 </message>
-<message name="consultarAlbumPorArtista">
-<part name="parameters" element="tns:consultarAlbumPorArtista"></part>
+<message name="altaTema">
+<part name="parameters" element="tns:altaTema"></part>
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
 </message>
-<message name="consultarAlbumPorArtistaResponse">
-<part name="parameters" element="tns:consultarAlbumPorArtistaResponse"></part>
+<message name="altaTemaResponse">
+<part name="parameters" element="tns:altaTemaResponse"></part>
 </message>
+<message name="mostrarListaGenero">
+<part name="parameters" element="tns:mostrarListaGenero"></part>
+</message>
+<message name="mostrarListaGeneroResponse">
+<part name="parameters" element="tns:mostrarListaGeneroResponse"></part>
+</message>
+<<<<<<< HEAD
 <message name="getAlbumsdeGeneros">
 <part name="parameters" element="tns:getAlbumsdeGeneros"></part>
 </message>
@@ -249,13 +432,21 @@
 </message>
 <message name="setImageCliResponse">
 <part name="parameters" element="tns:setImageCliResponse"></part>
+=======
+<message name="obtenerEstadoSuscripcion">
+<part name="parameters" element="tns:obtenerEstadoSuscripcion"></part>
 </message>
-<message name="seleccionarLista">
-<part name="parameters" element="tns:seleccionarLista"></part>
+<message name="obtenerEstadoSuscripcionResponse">
+<part name="parameters" element="tns:obtenerEstadoSuscripcionResponse"></part>
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
 </message>
-<message name="seleccionarListaResponse">
-<part name="parameters" element="tns:seleccionarListaResponse"></part>
+<message name="modificarSuscripcion">
+<part name="parameters" element="tns:modificarSuscripcion"></part>
 </message>
+<message name="modificarSuscripcionResponse">
+<part name="parameters" element="tns:modificarSuscripcionResponse"></part>
+</message>
+<<<<<<< HEAD
 <message name="getSeguidos">
 <part name="parameters" element="tns:getSeguidos"></part>
 </message>
@@ -264,46 +455,70 @@
 </message>
 <message name="getTema">
 <part name="parameters" element="tns:getTema"></part>
+=======
+<message name="publicarLista">
+<part name="parameters" element="tns:publicarLista"></part>
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
 </message>
-<message name="getTemaResponse">
-<part name="parameters" element="tns:getTemaResponse"></part>
+<message name="publicarListaResponse">
+<part name="parameters" element="tns:publicarListaResponse"></part>
 </message>
-<message name="setTema">
-<part name="parameters" element="tns:setTema"></part>
+<message name="getlr">
+<part name="parameters" element="tns:getlr"></part>
 </message>
-<message name="setTemaResponse">
-<part name="parameters" element="tns:setTemaResponse"></part>
+<message name="getlrResponse">
+<part name="parameters" element="tns:getlrResponse"></part>
 </message>
-<message name="buscarUsrMail">
-<part name="parameters" element="tns:buscarUsrMail"></part>
+<message name="dejarDeSeguirUsuario">
+<part name="parameters" element="tns:dejarDeSeguirUsuario"></part>
 </message>
-<message name="buscarUsrMailResponse">
-<part name="parameters" element="tns:buscarUsrMailResponse"></part>
+<message name="dejarDeSeguirUsuarioResponse">
+<part name="parameters" element="tns:dejarDeSeguirUsuarioResponse"></part>
 </message>
+<<<<<<< HEAD
 <message name="crearAlbum2">
 <part name="parameters" element="tns:crearAlbum2"></part>
 </message>
 <message name="crearAlbum2Response">
 <part name="parameters" element="tns:crearAlbum2Response"></part>
+=======
+<message name="buscarAlbum">
+<part name="parameters" element="tns:buscarAlbum"></part>
 </message>
-<message name="getUsuario">
-<part name="parameters" element="tns:getUsuario"></part>
+<message name="buscarAlbumResponse">
+<part name="parameters" element="tns:buscarAlbumResponse"></part>
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
 </message>
-<message name="getUsuarioResponse">
-<part name="parameters" element="tns:getUsuarioResponse"></part>
+<message name="getListGenero">
+<part name="parameters" element="tns:getListGenero"></part>
 </message>
+<message name="getListGeneroResponse">
+<part name="parameters" element="tns:getListGeneroResponse"></part>
+</message>
+<<<<<<< HEAD
 <message name="listarListaRepr">
 <part name="parameters" element="tns:listarListaRepr"></part>
+=======
+<message name="agregarTemaLista">
+<part name="parameters" element="tns:agregarTemaLista"></part>
 </message>
-<message name="listarListaReprResponse">
-<part name="parameters" element="tns:listarListaReprResponse"></part>
+<message name="agregarTemaListaResponse">
+<part name="parameters" element="tns:agregarTemaListaResponse"></part>
 </message>
-<message name="getGenerosHijos">
-<part name="parameters" element="tns:getGenerosHijos"></part>
+<message name="quitarTemaLista">
+<part name="parameters" element="tns:quitarTemaLista"></part>
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
 </message>
-<message name="getGenerosHijosResponse">
-<part name="parameters" element="tns:getGenerosHijosResponse"></part>
+<message name="quitarTemaListaResponse">
+<part name="parameters" element="tns:quitarTemaListaResponse"></part>
 </message>
+<message name="listarDefecto">
+<part name="parameters" element="tns:listarDefecto"></part>
+</message>
+<message name="listarDefectoResponse">
+<part name="parameters" element="tns:listarDefectoResponse"></part>
+</message>
+<<<<<<< HEAD
 <message name="eliminarFavorito">
 <part name="parameters" element="tns:eliminarFavorito"></part>
 </message>
@@ -378,19 +593,70 @@
 <operation name="mostrarListaGenero">
 <input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/mostrarListaGeneroRequest" message="tns:mostrarListaGenero"></input>
 <output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/mostrarListaGeneroResponse" message="tns:mostrarListaGeneroResponse"></output>
+=======
+<message name="seleccionarAlbum">
+<part name="parameters" element="tns:seleccionarAlbum"></part>
+</message>
+<message name="seleccionarAlbumResponse">
+<part name="parameters" element="tns:seleccionarAlbumResponse"></part>
+</message>
+<message name="listarUsuarios">
+<part name="parameters" element="tns:listarUsuarios"></part>
+</message>
+<message name="listarUsuariosResponse">
+<part name="parameters" element="tns:listarUsuariosResponse"></part>
+</message>
+<message name="seguirUsuario">
+<part name="parameters" element="tns:seguirUsuario"></part>
+</message>
+<message name="seguirUsuarioResponse">
+<part name="parameters" element="tns:seguirUsuarioResponse"></part>
+</message>
+<portType name="Controlador">
+<operation name="seleccionarLista">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/seleccionarListaRequest" message="tns:seleccionarLista"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/seleccionarListaResponse" message="tns:seleccionarListaResponse"></output>
 </operation>
-<operation name="crearListaParticular">
-<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/crearListaParticularRequest" message="tns:crearListaParticular"></input>
-<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/crearListaParticularResponse" message="tns:crearListaParticularResponse"></output>
+<operation name="getTema">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/getTemaRequest" message="tns:getTema"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/getTemaResponse" message="tns:getTemaResponse"></output>
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
 </operation>
+<operation name="obtenerPagoSuscripcion">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/obtenerPagoSuscripcionRequest" message="tns:obtenerPagoSuscripcion"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/obtenerPagoSuscripcionResponse" message="tns:obtenerPagoSuscripcionResponse"></output>
+</operation>
+<<<<<<< HEAD
 <operation name="obtenerEstadoSuscripcion">
 <input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/obtenerEstadoSuscripcionRequest" message="tns:obtenerEstadoSuscripcion"></input>
 <output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/obtenerEstadoSuscripcionResponse" message="tns:obtenerEstadoSuscripcionResponse"></output>
+=======
+<operation name="consultarListaRep">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/consultarListaRepRequest" message="tns:consultarListaRep"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/consultarListaRepResponse" message="tns:consultarListaRepResponse"></output>
 </operation>
-<operation name="modificarSuscripcion">
-<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/modificarSuscripcionRequest" message="tns:modificarSuscripcion"></input>
-<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/modificarSuscripcionResponse" message="tns:modificarSuscripcionResponse"></output>
+<operation name="listarListaRepr">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/listarListaReprRequest" message="tns:listarListaRepr"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/listarListaReprResponse" message="tns:listarListaReprResponse"></output>
 </operation>
+<operation name="eliminarFavorito">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/eliminarFavoritoRequest" message="tns:eliminarFavorito"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/eliminarFavoritoResponse" message="tns:eliminarFavoritoResponse"></output>
+</operation>
+<operation name="consultarAlbumPorArtista">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/consultarAlbumPorArtistaRequest" message="tns:consultarAlbumPorArtista"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/consultarAlbumPorArtistaResponse" message="tns:consultarAlbumPorArtistaResponse"></output>
+</operation>
+<operation name="consultarAlbumPorGenero">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/consultarAlbumPorGeneroRequest" message="tns:consultarAlbumPorGenero"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/consultarAlbumPorGeneroResponse" message="tns:consultarAlbumPorGeneroResponse"></output>
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
+</operation>
+<operation name="seleccionarArtistaPorNombre">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/seleccionarArtistaPorNombreRequest" message="tns:seleccionarArtistaPorNombre"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/seleccionarArtistaPorNombreResponse" message="tns:seleccionarArtistaPorNombreResponse"></output>
+</operation>
+<<<<<<< HEAD
 <operation name="crearListaDefecto">
 <input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/crearListaDefectoRequest" message="tns:crearListaDefecto"></input>
 <output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/crearListaDefectoResponse" message="tns:crearListaDefectoResponse"></output>
@@ -398,11 +664,57 @@
 <operation name="publicarLista">
 <input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/publicarListaRequest" message="tns:publicarLista"></input>
 <output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/publicarListaResponse" message="tns:publicarListaResponse"></output>
+=======
+<operation name="getUsuario">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/getUsuarioRequest" message="tns:getUsuario"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/getUsuarioResponse" message="tns:getUsuarioResponse"></output>
 </operation>
-<operation name="crearAlbum">
-<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/crearAlbumRequest" message="tns:crearAlbum"></input>
-<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/crearAlbumResponse" message="tns:crearAlbumResponse"></output>
+<operation name="buscarUsrMail">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/buscarUsrMailRequest" message="tns:buscarUsrMail"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/buscarUsrMailResponse" message="tns:buscarUsrMailResponse"></output>
 </operation>
+<operation name="setImageCli">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/setImageCliRequest" message="tns:setImageCli"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/setImageCliResponse" message="tns:setImageCliResponse"></output>
+</operation>
+<operation name="setImageArt">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/setImageArtRequest" message="tns:setImageArt"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/setImageArtResponse" message="tns:setImageArtResponse"></output>
+</operation>
+<operation name="setTema">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/setTemaRequest" message="tns:setTema"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/setTemaResponse" message="tns:setTemaResponse"></output>
+</operation>
+<operation name="getSeguidos">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/getSeguidosRequest" message="tns:getSeguidos"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/getSeguidosResponse" message="tns:getSeguidosResponse"></output>
+</operation>
+<operation name="getGenerosHijos">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/getGenerosHijosRequest" message="tns:getGenerosHijos"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/getGenerosHijosResponse" message="tns:getGenerosHijosResponse"></output>
+</operation>
+<operation name="getAlbumsdeGeneros">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/getAlbumsdeGenerosRequest" message="tns:getAlbumsdeGeneros"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/getAlbumsdeGenerosResponse" message="tns:getAlbumsdeGenerosResponse"></output>
+</operation>
+<operation name="crearListaParticularClase">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/crearListaParticularClaseRequest" message="tns:crearListaParticularClase"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/crearListaParticularClaseResponse" message="tns:crearListaParticularClaseResponse"></output>
+</operation>
+<operation name="setImage">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/setImageRequest" message="tns:setImage"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/setImageResponse" message="tns:setImageResponse"></output>
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
+</operation>
+<operation name="listarClientes">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/listarClientesRequest" message="tns:listarClientes"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/listarClientesResponse" message="tns:listarClientesResponse"></output>
+</operation>
+<operation name="seleccionarCliente">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/seleccionarClienteRequest" message="tns:seleccionarCliente"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/seleccionarClienteResponse" message="tns:seleccionarClienteResponse"></output>
+</operation>
+<<<<<<< HEAD
 <operation name="getlr">
 <input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/getlrRequest" message="tns:getlr"></input>
 <output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/getlrResponse" message="tns:getlrResponse"></output>
@@ -418,6 +730,39 @@
 <operation name="seleccionarAlbum">
 <input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/seleccionarAlbumRequest" message="tns:seleccionarAlbum"></input>
 <output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/seleccionarAlbumResponse" message="tns:seleccionarAlbumResponse"></output>
+=======
+<operation name="agregarFavorito">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/agregarFavoritoRequest" message="tns:agregarFavorito"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/agregarFavoritoResponse" message="tns:agregarFavoritoResponse"></output>
+</operation>
+<operation name="getCli">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/getCliRequest" message="tns:getCli"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/getCliResponse" message="tns:getCliResponse"></output>
+</operation>
+<operation name="listarTemas">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/listarTemasRequest" message="tns:listarTemas"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/listarTemasResponse" message="tns:listarTemasResponse"></output>
+</operation>
+<operation name="listarAlbum">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/listarAlbumRequest" message="tns:listarAlbum"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/listarAlbumResponse" message="tns:listarAlbumResponse"></output>
+</operation>
+<operation name="crearListaParticular">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/crearListaParticularRequest" message="tns:crearListaParticular"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/crearListaParticularResponse" message="tns:crearListaParticularResponse"></output>
+</operation>
+<operation name="crearListaDefecto">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/crearListaDefectoRequest" message="tns:crearListaDefecto"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/crearListaDefectoResponse" message="tns:crearListaDefectoResponse"></output>
+</operation>
+<operation name="seleccionarArtista">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/seleccionarArtistaRequest" message="tns:seleccionarArtista"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/seleccionarArtistaResponse" message="tns:seleccionarArtistaResponse"></output>
+</operation>
+<operation name="listarGeneros">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/listarGenerosRequest" message="tns:listarGeneros"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/listarGenerosResponse" message="tns:listarGenerosResponse"></output>
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
 </operation>
 <operation name="altaGenero">
 <input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/altaGeneroRequest" message="tns:altaGenero"></input>
@@ -427,6 +772,7 @@
 <input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/buscarGeneroRequest" message="tns:buscarGenero"></input>
 <output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/buscarGeneroResponse" message="tns:buscarGeneroResponse"></output>
 </operation>
+<<<<<<< HEAD
 <operation name="quitarTemaLista">
 <input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/quitarTemaListaRequest" message="tns:quitarTemaLista"></input>
 <output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/quitarTemaListaResponse" message="tns:quitarTemaListaResponse"></output>
@@ -438,11 +784,17 @@
 <operation name="altaTema">
 <input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/altaTemaRequest" message="tns:altaTema"></input>
 <output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/altaTemaResponse" message="tns:altaTemaResponse"></output>
+=======
+<operation name="publicar">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/publicarRequest" message="tns:publicar"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/publicarResponse" message="tns:publicarResponse"></output>
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
 </operation>
-<operation name="setImage">
-<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/setImageRequest" message="tns:setImage"></input>
-<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/setImageResponse" message="tns:setImageResponse"></output>
+<operation name="crearCliente">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/crearClienteRequest" message="tns:crearCliente"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/crearClienteResponse" message="tns:crearClienteResponse"></output>
 </operation>
+<<<<<<< HEAD
 <operation name="obtenerPagoSuscripcion">
 <input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/obtenerPagoSuscripcionRequest" message="tns:obtenerPagoSuscripcion"></input>
 <output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/obtenerPagoSuscripcionResponse" message="tns:obtenerPagoSuscripcionResponse"></output>
@@ -450,19 +802,35 @@
 <operation name="seleccionarArtistaPorNombre">
 <input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/seleccionarArtistaPorNombreRequest" message="tns:seleccionarArtistaPorNombre"></input>
 <output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/seleccionarArtistaPorNombreResponse" message="tns:seleccionarArtistaPorNombreResponse"></output>
+=======
+<operation name="crearArtista">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/crearArtistaRequest" message="tns:crearArtista"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/crearArtistaResponse" message="tns:crearArtistaResponse"></output>
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
 </operation>
-<operation name="consultarAlbumPorGenero">
-<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/consultarAlbumPorGeneroRequest" message="tns:consultarAlbumPorGenero"></input>
-<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/consultarAlbumPorGeneroResponse" message="tns:consultarAlbumPorGeneroResponse"></output>
+<operation name="listarArtistas">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/listarArtistasRequest" message="tns:listarArtistas"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/listarArtistasResponse" message="tns:listarArtistasResponse"></output>
 </operation>
+<<<<<<< HEAD
 <operation name="consultarListaRep">
 <input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/consultarListaRepRequest" message="tns:consultarListaRep"></input>
 <output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/consultarListaRepResponse" message="tns:consultarListaRepResponse"></output>
+=======
+<operation name="crearAlbum">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/crearAlbumRequest" message="tns:crearAlbum"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/crearAlbumResponse" message="tns:crearAlbumResponse"></output>
 </operation>
-<operation name="consultarAlbumPorArtista">
-<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/consultarAlbumPorArtistaRequest" message="tns:consultarAlbumPorArtista"></input>
-<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/consultarAlbumPorArtistaResponse" message="tns:consultarAlbumPorArtistaResponse"></output>
+<operation name="altaTema">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/altaTemaRequest" message="tns:altaTema"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/altaTemaResponse" message="tns:altaTemaResponse"></output>
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
 </operation>
+<operation name="mostrarListaGenero">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/mostrarListaGeneroRequest" message="tns:mostrarListaGenero"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/mostrarListaGeneroResponse" message="tns:mostrarListaGeneroResponse"></output>
+</operation>
+<<<<<<< HEAD
 <operation name="getAlbumsdeGeneros">
 <input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/getAlbumsdeGenerosRequest" message="tns:getAlbumsdeGeneros"></input>
 <output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/getAlbumsdeGenerosResponse" message="tns:getAlbumsdeGenerosResponse"></output>
@@ -474,11 +842,17 @@
 <operation name="setImageCli">
 <input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/setImageCliRequest" message="tns:setImageCli"></input>
 <output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/setImageCliResponse" message="tns:setImageCliResponse"></output>
+=======
+<operation name="obtenerEstadoSuscripcion">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/obtenerEstadoSuscripcionRequest" message="tns:obtenerEstadoSuscripcion"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/obtenerEstadoSuscripcionResponse" message="tns:obtenerEstadoSuscripcionResponse"></output>
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
 </operation>
-<operation name="seleccionarLista">
-<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/seleccionarListaRequest" message="tns:seleccionarLista"></input>
-<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/seleccionarListaResponse" message="tns:seleccionarListaResponse"></output>
+<operation name="modificarSuscripcion">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/modificarSuscripcionRequest" message="tns:modificarSuscripcion"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/modificarSuscripcionResponse" message="tns:modificarSuscripcionResponse"></output>
 </operation>
+<<<<<<< HEAD
 <operation name="getSeguidos">
 <input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/getSeguidosRequest" message="tns:getSeguidos"></input>
 <output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/getSeguidosResponse" message="tns:getSeguidosResponse"></output>
@@ -486,39 +860,78 @@
 <operation name="getTema">
 <input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/getTemaRequest" message="tns:getTema"></input>
 <output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/getTemaResponse" message="tns:getTemaResponse"></output>
+=======
+<operation name="publicarLista">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/publicarListaRequest" message="tns:publicarLista"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/publicarListaResponse" message="tns:publicarListaResponse"></output>
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
 </operation>
-<operation name="setTema">
-<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/setTemaRequest" message="tns:setTema"></input>
-<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/setTemaResponse" message="tns:setTemaResponse"></output>
+<operation name="getlr">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/getlrRequest" message="tns:getlr"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/getlrResponse" message="tns:getlrResponse"></output>
 </operation>
-<operation name="buscarUsrMail">
-<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/buscarUsrMailRequest" message="tns:buscarUsrMail"></input>
-<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/buscarUsrMailResponse" message="tns:buscarUsrMailResponse"></output>
+<operation name="dejarDeSeguirUsuario">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/dejarDeSeguirUsuarioRequest" message="tns:dejarDeSeguirUsuario"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/dejarDeSeguirUsuarioResponse" message="tns:dejarDeSeguirUsuarioResponse"></output>
 </operation>
+<<<<<<< HEAD
 <operation name="crearAlbum2">
 <input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/crearAlbum2Request" message="tns:crearAlbum2"></input>
 <output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/crearAlbum2Response" message="tns:crearAlbum2Response"></output>
+=======
+<operation name="buscarAlbum">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/buscarAlbumRequest" message="tns:buscarAlbum"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/buscarAlbumResponse" message="tns:buscarAlbumResponse"></output>
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
 </operation>
-<operation name="getUsuario">
-<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/getUsuarioRequest" message="tns:getUsuario"></input>
-<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/getUsuarioResponse" message="tns:getUsuarioResponse"></output>
+<operation name="getListGenero">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/getListGeneroRequest" message="tns:getListGenero"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/getListGeneroResponse" message="tns:getListGeneroResponse"></output>
 </operation>
+<<<<<<< HEAD
 <operation name="listarListaRepr">
 <input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/listarListaReprRequest" message="tns:listarListaRepr"></input>
 <output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/listarListaReprResponse" message="tns:listarListaReprResponse"></output>
+=======
+<operation name="agregarTemaLista">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/agregarTemaListaRequest" message="tns:agregarTemaLista"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/agregarTemaListaResponse" message="tns:agregarTemaListaResponse"></output>
 </operation>
-<operation name="getGenerosHijos">
-<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/getGenerosHijosRequest" message="tns:getGenerosHijos"></input>
-<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/getGenerosHijosResponse" message="tns:getGenerosHijosResponse"></output>
+<operation name="quitarTemaLista">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/quitarTemaListaRequest" message="tns:quitarTemaLista"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/quitarTemaListaResponse" message="tns:quitarTemaListaResponse"></output>
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
 </operation>
+<operation name="listarDefecto">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/listarDefectoRequest" message="tns:listarDefecto"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/listarDefectoResponse" message="tns:listarDefectoResponse"></output>
+</operation>
+<<<<<<< HEAD
 <operation name="eliminarFavorito">
 <input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/eliminarFavoritoRequest" message="tns:eliminarFavorito"></input>
 <output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/eliminarFavoritoResponse" message="tns:eliminarFavoritoResponse"></output>
+=======
+<operation name="seleccionarAlbum">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/seleccionarAlbumRequest" message="tns:seleccionarAlbum"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/seleccionarAlbumResponse" message="tns:seleccionarAlbumResponse"></output>
+</operation>
+<operation name="listarUsuarios">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/listarUsuariosRequest" message="tns:listarUsuarios"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/listarUsuariosResponse" message="tns:listarUsuariosResponse"></output>
+</operation>
+<operation name="seguirUsuario">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/seguirUsuarioRequest" message="tns:seguirUsuario"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/seguirUsuarioResponse" message="tns:seguirUsuarioResponse"></output>
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
 </operation>
 </portType>
 <binding name="ControladorPortBinding" type="tns:Controlador">
 <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"></soap:binding>
+<<<<<<< HEAD
 <operation name="publicar">
+=======
+<operation name="seleccionarLista">
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
 <soap:operation soapAction=""></soap:operation>
 <input>
 <soap:body use="literal"></soap:body>
@@ -527,7 +940,389 @@
 <soap:body use="literal"></soap:body>
 </output>
 </operation>
+<<<<<<< HEAD
 <operation name="crearArtista">
+=======
+<operation name="getTema">
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
+<soap:operation soapAction=""></soap:operation>
+<input>
+<soap:body use="literal"></soap:body>
+</input>
+<output>
+<soap:body use="literal"></soap:body>
+</output>
+</operation>
+<<<<<<< HEAD
+<operation name="crearCliente">
+=======
+<operation name="obtenerPagoSuscripcion">
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
+<soap:operation soapAction=""></soap:operation>
+<input>
+<soap:body use="literal"></soap:body>
+</input>
+<output>
+<soap:body use="literal"></soap:body>
+</output>
+</operation>
+<<<<<<< HEAD
+<operation name="listarUsuarios">
+=======
+<operation name="consultarListaRep">
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
+<soap:operation soapAction=""></soap:operation>
+<input>
+<soap:body use="literal"></soap:body>
+</input>
+<output>
+<soap:body use="literal"></soap:body>
+</output>
+</operation>
+<<<<<<< HEAD
+<operation name="seguirUsuario">
+=======
+<operation name="listarListaRepr">
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
+<soap:operation soapAction=""></soap:operation>
+<input>
+<soap:body use="literal"></soap:body>
+</input>
+<output>
+<soap:body use="literal"></soap:body>
+</output>
+</operation>
+<<<<<<< HEAD
+<operation name="buscarAlbum">
+=======
+<operation name="eliminarFavorito">
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
+<soap:operation soapAction=""></soap:operation>
+<input>
+<soap:body use="literal"></soap:body>
+</input>
+<output>
+<soap:body use="literal"></soap:body>
+</output>
+</operation>
+<<<<<<< HEAD
+<operation name="getListGenero">
+=======
+<operation name="consultarAlbumPorArtista">
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
+<soap:operation soapAction=""></soap:operation>
+<input>
+<soap:body use="literal"></soap:body>
+</input>
+<output>
+<soap:body use="literal"></soap:body>
+</output>
+</operation>
+<<<<<<< HEAD
+<operation name="dejarDeSeguirUsuario">
+=======
+<operation name="consultarAlbumPorGenero">
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
+<soap:operation soapAction=""></soap:operation>
+<input>
+<soap:body use="literal"></soap:body>
+</input>
+<output>
+<soap:body use="literal"></soap:body>
+</output>
+</operation>
+<<<<<<< HEAD
+<operation name="seleccionarArtista">
+=======
+<operation name="seleccionarArtistaPorNombre">
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
+<soap:operation soapAction=""></soap:operation>
+<input>
+<soap:body use="literal"></soap:body>
+</input>
+<output>
+<soap:body use="literal"></soap:body>
+</output>
+</operation>
+<<<<<<< HEAD
+<operation name="listarClientes">
+=======
+<operation name="getUsuario">
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
+<soap:operation soapAction=""></soap:operation>
+<input>
+<soap:body use="literal"></soap:body>
+</input>
+<output>
+<soap:body use="literal"></soap:body>
+</output>
+</operation>
+<<<<<<< HEAD
+<operation name="listarGeneros">
+=======
+<operation name="buscarUsrMail">
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
+<soap:operation soapAction=""></soap:operation>
+<input>
+<soap:body use="literal"></soap:body>
+</input>
+<output>
+<soap:body use="literal"></soap:body>
+</output>
+</operation>
+<<<<<<< HEAD
+<operation name="agregarFavorito">
+=======
+<operation name="setImageCli">
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
+<soap:operation soapAction=""></soap:operation>
+<input>
+<soap:body use="literal"></soap:body>
+</input>
+<output>
+<soap:body use="literal"></soap:body>
+</output>
+</operation>
+<<<<<<< HEAD
+<operation name="getCli">
+=======
+<operation name="setImageArt">
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
+<soap:operation soapAction=""></soap:operation>
+<input>
+<soap:body use="literal"></soap:body>
+</input>
+<output>
+<soap:body use="literal"></soap:body>
+</output>
+</operation>
+<<<<<<< HEAD
+<operation name="listarAlbum">
+=======
+<operation name="setTema">
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
+<soap:operation soapAction=""></soap:operation>
+<input>
+<soap:body use="literal"></soap:body>
+</input>
+<output>
+<soap:body use="literal"></soap:body>
+</output>
+</operation>
+<<<<<<< HEAD
+<operation name="listarTemas">
+=======
+<operation name="getSeguidos">
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
+<soap:operation soapAction=""></soap:operation>
+<input>
+<soap:body use="literal"></soap:body>
+</input>
+<output>
+<soap:body use="literal"></soap:body>
+</output>
+</operation>
+<<<<<<< HEAD
+<operation name="seleccionarCliente">
+=======
+<operation name="getGenerosHijos">
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
+<soap:operation soapAction=""></soap:operation>
+<input>
+<soap:body use="literal"></soap:body>
+</input>
+<output>
+<soap:body use="literal"></soap:body>
+</output>
+</operation>
+<<<<<<< HEAD
+<operation name="mostrarListaGenero">
+=======
+<operation name="getAlbumsdeGeneros">
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
+<soap:operation soapAction=""></soap:operation>
+<input>
+<soap:body use="literal"></soap:body>
+</input>
+<output>
+<soap:body use="literal"></soap:body>
+</output>
+</operation>
+<<<<<<< HEAD
+<operation name="crearListaParticular">
+=======
+<operation name="crearListaParticularClase">
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
+<soap:operation soapAction=""></soap:operation>
+<input>
+<soap:body use="literal"></soap:body>
+</input>
+<output>
+<soap:body use="literal"></soap:body>
+</output>
+</operation>
+<<<<<<< HEAD
+<operation name="obtenerEstadoSuscripcion">
+=======
+<operation name="setImage">
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
+<soap:operation soapAction=""></soap:operation>
+<input>
+<soap:body use="literal"></soap:body>
+</input>
+<output>
+<soap:body use="literal"></soap:body>
+</output>
+</operation>
+<<<<<<< HEAD
+<operation name="modificarSuscripcion">
+=======
+<operation name="listarClientes">
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
+<soap:operation soapAction=""></soap:operation>
+<input>
+<soap:body use="literal"></soap:body>
+</input>
+<output>
+<soap:body use="literal"></soap:body>
+</output>
+</operation>
+<<<<<<< HEAD
+<operation name="crearListaDefecto">
+=======
+<operation name="seleccionarCliente">
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
+<soap:operation soapAction=""></soap:operation>
+<input>
+<soap:body use="literal"></soap:body>
+</input>
+<output>
+<soap:body use="literal"></soap:body>
+</output>
+</operation>
+<<<<<<< HEAD
+<operation name="publicarLista">
+=======
+<operation name="agregarFavorito">
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
+<soap:operation soapAction=""></soap:operation>
+<input>
+<soap:body use="literal"></soap:body>
+</input>
+<output>
+<soap:body use="literal"></soap:body>
+</output>
+</operation>
+<<<<<<< HEAD
+<operation name="crearAlbum">
+=======
+<operation name="getCli">
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
+<soap:operation soapAction=""></soap:operation>
+<input>
+<soap:body use="literal"></soap:body>
+</input>
+<output>
+<soap:body use="literal"></soap:body>
+</output>
+</operation>
+<<<<<<< HEAD
+<operation name="getlr">
+=======
+<operation name="listarTemas">
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
+<soap:operation soapAction=""></soap:operation>
+<input>
+<soap:body use="literal"></soap:body>
+</input>
+<output>
+<soap:body use="literal"></soap:body>
+</output>
+</operation>
+<<<<<<< HEAD
+<operation name="listarDefecto">
+=======
+<operation name="listarAlbum">
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
+<soap:operation soapAction=""></soap:operation>
+<input>
+<soap:body use="literal"></soap:body>
+</input>
+<output>
+<soap:body use="literal"></soap:body>
+</output>
+</operation>
+<operation name="crearListaParticular">
+<soap:operation soapAction=""></soap:operation>
+<input>
+<soap:body use="literal"></soap:body>
+</input>
+<output>
+<soap:body use="literal"></soap:body>
+</output>
+</operation>
+<<<<<<< HEAD
+<operation name="seleccionarAlbum">
+=======
+<operation name="crearListaDefecto">
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
+<soap:operation soapAction=""></soap:operation>
+<input>
+<soap:body use="literal"></soap:body>
+</input>
+<output>
+<soap:body use="literal"></soap:body>
+</output>
+</operation>
+<<<<<<< HEAD
+<operation name="altaGenero">
+=======
+<operation name="seleccionarArtista">
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
+<soap:operation soapAction=""></soap:operation>
+<input>
+<soap:body use="literal"></soap:body>
+</input>
+<output>
+<soap:body use="literal"></soap:body>
+</output>
+</operation>
+<<<<<<< HEAD
+<operation name="buscarGenero">
+=======
+<operation name="listarGeneros">
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
+<soap:operation soapAction=""></soap:operation>
+<input>
+<soap:body use="literal"></soap:body>
+</input>
+<output>
+<soap:body use="literal"></soap:body>
+</output>
+</operation>
+<operation name="quitarTemaLista">
+<soap:operation soapAction=""></soap:operation>
+<input>
+<soap:body use="literal"></soap:body>
+</input>
+<output>
+<soap:body use="literal"></soap:body>
+</output>
+</operation>
+<operation name="agregarTemaLista">
+<soap:operation soapAction=""></soap:operation>
+<input>
+<soap:body use="literal"></soap:body>
+</input>
+<output>
+<soap:body use="literal"></soap:body>
+</output>
+</operation>
+<<<<<<< HEAD
+<operation name="altaTema">
+=======
+<operation name="publicar">
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
 <soap:operation soapAction=""></soap:operation>
 <input>
 <soap:body use="literal"></soap:body>
@@ -545,7 +1340,11 @@
 <soap:body use="literal"></soap:body>
 </output>
 </operation>
-<operation name="listarUsuarios">
+<<<<<<< HEAD
+<operation name="obtenerPagoSuscripcion">
+=======
+<operation name="crearArtista">
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
 <soap:operation soapAction=""></soap:operation>
 <input>
 <soap:body use="literal"></soap:body>
@@ -554,196 +1353,11 @@
 <soap:body use="literal"></soap:body>
 </output>
 </operation>
-<operation name="seguirUsuario">
-<soap:operation soapAction=""></soap:operation>
-<input>
-<soap:body use="literal"></soap:body>
-</input>
-<output>
-<soap:body use="literal"></soap:body>
-</output>
-</operation>
-<operation name="buscarAlbum">
-<soap:operation soapAction=""></soap:operation>
-<input>
-<soap:body use="literal"></soap:body>
-</input>
-<output>
-<soap:body use="literal"></soap:body>
-</output>
-</operation>
-<operation name="getListGenero">
-<soap:operation soapAction=""></soap:operation>
-<input>
-<soap:body use="literal"></soap:body>
-</input>
-<output>
-<soap:body use="literal"></soap:body>
-</output>
-</operation>
-<operation name="dejarDeSeguirUsuario">
-<soap:operation soapAction=""></soap:operation>
-<input>
-<soap:body use="literal"></soap:body>
-</input>
-<output>
-<soap:body use="literal"></soap:body>
-</output>
-</operation>
-<operation name="seleccionarArtista">
-<soap:operation soapAction=""></soap:operation>
-<input>
-<soap:body use="literal"></soap:body>
-</input>
-<output>
-<soap:body use="literal"></soap:body>
-</output>
-</operation>
-<operation name="listarClientes">
-<soap:operation soapAction=""></soap:operation>
-<input>
-<soap:body use="literal"></soap:body>
-</input>
-<output>
-<soap:body use="literal"></soap:body>
-</output>
-</operation>
-<operation name="listarGeneros">
-<soap:operation soapAction=""></soap:operation>
-<input>
-<soap:body use="literal"></soap:body>
-</input>
-<output>
-<soap:body use="literal"></soap:body>
-</output>
-</operation>
-<operation name="agregarFavorito">
-<soap:operation soapAction=""></soap:operation>
-<input>
-<soap:body use="literal"></soap:body>
-</input>
-<output>
-<soap:body use="literal"></soap:body>
-</output>
-</operation>
-<operation name="getCli">
-<soap:operation soapAction=""></soap:operation>
-<input>
-<soap:body use="literal"></soap:body>
-</input>
-<output>
-<soap:body use="literal"></soap:body>
-</output>
-</operation>
-<operation name="listarAlbum">
-<soap:operation soapAction=""></soap:operation>
-<input>
-<soap:body use="literal"></soap:body>
-</input>
-<output>
-<soap:body use="literal"></soap:body>
-</output>
-</operation>
-<operation name="listarTemas">
-<soap:operation soapAction=""></soap:operation>
-<input>
-<soap:body use="literal"></soap:body>
-</input>
-<output>
-<soap:body use="literal"></soap:body>
-</output>
-</operation>
-<operation name="seleccionarCliente">
-<soap:operation soapAction=""></soap:operation>
-<input>
-<soap:body use="literal"></soap:body>
-</input>
-<output>
-<soap:body use="literal"></soap:body>
-</output>
-</operation>
-<operation name="mostrarListaGenero">
-<soap:operation soapAction=""></soap:operation>
-<input>
-<soap:body use="literal"></soap:body>
-</input>
-<output>
-<soap:body use="literal"></soap:body>
-</output>
-</operation>
-<operation name="crearListaParticular">
-<soap:operation soapAction=""></soap:operation>
-<input>
-<soap:body use="literal"></soap:body>
-</input>
-<output>
-<soap:body use="literal"></soap:body>
-</output>
-</operation>
-<operation name="obtenerEstadoSuscripcion">
-<soap:operation soapAction=""></soap:operation>
-<input>
-<soap:body use="literal"></soap:body>
-</input>
-<output>
-<soap:body use="literal"></soap:body>
-</output>
-</operation>
-<operation name="modificarSuscripcion">
-<soap:operation soapAction=""></soap:operation>
-<input>
-<soap:body use="literal"></soap:body>
-</input>
-<output>
-<soap:body use="literal"></soap:body>
-</output>
-</operation>
-<operation name="crearListaDefecto">
-<soap:operation soapAction=""></soap:operation>
-<input>
-<soap:body use="literal"></soap:body>
-</input>
-<output>
-<soap:body use="literal"></soap:body>
-</output>
-</operation>
-<operation name="publicarLista">
-<soap:operation soapAction=""></soap:operation>
-<input>
-<soap:body use="literal"></soap:body>
-</input>
-<output>
-<soap:body use="literal"></soap:body>
-</output>
-</operation>
-<operation name="crearAlbum">
-<soap:operation soapAction=""></soap:operation>
-<input>
-<soap:body use="literal"></soap:body>
-</input>
-<output>
-<soap:body use="literal"></soap:body>
-</output>
-</operation>
-<operation name="getlr">
-<soap:operation soapAction=""></soap:operation>
-<input>
-<soap:body use="literal"></soap:body>
-</input>
-<output>
-<soap:body use="literal"></soap:body>
-</output>
-</operation>
-<operation name="listarDefecto">
-<soap:operation soapAction=""></soap:operation>
-<input>
-<soap:body use="literal"></soap:body>
-</input>
-<output>
-<soap:body use="literal"></soap:body>
-</output>
-</operation>
+<<<<<<< HEAD
+<operation name="seleccionarArtistaPorNombre">
+=======
 <operation name="listarArtistas">
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
 <soap:operation soapAction=""></soap:operation>
 <input>
 <soap:body use="literal"></soap:body>
@@ -752,43 +1366,11 @@
 <soap:body use="literal"></soap:body>
 </output>
 </operation>
-<operation name="seleccionarAlbum">
-<soap:operation soapAction=""></soap:operation>
-<input>
-<soap:body use="literal"></soap:body>
-</input>
-<output>
-<soap:body use="literal"></soap:body>
-</output>
-</operation>
-<operation name="altaGenero">
-<soap:operation soapAction=""></soap:operation>
-<input>
-<soap:body use="literal"></soap:body>
-</input>
-<output>
-<soap:body use="literal"></soap:body>
-</output>
-</operation>
-<operation name="buscarGenero">
-<soap:operation soapAction=""></soap:operation>
-<input>
-<soap:body use="literal"></soap:body>
-</input>
-<output>
-<soap:body use="literal"></soap:body>
-</output>
-</operation>
-<operation name="quitarTemaLista">
-<soap:operation soapAction=""></soap:operation>
-<input>
-<soap:body use="literal"></soap:body>
-</input>
-<output>
-<soap:body use="literal"></soap:body>
-</output>
-</operation>
-<operation name="agregarTemaLista">
+<<<<<<< HEAD
+<operation name="consultarAlbumPorGenero">
+=======
+<operation name="crearAlbum">
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
 <soap:operation soapAction=""></soap:operation>
 <input>
 <soap:body use="literal"></soap:body>
@@ -806,7 +1388,7 @@
 <soap:body use="literal"></soap:body>
 </output>
 </operation>
-<operation name="setImage">
+<operation name="mostrarListaGenero">
 <soap:operation soapAction=""></soap:operation>
 <input>
 <soap:body use="literal"></soap:body>
@@ -815,52 +1397,11 @@
 <soap:body use="literal"></soap:body>
 </output>
 </operation>
-<operation name="obtenerPagoSuscripcion">
-<soap:operation soapAction=""></soap:operation>
-<input>
-<soap:body use="literal"></soap:body>
-</input>
-<output>
-<soap:body use="literal"></soap:body>
-</output>
-</operation>
-<operation name="seleccionarArtistaPorNombre">
-<soap:operation soapAction=""></soap:operation>
-<input>
-<soap:body use="literal"></soap:body>
-</input>
-<output>
-<soap:body use="literal"></soap:body>
-</output>
-</operation>
-<operation name="consultarAlbumPorGenero">
-<soap:operation soapAction=""></soap:operation>
-<input>
-<soap:body use="literal"></soap:body>
-</input>
-<output>
-<soap:body use="literal"></soap:body>
-</output>
-</operation>
-<operation name="consultarListaRep">
-<soap:operation soapAction=""></soap:operation>
-<input>
-<soap:body use="literal"></soap:body>
-</input>
-<output>
-<soap:body use="literal"></soap:body>
-</output>
-</operation>
-<operation name="consultarAlbumPorArtista">
-<soap:operation soapAction=""></soap:operation>
-<input>
-<soap:body use="literal"></soap:body>
-</input>
-<output>
-<soap:body use="literal"></soap:body>
-</output>
-</operation>
+<<<<<<< HEAD
 <operation name="getAlbumsdeGeneros">
+=======
+<operation name="obtenerEstadoSuscripcion">
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
 <soap:operation soapAction=""></soap:operation>
 <input>
 <soap:body use="literal"></soap:body>
@@ -869,7 +1410,11 @@
 <soap:body use="literal"></soap:body>
 </output>
 </operation>
+<<<<<<< HEAD
 <operation name="setImageArt">
+=======
+<operation name="modificarSuscripcion">
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
 <soap:operation soapAction=""></soap:operation>
 <input>
 <soap:body use="literal"></soap:body>
@@ -878,7 +1423,11 @@
 <soap:body use="literal"></soap:body>
 </output>
 </operation>
+<<<<<<< HEAD
 <operation name="setImageCli">
+=======
+<operation name="publicarLista">
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
 <soap:operation soapAction=""></soap:operation>
 <input>
 <soap:body use="literal"></soap:body>
@@ -887,7 +1436,11 @@
 <soap:body use="literal"></soap:body>
 </output>
 </operation>
+<<<<<<< HEAD
 <operation name="seleccionarLista">
+=======
+<operation name="getlr">
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
 <soap:operation soapAction=""></soap:operation>
 <input>
 <soap:body use="literal"></soap:body>
@@ -896,7 +1449,11 @@
 <soap:body use="literal"></soap:body>
 </output>
 </operation>
+<<<<<<< HEAD
 <operation name="getSeguidos">
+=======
+<operation name="dejarDeSeguirUsuario">
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
 <soap:operation soapAction=""></soap:operation>
 <input>
 <soap:body use="literal"></soap:body>
@@ -905,7 +1462,11 @@
 <soap:body use="literal"></soap:body>
 </output>
 </operation>
+<<<<<<< HEAD
 <operation name="getTema">
+=======
+<operation name="buscarAlbum">
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
 <soap:operation soapAction=""></soap:operation>
 <input>
 <soap:body use="literal"></soap:body>
@@ -914,7 +1475,11 @@
 <soap:body use="literal"></soap:body>
 </output>
 </operation>
+<<<<<<< HEAD
 <operation name="setTema">
+=======
+<operation name="getListGenero">
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
 <soap:operation soapAction=""></soap:operation>
 <input>
 <soap:body use="literal"></soap:body>
@@ -923,7 +1488,11 @@
 <soap:body use="literal"></soap:body>
 </output>
 </operation>
+<<<<<<< HEAD
 <operation name="buscarUsrMail">
+=======
+<operation name="agregarTemaLista">
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
 <soap:operation soapAction=""></soap:operation>
 <input>
 <soap:body use="literal"></soap:body>
@@ -932,7 +1501,11 @@
 <soap:body use="literal"></soap:body>
 </output>
 </operation>
+<<<<<<< HEAD
 <operation name="crearAlbum2">
+=======
+<operation name="quitarTemaLista">
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
 <soap:operation soapAction=""></soap:operation>
 <input>
 <soap:body use="literal"></soap:body>
@@ -941,7 +1514,11 @@
 <soap:body use="literal"></soap:body>
 </output>
 </operation>
+<<<<<<< HEAD
 <operation name="getUsuario">
+=======
+<operation name="listarDefecto">
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
 <soap:operation soapAction=""></soap:operation>
 <input>
 <soap:body use="literal"></soap:body>
@@ -950,7 +1527,11 @@
 <soap:body use="literal"></soap:body>
 </output>
 </operation>
+<<<<<<< HEAD
 <operation name="listarListaRepr">
+=======
+<operation name="seleccionarAlbum">
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
 <soap:operation soapAction=""></soap:operation>
 <input>
 <soap:body use="literal"></soap:body>
@@ -959,7 +1540,11 @@
 <soap:body use="literal"></soap:body>
 </output>
 </operation>
+<<<<<<< HEAD
 <operation name="getGenerosHijos">
+=======
+<operation name="listarUsuarios">
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
 <soap:operation soapAction=""></soap:operation>
 <input>
 <soap:body use="literal"></soap:body>
@@ -968,7 +1553,11 @@
 <soap:body use="literal"></soap:body>
 </output>
 </operation>
+<<<<<<< HEAD
 <operation name="eliminarFavorito">
+=======
+<operation name="seguirUsuario">
+>>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
 <soap:operation soapAction=""></soap:operation>
 <input>
 <soap:body use="literal"></soap:body>

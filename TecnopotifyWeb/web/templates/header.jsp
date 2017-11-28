@@ -37,7 +37,7 @@
                         <li><a href="<%= request.getContextPath()%>/seguirUsuario.jsp">Seguir/Dejar de seguir Usuario</a></li>
                         <li><a href="<%= request.getContextPath()%>/contratarSuscripcion.jsp">Contratar Suscripción</a></li>
                         <li><a href="<%= request.getContextPath()%>/actualizarSuscripcion.jsp">Actualizar Suscripción</a></li>
-
+                        <li><a href="<%= request.getContextPath()%>/crearListaReproduccion.jsp">Crear Lista Particular</a></li>
                         <%      }
                         %>
                     </ul>
