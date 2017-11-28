@@ -285,13 +285,13 @@ public class ServletUsr extends HttpServlet {
 
         if (comando != null && comando.equals("listaRep")) {
 
-            String nombreL = request.getParameter("nombre");
-            String nick = (String) request.getSession().getAttribute("user");
-            Cliente cli = getCli(nick);
-            DataListaReproduccion listaP = new DataListaReproduccion();
+            String nombreL = request.getParameter("nombre");           
+            Cliente cli = (Cliente)request.getSession().getAttribute("user");
+            String nick = cli.getNickname();
+            ListaParticular listaP = new ListaParticular();
             listaP.setNombre(nombreL);
             listaP.setImagen("");
-            webCtr.crearListaParticular(true, nick, listaP);
+            webCtr.crearListaParticularClase(true, nick, listaP);
 
             request.setAttribute("id", nombreL);
 

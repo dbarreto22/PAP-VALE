@@ -228,6 +228,21 @@ public class Controlador implements IControlador {
             Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
+    
+    @WebMethod
+    public void crearListaParticularClase(boolean privado, String nickCliente, ListaParticular listaP) {
+
+        Cliente cli = seleccionarCliente(nickCliente);               
+        ListaParticularJpaController crlListaP = new ListaParticularJpaController(fact);
+        ClienteJpaController cliCtr = new ClienteJpaController(fact);
+        cli.getListasReprParticular().add(listaP);
+        try {
+            crlListaP.create(listaP);
+            cliCtr.edit(cli);
+        } catch (Exception ex) {
+            Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
 
     @WebMethod
     public void altaGenero(dataGenero oDtGenero) {

@@ -225,6 +225,13 @@ public class ControladorWeb {
         return port.getSeguidos(arg0);
     }
 
+    public  void crearListaParticularClase(boolean arg0, java.lang.String arg1, edu.tecnopotify.interfaces.ListaParticular arg2) {
+       
+        port.crearListaParticularClase(arg0, arg1, arg2);
+    }
+
+
+
     
     
     

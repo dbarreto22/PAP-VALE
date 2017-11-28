@@ -1,0 +1,349 @@
+27-Nov-2017 15:45:22.116 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.46
+27-Nov-2017 15:45:22.190 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 10 2017 10:10:31 UTC
+27-Nov-2017 15:45:22.190 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.46.0
+27-Nov-2017 15:45:22.190 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+27-Nov-2017 15:45:22.190 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.4.92-31-default
+27-Nov-2017 15:45:22.190 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+27-Nov-2017 15:45:22.191 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/java/jdk1.8.0_152/jre
+27-Nov-2017 15:45:22.191 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_152-b16
+27-Nov-2017 15:45:22.191 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+27-Nov-2017 15:45:22.191 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46
+27-Nov-2017 15:45:22.192 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46
+27-Nov-2017 15:45:22.192 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46/conf/logging.properties
+27-Nov-2017 15:45:22.193 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+27-Nov-2017 15:45:22.193 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dhttp.nonProxyHosts=localhost|127.0.0.1
+27-Nov-2017 15:45:22.194 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+27-Nov-2017 15:45:22.194 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+27-Nov-2017 15:45:22.194 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=/home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46/endorsed
+27-Nov-2017 15:45:22.195 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46
+27-Nov-2017 15:45:22.195 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46
+27-Nov-2017 15:45:22.196 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46/temp
+27-Nov-2017 15:45:22.211 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/jdk1.8.0_152/jre/lib/amd64:/usr/java/jdk1.8.0_152/jre/lib/i386::/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+27-Nov-2017 15:45:23.122 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+27-Nov-2017 15:45:23.209 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+27-Nov-2017 15:45:23.214 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+27-Nov-2017 15:45:23.217 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+27-Nov-2017 15:45:23.232 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 2823 ms
+27-Nov-2017 15:45:23.412 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+27-Nov-2017 15:45:23.412 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.46
+27-Nov-2017 15:45:23.444 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor /home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46/conf/Catalina/localhost/AplicacionWebPrueba.xml
+27-Nov-2017 15:45:23.789 SEVERE [localhost-startStop-1] org.apache.catalina.core.ContainerBase.addChildInternal ContainerBase.addChild: start: 
+ org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/AplicacionWebPrueba]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:162)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:753)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:729)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:621)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1835)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [org.apache.catalina.webresources.StandardRoot@61ba92db]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:162)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4969)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5099)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	... 10 more
+Caused by: java.lang.IllegalArgumentException: The main resource set specified [/home/diego-lucia/Documentos/AplicacionWebPrueba/build/web] is not valid
+	at org.apache.catalina.webresources.StandardRoot.createMainResourceSet(StandardRoot.java:743)
+	at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:701)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	... 13 more
+
+27-Nov-2017 15:45:23.809 SEVERE [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Error deploying configuration descriptor /home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46/conf/Catalina/localhost/AplicacionWebPrueba.xml
+ java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/AplicacionWebPrueba]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:757)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:729)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:621)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1835)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+27-Nov-2017 15:45:23.812 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor /home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46/conf/Catalina/localhost/AplicacionWebPrueba.xml has finished in 367 ms
+27-Nov-2017 15:45:23.812 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor /home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46/conf/Catalina/localhost/Tecnopotify.xml
+27-Nov-2017 15:45:23.845 SEVERE [localhost-startStop-1] org.apache.catalina.core.ContainerBase.addChildInternal ContainerBase.addChild: start: 
+ org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Tecnopotify]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:162)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:753)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:729)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:621)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1835)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [org.apache.catalina.webresources.StandardRoot@5a0f3a6e]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:162)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4969)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5099)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	... 10 more
+Caused by: java.lang.IllegalArgumentException: The main resource set specified [/home/diego-lucia/Escritorio/Paaps/TecnopotifyWeb/build/web] is not valid
+	at org.apache.catalina.webresources.StandardRoot.createMainResourceSet(StandardRoot.java:743)
+	at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:701)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	... 13 more
+
+27-Nov-2017 15:45:23.846 SEVERE [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Error deploying configuration descriptor /home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46/conf/Catalina/localhost/Tecnopotify.xml
+ java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Tecnopotify]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:757)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:729)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:621)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1835)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+27-Nov-2017 15:45:23.847 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor /home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46/conf/Catalina/localhost/Tecnopotify.xml has finished in 35 ms
+27-Nov-2017 15:45:23.865 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor /home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46/conf/Catalina/localhost/WebApplicationPrueba.xml
+27-Nov-2017 15:45:23.903 SEVERE [localhost-startStop-1] org.apache.catalina.core.ContainerBase.addChildInternal ContainerBase.addChild: start: 
+ org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/WebApplicationPrueba]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:162)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:753)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:729)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:621)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1835)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [org.apache.catalina.webresources.StandardRoot@3ff399eb]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:162)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4969)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5099)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	... 10 more
+Caused by: java.lang.IllegalArgumentException: The main resource set specified [/home/diego-lucia/Escritorio/WebApplicationPrueba/build/web] is not valid
+	at org.apache.catalina.webresources.StandardRoot.createMainResourceSet(StandardRoot.java:743)
+	at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:701)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	... 13 more
+
+27-Nov-2017 15:45:23.917 SEVERE [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Error deploying configuration descriptor /home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46/conf/Catalina/localhost/WebApplicationPrueba.xml
+ java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/WebApplicationPrueba]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:757)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:729)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:621)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1835)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+27-Nov-2017 15:45:23.918 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor /home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46/conf/Catalina/localhost/WebApplicationPrueba.xml has finished in 54 ms
+27-Nov-2017 15:45:23.928 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46/webapps/ROOT
+27-Nov-2017 15:45:25.486 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46/webapps/ROOT has finished in 1,558 ms
+27-Nov-2017 15:45:25.486 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46/webapps/docs
+27-Nov-2017 15:45:25.559 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46/webapps/docs has finished in 73 ms
+27-Nov-2017 15:45:25.560 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46/webapps/examples
+27-Nov-2017 15:45:26.758 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46/webapps/examples has finished in 1,198 ms
+27-Nov-2017 15:45:26.759 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46/webapps/host-manager
+27-Nov-2017 15:45:26.864 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46/webapps/host-manager has finished in 105 ms
+27-Nov-2017 15:45:26.865 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46/webapps/manager
+27-Nov-2017 15:45:27.021 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46/webapps/manager has finished in 156 ms
+27-Nov-2017 15:45:27.101 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+27-Nov-2017 15:45:27.164 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+27-Nov-2017 15:45:27.179 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 3946 ms
+27-Nov-2017 15:45:43.381 INFO [http-nio-8080-exec-4] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/Tecnopotify]
+27-Nov-2017 15:47:11.825 INFO [http-nio-8080-exec-15] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor /home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46/conf/Catalina/localhost/Tecnopotify.xml
+27-Nov-2017 15:47:19.980 INFO [http-nio-8080-exec-15] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+27-Nov-2017 15:47:20.152 INFO [http-nio-8080-exec-15] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor /home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46/conf/Catalina/localhost/Tecnopotify.xml has finished in 8,326 ms
+27-Nov-2017 15:47:20.176 INFO [http-nio-8080-exec-17] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Tecnopotify]] after start() had already been called. The second call will be ignored.
+27-Nov-2017 16:15:09.284 INFO [http-nio-8080-exec-19] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] has started
+27-Nov-2017 16:15:23.756 INFO [http-nio-8080-exec-19] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+27-Nov-2017 16:15:23.887 INFO [http-nio-8080-exec-19] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] is completed
+27-Nov-2017 16:15:26.862 INFO [http-nio-8080-exec-12] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/Tecnopotify]
+27-Nov-2017 16:16:25.116 INFO [http-nio-8080-exec-13] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor /home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46/conf/Catalina/localhost/Tecnopotify.xml
+27-Nov-2017 16:16:34.345 INFO [http-nio-8080-exec-13] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+27-Nov-2017 16:16:34.369 INFO [http-nio-8080-exec-13] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor /home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46/conf/Catalina/localhost/Tecnopotify.xml has finished in 9,253 ms
+27-Nov-2017 16:16:34.393 INFO [http-nio-8080-exec-25] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Tecnopotify]] after start() had already been called. The second call will be ignored.
+27-Nov-2017 20:40:12.238 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+27-Nov-2017 20:40:12.239 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+27-Nov-2017 20:40:12.290 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+27-Nov-2017 20:40:12.341 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+27-Nov-2017 20:40:12.660 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+27-Nov-2017 20:40:12.707 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+27-Nov-2017 20:40:12.715 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+27-Nov-2017 20:40:12.716 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+27-Nov-2017 20:40:21.121 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.46
+27-Nov-2017 20:40:21.224 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 10 2017 10:10:31 UTC
+27-Nov-2017 20:40:21.225 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.46.0
+27-Nov-2017 20:40:21.225 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+27-Nov-2017 20:40:21.225 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.4.92-31-default
+27-Nov-2017 20:40:21.225 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+27-Nov-2017 20:40:21.226 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/java/jdk1.8.0_152/jre
+27-Nov-2017 20:40:21.226 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_152-b16
+27-Nov-2017 20:40:21.226 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+27-Nov-2017 20:40:21.226 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46
+27-Nov-2017 20:40:21.226 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46
+27-Nov-2017 20:40:21.227 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46/conf/logging.properties
+27-Nov-2017 20:40:21.227 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+27-Nov-2017 20:40:21.227 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dhttp.nonProxyHosts=localhost|127.0.0.1
+27-Nov-2017 20:40:21.228 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+27-Nov-2017 20:40:21.228 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+27-Nov-2017 20:40:21.229 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -agentlib:jdwp=transport=dt_socket,address=11550,server=y,suspend=n
+27-Nov-2017 20:40:21.229 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=/home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46/endorsed
+27-Nov-2017 20:40:21.229 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46
+27-Nov-2017 20:40:21.230 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46
+27-Nov-2017 20:40:21.230 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46/temp
+27-Nov-2017 20:40:21.230 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/jdk1.8.0_152/jre/lib/amd64:/usr/java/jdk1.8.0_152/jre/lib/i386::/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+27-Nov-2017 20:40:22.212 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+27-Nov-2017 20:40:22.325 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+27-Nov-2017 20:40:22.336 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+27-Nov-2017 20:40:22.339 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+27-Nov-2017 20:40:22.347 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 4434 ms
+27-Nov-2017 20:40:22.483 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+27-Nov-2017 20:40:22.484 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.46
+27-Nov-2017 20:40:22.508 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor /home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46/conf/Catalina/localhost/AplicacionWebPrueba.xml
+27-Nov-2017 20:40:22.820 SEVERE [localhost-startStop-1] org.apache.catalina.core.ContainerBase.addChildInternal ContainerBase.addChild: start: 
+ org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/AplicacionWebPrueba]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:162)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:753)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:729)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:621)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1835)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [org.apache.catalina.webresources.StandardRoot@431242a]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:162)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4969)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5099)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	... 10 more
+Caused by: java.lang.IllegalArgumentException: The main resource set specified [/home/diego-lucia/Documentos/AplicacionWebPrueba/build/web] is not valid
+	at org.apache.catalina.webresources.StandardRoot.createMainResourceSet(StandardRoot.java:743)
+	at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:701)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	... 13 more
+
+27-Nov-2017 20:40:22.823 SEVERE [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Error deploying configuration descriptor /home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46/conf/Catalina/localhost/AplicacionWebPrueba.xml
+ java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/AplicacionWebPrueba]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:757)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:729)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:621)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1835)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+27-Nov-2017 20:40:22.826 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor /home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46/conf/Catalina/localhost/AplicacionWebPrueba.xml has finished in 316 ms
+27-Nov-2017 20:40:22.827 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor /home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46/conf/Catalina/localhost/WebApplicationPrueba.xml
+27-Nov-2017 20:40:22.879 SEVERE [localhost-startStop-1] org.apache.catalina.core.ContainerBase.addChildInternal ContainerBase.addChild: start: 
+ org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/WebApplicationPrueba]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:162)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:753)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:729)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:621)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1835)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [org.apache.catalina.webresources.StandardRoot@200ea333]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:162)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4969)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5099)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	... 10 more
+Caused by: java.lang.IllegalArgumentException: The main resource set specified [/home/diego-lucia/Escritorio/WebApplicationPrueba/build/web] is not valid
+	at org.apache.catalina.webresources.StandardRoot.createMainResourceSet(StandardRoot.java:743)
+	at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:701)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	... 13 more
+
+27-Nov-2017 20:40:22.882 SEVERE [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Error deploying configuration descriptor /home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46/conf/Catalina/localhost/WebApplicationPrueba.xml
+ java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/WebApplicationPrueba]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:757)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:729)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:621)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1835)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+27-Nov-2017 20:40:22.883 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor /home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46/conf/Catalina/localhost/WebApplicationPrueba.xml has finished in 56 ms
+27-Nov-2017 20:40:22.883 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor /home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46/conf/Catalina/localhost/Tecnopotify.xml
+27-Nov-2017 20:40:30.070 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+27-Nov-2017 20:40:30.610 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor /home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46/conf/Catalina/localhost/Tecnopotify.xml has finished in 7,727 ms
+27-Nov-2017 20:40:30.612 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46/webapps/ROOT
+27-Nov-2017 20:40:30.691 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46/webapps/ROOT has finished in 79 ms
+27-Nov-2017 20:40:30.693 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46/webapps/docs
+27-Nov-2017 20:40:30.807 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46/webapps/docs has finished in 114 ms
+27-Nov-2017 20:40:30.807 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46/webapps/examples
+27-Nov-2017 20:40:32.005 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46/webapps/examples has finished in 1,198 ms
+27-Nov-2017 20:40:32.006 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46/webapps/host-manager
+27-Nov-2017 20:40:32.179 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46/webapps/host-manager has finished in 173 ms
+27-Nov-2017 20:40:32.179 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46/webapps/manager
+27-Nov-2017 20:40:32.320 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46/webapps/manager has finished in 140 ms
+27-Nov-2017 20:40:32.333 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+27-Nov-2017 20:40:32.386 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+27-Nov-2017 20:40:32.521 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 10173 ms
+27-Nov-2017 20:40:37.354 INFO [http-nio-8080-exec-2] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/Tecnopotify]
+27-Nov-2017 20:40:37.431 INFO [http-nio-8080-exec-4] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor /home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46/conf/Catalina/localhost/Tecnopotify.xml
+27-Nov-2017 20:40:41.481 INFO [http-nio-8080-exec-4] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor /home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46/conf/Catalina/localhost/Tecnopotify.xml has finished in 4,050 ms
+27-Nov-2017 20:40:41.515 INFO [http-nio-8080-exec-6] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Tecnopotify]] after start() had already been called. The second call will be ignored.
+27-Nov-2017 20:55:47.159 INFO [http-nio-8080-exec-18] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] has started
+27-Nov-2017 20:55:52.964 INFO [http-nio-8080-exec-18] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] is completed
+27-Nov-2017 21:00:42.899 INFO [http-nio-8080-exec-17] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] has started
+27-Nov-2017 21:00:49.472 INFO [http-nio-8080-exec-17] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] is completed
+27-Nov-2017 21:00:49.838 INFO [http-nio-8080-exec-23] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] has started
+27-Nov-2017 21:00:52.580 INFO [http-nio-8080-exec-23] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] is completed
+27-Nov-2017 21:01:50.921 INFO [http-nio-8080-exec-21] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] has started
+27-Nov-2017 21:01:54.553 INFO [http-nio-8080-exec-21] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] is completed
+27-Nov-2017 21:02:22.200 INFO [http-nio-8080-exec-25] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] has started
+27-Nov-2017 21:02:26.790 INFO [http-nio-8080-exec-25] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] is completed
+27-Nov-2017 21:02:27.315 INFO [http-nio-8080-exec-28] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] has started
+27-Nov-2017 21:02:32.128 INFO [http-nio-8080-exec-28] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] is completed
+27-Nov-2017 21:03:15.179 INFO [http-nio-8080-exec-29] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] has started
+27-Nov-2017 21:03:29.186 INFO [85] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] is completed
+27-Nov-2017 21:04:50.232 INFO [http-nio-8080-exec-43] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] has started
+27-Nov-2017 21:04:55.148 INFO [http-nio-8080-exec-43] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] is completed
+27-Nov-2017 21:04:55.548 INFO [http-nio-8080-exec-39] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] has started
+27-Nov-2017 21:04:58.934 INFO [http-nio-8080-exec-39] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] is completed
+27-Nov-2017 21:05:13.848 INFO [http-nio-8080-exec-44] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] has started
+27-Nov-2017 21:05:16.538 INFO [http-nio-8080-exec-44] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] is completed
+27-Nov-2017 21:05:26.115 INFO [http-nio-8080-exec-41] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/Tecnopotify]
+27-Nov-2017 21:06:08.052 INFO [http-nio-8080-exec-54] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor /home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46/conf/Catalina/localhost/Tecnopotify.xml
+27-Nov-2017 21:06:10.928 INFO [http-nio-8080-exec-54] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor /home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46/conf/Catalina/localhost/Tecnopotify.xml has finished in 2,875 ms
+27-Nov-2017 21:06:10.946 INFO [106] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Tecnopotify]] after start() had already been called. The second call will be ignored.
+27-Nov-2017 21:14:23.433 INFO [http-nio-8080-exec-60] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/Tecnopotify]
+27-Nov-2017 21:27:35.350 INFO [http-nio-8080-exec-63] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor /home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46/conf/Catalina/localhost/Tecnopotify.xml
+27-Nov-2017 21:27:46.280 INFO [http-nio-8080-exec-63] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor /home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46/conf/Catalina/localhost/Tecnopotify.xml has finished in 10,931 ms
+27-Nov-2017 21:27:46.575 INFO [http-nio-8080-exec-64] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Tecnopotify]] after start() had already been called. The second call will be ignored.
+27-Nov-2017 21:37:15.879 INFO [http-nio-8080-exec-68] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] has started
+27-Nov-2017 21:37:21.518 INFO [http-nio-8080-exec-68] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] is completed
+27-Nov-2017 21:37:45.892 INFO [http-nio-8080-exec-63] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] has started
+27-Nov-2017 21:37:48.938 INFO [http-nio-8080-exec-63] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] is completed
+27-Nov-2017 21:38:20.983 INFO [http-nio-8080-exec-72] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] has started
+27-Nov-2017 21:38:23.408 INFO [http-nio-8080-exec-72] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] is completed
+27-Nov-2017 21:38:36.708 INFO [http-nio-8080-exec-64] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/Tecnopotify]
+27-Nov-2017 21:42:37.475 INFO [http-nio-8080-exec-83] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor /home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46/conf/Catalina/localhost/Tecnopotify.xml
+27-Nov-2017 21:42:41.203 INFO [http-nio-8080-exec-83] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor /home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46/conf/Catalina/localhost/Tecnopotify.xml has finished in 3,728 ms
+27-Nov-2017 21:42:41.220 INFO [http-nio-8080-exec-82] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Tecnopotify]] after start() had already been called. The second call will be ignored.
