@@ -13,10 +13,12 @@ import edu.tecnopotify.entidades.Genero;
 import edu.tecnopotify.entidades.ListaReproduccion;
 import edu.tecnopotify.entidades.Cliente;
 import edu.tecnopotify.entidades.ListaDefecto;
+import edu.tecnopotify.entidades.RegistroUsuarios;
 import edu.tecnopotify.entidades.Temas;
 import edu.tecnopotify.entidades.Usuario;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import javax.persistence.EntityManagerFactory;
 
 
@@ -133,5 +135,8 @@ public interface IControlador {
     public void crearListaParticularClase(boolean privado, String nickCliente, ListaParticular listaP);
     
     public void RegistroUsuariosCount(String ip, String url, String browser);
+    
+    public List<RegistroUsuarios> listarRegistroUsuarios ();
+    
 }
 

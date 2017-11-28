@@ -767,6 +767,13 @@ public class Controlador implements IControlador {
             Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, e);
         }
     }
+    
+    public List<RegistroUsuarios> listarRegistroUsuarios (){
+        List<RegistroUsuarios> reg = new  ArrayList();
+        RegistroUsuariosJpaController ctr = new RegistroUsuariosJpaController(fact);
+        reg = ctr.findRegistroUsuariosEntities();
+        return reg;
+    }
 
    
 

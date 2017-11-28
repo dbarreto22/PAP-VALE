@@ -31,7 +31,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
      */
     public VentanaPrincipal() {
         initComponents();
-       // ctr.cargarDatos();
+        // ctr.cargarDatos();
         ctr.publicar();
     }
 
@@ -143,7 +143,8 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
-    }   
+    }
+
     private void modificarSuscripcionJInternalFrame() {
         SuscripcionJInternalFrame frame = new SuscripcionJInternalFrame();
         frame.setVisible(true);
@@ -221,6 +222,17 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         }
     }
 
+    protected void crateControlNavegacion() {
+        ControlNavegacionJInternalFrame frame = new ControlNavegacionJInternalFrame();
+        frame.setVisible(true);
+        this.Desktop.add(frame);
+        try {
+            frame.setSelected(true);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+    }
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -253,6 +265,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         agregarTema = new javax.swing.JMenuItem();
         jMenuPublicarLista = new javax.swing.JMenuItem();
         jMenuConsutlarListaRep = new javax.swing.JMenuItem();
+        controlNavegacion = new javax.swing.JMenuItem();
         jMenu5 = new javax.swing.JMenu();
 
         jMenu12.setText("jMenu12");
@@ -263,6 +276,11 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         setName("frPrincipal"); // NOI18N
 
         jMenu3.setText("Menu");
+        jMenu3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenu3ActionPerformed(evt);
+            }
+        });
 
         menuUuarios.setText("Usuarios");
 
@@ -392,6 +410,14 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 
         jMenu3.add(menuLista);
 
+        controlNavegacion.setText("Control Navegaciòn");
+        controlNavegacion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                controlNavegacionActionPerformed(evt);
+            }
+        });
+        jMenu3.add(controlNavegacion);
+
         jMenuBar3.add(jMenu3);
 
         jMenu5.setText("Edit");
@@ -489,11 +515,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_menuFavsActionPerformed
 
-    private void SeguirUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
-        // TODO add your handling code here:
-        
-    }//GEN-LAST:event_jMenuItem1ActionPerformed
-
     private void DejarSeguir2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DejarSeguir2ActionPerformed
         // TODO add your handling code here:
         cratedejarSeguirUsuario();
@@ -504,40 +525,49 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         modificarSuscripcionJInternalFrame();
     }//GEN-LAST:event_jMenuModificarSuscripcionActionPerformed
 
-        /**
-         * @param args the command line arguments
-         */
-        public static void main(String args[]) {
-            /* Set the Nimbus look and feel */
-            //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-            /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-             */
-            try {
-                for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                    if ("Nimbus".equals(info.getName())) {
-                        javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                        break;
-                    }
-                }
-            } catch (ClassNotFoundException ex) {
-                java.util.logging.Logger.getLogger(VentanaPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-            } catch (InstantiationException ex) {
-                java.util.logging.Logger.getLogger(VentanaPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-            } catch (IllegalAccessException ex) {
-                java.util.logging.Logger.getLogger(VentanaPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-            } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-                java.util.logging.Logger.getLogger(VentanaPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-            }
-            //</editor-fold>
+    private void jMenu3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenu3ActionPerformed
 
-            /* Create and display the form */
-            java.awt.EventQueue.invokeLater(new Runnable() {
-                public void run() {
-                    new VentanaPrincipal().setVisible(true);
+    private void controlNavegacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_controlNavegacionActionPerformed
+        // TODO add your handling code here:
+        crateControlNavegacion();
+    }//GEN-LAST:event_controlNavegacionActionPerformed
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
                 }
-            });
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(VentanaPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(VentanaPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(VentanaPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(VentanaPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new VentanaPrincipal().setVisible(true);
+            }
+        });
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuItem CrearTema;
@@ -547,6 +577,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenuItem QuitarTema;
     private javax.swing.JMenuItem SeguirUsuario2;
     private javax.swing.JMenuItem agregarTema;
+    private javax.swing.JMenuItem controlNavegacion;
     private javax.swing.JMenu jMenu12;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu5;
