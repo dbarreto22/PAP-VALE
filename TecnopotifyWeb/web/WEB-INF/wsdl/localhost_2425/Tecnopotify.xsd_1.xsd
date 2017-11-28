@@ -54,6 +54,10 @@
 
 <xs:element name="crearArtista" type="tns:crearArtista"></xs:element>
 
+<xs:element name="crearArtistaClase" type="tns:crearArtistaClase"></xs:element>
+
+<xs:element name="crearArtistaClaseResponse" type="tns:crearArtistaClaseResponse"></xs:element>
+
 <xs:element name="crearArtistaResponse" type="tns:crearArtistaResponse"></xs:element>
 
 <xs:element name="crearCliente" type="tns:crearCliente"></xs:element>
@@ -817,6 +821,18 @@
 <xs:sequence>
 <xs:element name="return" type="tns:album" minOccurs="0"></xs:element>
 </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="crearArtistaClase">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="arg1" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="arg2" type="tns:usuario" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="crearArtistaClaseResponse">
+<xs:sequence></xs:sequence>
 </xs:complexType>
 
 <xs:complexType name="altaGenero">

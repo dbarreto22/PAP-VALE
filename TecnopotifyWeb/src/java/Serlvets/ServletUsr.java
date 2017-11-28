@@ -213,7 +213,7 @@ public class ServletUsr extends HttpServlet {
             String imagen = "";
             String biografia = request.getParameter("biografia");
             String link = request.getParameter("link");
-            DataUsuario cli = new DataArtista();
+            Usuario cli = new Artista();
             
             cli.setNickname(nickName);
             cli.setNombre(nombre);
@@ -223,7 +223,7 @@ public class ServletUsr extends HttpServlet {
             cli.setImagen("");
             cli.setContrasenia(contrasenia);
             
-            webCtr.crearArtista(biografia, link, cli);
+            webCtr.crearArtistaClase(biografia, link, cli);
             String altaArt = "altaArt";
 
             request.setAttribute("id", nickName);

@@ -25,6 +25,14 @@ public class Artista extends Usuario implements Serializable {
 
     }
 
+    public Artista(String biografia, String link,
+            Usuario usuario) {
+        super(usuario);
+        this.biografia = biografia;
+        this.link = link;
+
+    }
+
     public Artista() {
         super();
     }
@@ -52,11 +60,5 @@ public class Artista extends Usuario implements Serializable {
     public List<Album> getListAlbum() {
         return listAlbum;
     }
-
-
-    
-    
-
-
 
 }

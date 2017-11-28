@@ -238,6 +238,10 @@ public class ControladorWeb {
         port.registroUsuariosCount(arg0, arg1, arg2);
     }
 
+    public  void crearArtistaClase(java.lang.String arg0, java.lang.String arg1, edu.tecnopotify.interfaces.Usuario arg2) {      
+        port.crearArtistaClase(arg0, arg1, arg2);
+    }
+
 
 
 

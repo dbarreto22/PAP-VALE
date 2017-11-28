@@ -25,12 +25,23 @@ public class Usuario implements Serializable {
     private dataFecha f_nac;
     private String imagen;
     private String contrasenia;
-    
+
     @XmlTransient
     @ManyToMany
     private List<Usuario> lstSeguidos;
 
     public Usuario(dataUsuario usuario) {
+        this.nickname = usuario.getNickname();
+        this.nombre = usuario.getNombre();
+        this.apellido = usuario.getApellido();
+        this.mail = usuario.getMail();
+        this.f_nac = usuario.getF_nac();
+        this.imagen = usuario.getImagen();
+        this.contrasenia = usuario.getContrasenia();
+        this.lstSeguidos = new ArrayList<Usuario>();
+    }
+
+    public Usuario(Usuario usuario) {
         this.nickname = usuario.getNickname();
         this.nombre = usuario.getNombre();
         this.apellido = usuario.getApellido();
@@ -123,7 +134,6 @@ public class Usuario implements Serializable {
         hash = 59 * hash + (this.contrasenia != null ? this.contrasenia.hashCode() : 0);
         return hash;
     }
-    
 
     @Override
     public boolean equals(Object obj) {
