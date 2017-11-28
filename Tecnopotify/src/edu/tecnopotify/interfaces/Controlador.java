@@ -4,6 +4,7 @@ import edu.tecnopotify.controladores.AlbumJpaController;
 import edu.tecnopotify.controladores.ArtistaJpaController;
 import edu.tecnopotify.controladores.ClienteJpaController;
 import edu.tecnopotify.controladores.ExtJpaAlbum;
+import edu.tecnopotify.controladores.ExtJpaCliente;
 import edu.tecnopotify.controladores.ExtJpaFavoritos;
 import edu.tecnopotify.controladores.ExtJpaGenero;
 import edu.tecnopotify.controladores.ExtJpaSrtista;
@@ -102,6 +103,20 @@ public class Controlador implements IControlador {
             Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
+    
+    @WebMethod
+    public void crearArtistaClase(String biografia, String link,
+            Usuario usuario) {
+        Usuario U = new Artista(biografia, link, usuario);
+        ArtistaJpaController ctrA = new ArtistaJpaController(fact);
+        try {
+            ctrA.create((Artista) U);
+        } catch (Exception ex) {
+            Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    
+    
 
     @WebMethod
     public String obtenerEstadoSuscripcion(String nickCliente) {
@@ -695,9 +710,9 @@ public class Controlador implements IControlador {
 
     @WebMethod
     public void setImageCli(Cliente cli) {
-        ClienteJpaController ctrCli = new ClienteJpaController(fact);
+        ExtJpaCliente ctrCli = new ExtJpaCliente(fact);
         try {
-            ctrCli.edit(cli);
+            ctrCli.editImagen(cli);
         } catch (Exception ex) {
             Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, ex);
         }

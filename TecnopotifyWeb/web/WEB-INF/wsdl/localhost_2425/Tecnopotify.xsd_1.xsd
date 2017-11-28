@@ -54,6 +54,10 @@
 
 <xs:element name="crearArtista" type="tns:crearArtista"></xs:element>
 
+<xs:element name="crearArtistaClase" type="tns:crearArtistaClase"></xs:element>
+
+<xs:element name="crearArtistaClaseResponse" type="tns:crearArtistaClaseResponse"></xs:element>
+
 <xs:element name="crearArtistaResponse" type="tns:crearArtistaResponse"></xs:element>
 
 <xs:element name="crearCliente" type="tns:crearCliente"></xs:element>
@@ -135,6 +139,10 @@
 <xs:element name="listarListaRepr" type="tns:listarListaRepr"></xs:element>
 
 <xs:element name="listarListaReprResponse" type="tns:listarListaReprResponse"></xs:element>
+
+<xs:element name="listarRegistroUsuarios" type="tns:listarRegistroUsuarios"></xs:element>
+
+<xs:element name="listarRegistroUsuariosResponse" type="tns:listarRegistroUsuariosResponse"></xs:element>
 
 <xs:element name="listarTemas" type="tns:listarTemas"></xs:element>
 
@@ -405,6 +413,25 @@
 
 <xs:complexType name="crearArtistaResponse">
 <xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listarRegistroUsuarios">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listarRegistroUsuariosResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:registroUsuarios" minOccurs="0" maxOccurs="unbounded"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="registroUsuarios">
+<xs:sequence>
+<xs:element name="browser" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="id" type="xs:int"></xs:element>
+<xs:element name="ip" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="url" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
 </xs:complexType>
 
 <xs:complexType name="getGenerosHijos">
@@ -794,6 +821,18 @@
 <xs:sequence>
 <xs:element name="return" type="tns:album" minOccurs="0"></xs:element>
 </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="crearArtistaClase">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="arg1" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="arg2" type="tns:usuario" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="crearArtistaClaseResponse">
+<xs:sequence></xs:sequence>
 </xs:complexType>
 
 <xs:complexType name="altaGenero">

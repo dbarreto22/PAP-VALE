@@ -87,6 +87,8 @@ public class ExtUsuario extends UsuarioJpaController {
         }
         return usr;
     }
+    
+    
 
 
 }

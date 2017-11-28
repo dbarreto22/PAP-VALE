@@ -29,6 +29,8 @@ public interface IControlador {
     public void crearCliente(dataUsuario usuario);
 
     public void crearArtista(String biografia, String link, dataUsuario usuario);
+    
+    public void crearArtistaClase(String biografia, String link, Usuario usuario);
 
     public void altaGenero(dataGenero genero);
 
