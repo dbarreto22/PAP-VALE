@@ -16,6 +16,7 @@ import edu.tecnopotify.entidades.ListaDefecto;
 import edu.tecnopotify.entidades.Temas;
 import edu.tecnopotify.entidades.Usuario;
 import java.util.ArrayList;
+import java.util.Date;
 import javax.persistence.EntityManagerFactory;
 
 
@@ -130,5 +131,7 @@ public interface IControlador {
     public ArrayList<Album> getAlbumsdeGeneros(String nombre);
     
     public void crearListaParticularClase(boolean privado, String nickCliente, ListaParticular listaP);
+    
+    public void RegistroUsuariosCount(String ip, String url, String browser);
 }
 

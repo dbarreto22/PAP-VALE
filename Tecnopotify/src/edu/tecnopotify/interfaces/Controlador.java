@@ -12,6 +12,7 @@ import edu.tecnopotify.controladores.GeneroJpaController;
 import edu.tecnopotify.controladores.ListaDefectoJpaController;
 import edu.tecnopotify.controladores.ListaParticularJpaController;
 import edu.tecnopotify.controladores.ListaReproduccionJpaController;
+import edu.tecnopotify.controladores.RegistroUsuariosJpaController;
 import edu.tecnopotify.controladores.SuscripcionJpaController;
 import edu.tecnopotify.controladores.TemasJpaController;
 import edu.tecnopotify.entidades.Genero;
@@ -34,6 +35,7 @@ import edu.tecnopotify.entidades.Artista;
 import edu.tecnopotify.entidades.Cliente;
 import edu.tecnopotify.entidades.ListaDefecto;
 import edu.tecnopotify.entidades.ListaParticular;
+import edu.tecnopotify.entidades.RegistroUsuarios;
 import edu.tecnopotify.entidades.Suscripcion;
 import static edu.tecnopotify.entidades.Suscripcion.estado.CANCELADA;
 import static edu.tecnopotify.entidades.Suscripcion.estado.PENDIENTE;
@@ -43,8 +45,11 @@ import static edu.tecnopotify.entidades.Suscripcion.pago.ANUAL;
 import static edu.tecnopotify.entidades.Suscripcion.pago.MENSUAL;
 import static edu.tecnopotify.entidades.Suscripcion.pago.SEMANAL;
 import edu.tecnopotify.entidades.Temas;
+import java.text.DateFormat;
+import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
 import java.util.logging.Level;
@@ -228,11 +233,11 @@ public class Controlador implements IControlador {
             Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-    
+
     @WebMethod
     public void crearListaParticularClase(boolean privado, String nickCliente, ListaParticular listaP) {
 
-        Cliente cli = seleccionarCliente(nickCliente);               
+        Cliente cli = seleccionarCliente(nickCliente);
         ListaParticularJpaController crlListaP = new ListaParticularJpaController(fact);
         ClienteJpaController cliCtr = new ClienteJpaController(fact);
         cli.getListasReprParticular().add(listaP);
@@ -345,8 +350,8 @@ public class Controlador implements IControlador {
             Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, e);
         }
     }
-    
-        @WebMethod
+
+    @WebMethod
     public void crearAlbum2(String nickNameArtista, Album oAlbum) {
         //Crea un album y lo agrega a su artista
         ExtJpaSrtista ctrArtista = new ExtJpaSrtista(fact);
@@ -748,6 +753,22 @@ public class Controlador implements IControlador {
         Genero g = ctr.findGenero(nombre);
         return new ArrayList<Album>(g.getListAlbum());
     }
+
+    @WebMethod
+    public void RegistroUsuariosCount(String ip, String url, String browser) {
+        RegistroUsuarios reg = new RegistroUsuarios(ip, url, browser);
+        RegistroUsuariosJpaController ctr = new RegistroUsuariosJpaController(fact);
+        try {
+            
+            if (ctr.findRegistroUsuariosEntities().size() < 10000) {
+                ctr.create(reg);
+            }
+        } catch (Exception e) {
+            Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, e);
+        }
+    }
+
+   
 
     @WebMethod(exclude = true)
     public void cargarDatos() {

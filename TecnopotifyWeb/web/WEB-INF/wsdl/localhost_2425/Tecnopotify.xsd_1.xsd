@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is JAX-WS RI 2.2.9-b130926.1035 svn-revision#5f6196f2b90e9460065a4c2f4e30e065b245e51e. --><xs:schema xmlns:tns="http://interfaces.tecnopotify.edu/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://interfaces.tecnopotify.edu/">
 
+<xs:element name="RegistroUsuariosCount" type="tns:RegistroUsuariosCount"></xs:element>
+
+<xs:element name="RegistroUsuariosCountResponse" type="tns:RegistroUsuariosCountResponse"></xs:element>
+
 <xs:element name="agregarFavorito" type="tns:agregarFavorito"></xs:element>
 
 <xs:element name="agregarFavoritoResponse" type="tns:agregarFavoritoResponse"></xs:element>
@@ -528,8 +532,6 @@
 </xs:complexType>
 
 <xs:complexType name="seleccionarArtista">
-<<<<<<< HEAD
-=======
 <xs:sequence>
 <xs:element name="arg0" type="xs:string" minOccurs="0"></xs:element>
 </xs:sequence>
@@ -552,7 +554,6 @@
 </xs:complexType>
 
 <xs:complexType name="getUsuario">
->>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
 <xs:sequence>
 <xs:element name="arg0" type="xs:string" minOccurs="0"></xs:element>
 </xs:sequence>
@@ -561,16 +562,6 @@
 <xs:complexType name="getUsuarioResponse">
 <xs:sequence>
 <xs:element name="return" type="tns:usuario" minOccurs="0"></xs:element>
-</xs:sequence>
-</xs:complexType>
-
-<xs:complexType name="listarGeneros">
-<xs:sequence></xs:sequence>
-</xs:complexType>
-
-<xs:complexType name="listarGenerosResponse">
-<xs:sequence>
-<xs:element name="return" type="tns:genero" minOccurs="0" maxOccurs="unbounded"></xs:element>
 </xs:sequence>
 </xs:complexType>
 
@@ -723,6 +714,17 @@
 </xs:sequence>
 </xs:complexType>
 
+<xs:complexType name="crearListaDefecto">
+<xs:sequence>
+<xs:element name="arg0" type="tns:dataListaReproduccion" minOccurs="0"></xs:element>
+<xs:element name="arg1" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="crearListaDefectoResponse">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
 <xs:complexType name="buscarAlbum">
 <xs:sequence>
 <xs:element name="arg0" type="xs:string" minOccurs="0"></xs:element>
@@ -735,14 +737,15 @@
 </xs:sequence>
 </xs:complexType>
 
-<xs:complexType name="crearListaDefecto">
+<xs:complexType name="RegistroUsuariosCount">
 <xs:sequence>
-<xs:element name="arg0" type="tns:dataListaReproduccion" minOccurs="0"></xs:element>
+<xs:element name="arg0" type="xs:string" minOccurs="0"></xs:element>
 <xs:element name="arg1" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="arg2" type="xs:string" minOccurs="0"></xs:element>
 </xs:sequence>
 </xs:complexType>
 
-<xs:complexType name="crearListaDefectoResponse">
+<xs:complexType name="RegistroUsuariosCountResponse">
 <xs:sequence></xs:sequence>
 </xs:complexType>
 
