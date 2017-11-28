@@ -330,6 +330,25 @@ public class Controlador implements IControlador {
             Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, e);
         }
     }
+    
+        @WebMethod
+    public void crearAlbum2(String nickNameArtista, Album oAlbum) {
+        //Crea un album y lo agrega a su artista
+        ExtJpaSrtista ctrArtista = new ExtJpaSrtista(fact);
+        //Busca al artista
+        Artista oArtista = ctrArtista.findArtista(nickNameArtista);
+        if (oArtista != null) {
+        }
+        AlbumJpaController ctrAlbum = new AlbumJpaController(fact);
+        try {
+            //Persiste el album y modifica el artista 
+            ctrAlbum.create(oAlbum);
+            ctrArtista.agregarAlbum(oArtista, oAlbum);
+
+        } catch (Exception e) {
+            Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, e);
+        }
+    }
 
     //debe devolver Dts?
     @WebMethod

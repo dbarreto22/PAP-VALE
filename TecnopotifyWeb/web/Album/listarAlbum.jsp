@@ -15,7 +15,7 @@
             <% List<Album> lstAlbum=(List<Album>)request.getAttribute("lstAlbum");
             if(lstAlbum!=null){
                 for(Album oAlbum:lstAlbum){%>
-                    <li><a href="<%= request.getContextPath()%>/Album?comando=mostrarAlbum&idAlbum=<%= oAlbum.getNombre()%>"><%= oAlbum.toString()%></a> 
+                    <li><a href="<%= request.getContextPath()%>/Album?comando=mostrarAlbum&idAlbum=<%= oAlbum.getNombre()%>"><%= oAlbum.getNombre()%></a> 
                     </li>
                 <%}
             }else{%>

@@ -71,6 +71,8 @@ public class ControladorWeb {
     public  void crearAlbum(java.lang.String arg0, edu.tecnopotify.interfaces.DataAlbum arg1) {
         port.crearAlbum(arg0, arg1);
     }
+    
+    
 
     public  void crearArtista(java.lang.String arg0, java.lang.String arg1, edu.tecnopotify.interfaces.DataUsuario arg2) {
         port.crearArtista(arg0, arg1, arg2);
@@ -223,6 +225,10 @@ public class ControladorWeb {
 
     public  java.util.List<edu.tecnopotify.interfaces.Usuario> getSeguidos(java.lang.String arg0) {
         return port.getSeguidos(arg0);
+    }
+
+    public void crearAlbum2(java.lang.String arg0, edu.tecnopotify.interfaces.Album arg1) {
+        port.crearAlbum2(arg0, arg1);
     }
 
     

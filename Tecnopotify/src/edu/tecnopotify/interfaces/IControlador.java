@@ -36,6 +36,8 @@ public interface IControlador {
     public void modificarSuscripcion(String nickname, String estadoSuscripcion, String pago);
 
     public void crearAlbum(String nickNameArtista, dataAlbum dtAlbum);
+    
+    public void crearAlbum2(String nickNameArtista, Album oAlbum);
 
     public void altaTema(dataTemas tema, String album);
     // public void seleccionarLista(String a);

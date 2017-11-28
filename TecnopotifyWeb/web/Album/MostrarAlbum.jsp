@@ -22,8 +22,10 @@
             <% List<Temas> lstTemas=(List<Temas>)request.getAttribute("lstTemas");
             if(lstTemas!=null){
                 for(Temas oTema:lstTemas){%>
-                    <li><%= oTema.toString()%></a> 
-                    </li>
+                    <li><%= oTema.getPosicion()%></li>
+                    <li><%= oTema.getNombre()%></li>
+                    <li><%= oTema.getDuracion()%></li>
+
                 <%}
             }else{%>
                  <h1>No existen temas para mostrar</h1>

@@ -116,12 +116,12 @@ public class ServletAlbum extends HttpServlet {
             String idAlbum = request.getParameter("nombreAlbum");
             int anio = Integer.parseInt(request.getParameter("anio"));
             String usr = request.getParameter("usr");
-            DataAlbum oDtAlbum = new DataAlbum();
-            oDtAlbum.setImagenAlbum(idAlbum);
-            oDtAlbum.setAnioCreado(anio);
-            oDtAlbum.setImagenAlbum(path);
+            Album oAlbum = new Album();
+            oAlbum.setNombre(idAlbum);
+            oAlbum.setAnioCreado(anio);
+            oAlbum.setImagenAlbum(path);
             artista = webCtr.seleccionarArtista(usr);
-            webCtr.crearAlbum(artista.getNickname(), oDtAlbum);
+            webCtr.crearAlbum2(artista.getNickname(), oAlbum);
             request.setAttribute("comando", comando);
             request.setAttribute("id", idAlbum);
             destino="/subirImg.jsp";

@@ -26,10 +26,11 @@
           method="post">
         <div class ="container">
             Artista:
-            <label for="male"><%=request.getSession().getAttribute("user")%></label> <br>
             <%
                 Usuario usr = (Usuario) request.getSession().getAttribute("user");
             %>
+            <label for="male"><%=usr.getNombre()%></label> 
+            <label for="male"><%=usr.getApellido()%></label><br>
             <input type="hidden"  name="usr" 
                    value="<%=usr.getNickname()%>" />
             <input type="hidden"  name="comando" value="altaAlbum" />
@@ -38,7 +39,6 @@
             Año: <br>
             <input type="number" name="anio" /> <br>
             <input type="submit" value="Enviar" />
-            <input>
         </div>
     </form> 
 </html>

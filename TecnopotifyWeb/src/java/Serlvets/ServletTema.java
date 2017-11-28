@@ -5,18 +5,13 @@
  */
 package Serlvets;
 
-import edu.tecnopotify.datatypes.dataAlbum;
-import edu.tecnopotify.datatypes.dataTemas;
-import edu.tecnopotify.entidades.Album;
-import edu.tecnopotify.entidades.Artista;
-import edu.tecnopotify.fabrica.Fabrica;
-import edu.tecnopotify.interfaces.IControlador;
+import edu.tecnopotify.interfaces.DataTemas;
 import java.io.IOException;
-import java.io.PrintWriter;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import Webservices.ControladorWeb;
 
 /**
  *
@@ -24,7 +19,7 @@ import javax.servlet.http.HttpServletResponse;
  */
 public class ServletTema extends HttpServlet {
 
-    
+    private ControladorWeb webCtr;    
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -74,6 +69,7 @@ public class ServletTema extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        webCtr=new ControladorWeb();
         processRequest(request, response);
         String comando= request.getParameter("comando");
         String path = "";
@@ -82,8 +78,12 @@ public class ServletTema extends HttpServlet {
             int pos = Integer.parseInt(request.getParameter("pos"));
             String tema = request.getParameter("nombreTema");
             String duracion = request.getParameter("duracion");
-            dataTemas oDtTema = new dataTemas(tema, duracion, pos, path);
-            altaTema(oDtTema, idAlbum);
+            DataTemas oDtTema = new DataTemas();
+            oDtTema.setNombre(tema);
+            oDtTema.setDuracion(duracion);
+            oDtTema.setPosicion(pos);
+            oDtTema.setArchivo(path);
+            webCtr.altaTema(oDtTema, idAlbum);
             request.setAttribute("comando", comando);
             request.setAttribute("id", tema);
             request.setAttribute("idAlbum",idAlbum);
@@ -101,9 +101,5 @@ public class ServletTema extends HttpServlet {
     public String getServletInfo() {
         return "Short description";
     }// </editor-fold>
-
-    private void altaTema(dataTemas oDtTema, String idAlbum) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
 
 }

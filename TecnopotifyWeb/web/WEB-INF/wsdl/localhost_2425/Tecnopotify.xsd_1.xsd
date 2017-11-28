@@ -42,6 +42,10 @@
 
 <xs:element name="crearAlbum" type="tns:crearAlbum"></xs:element>
 
+<xs:element name="crearAlbum2" type="tns:crearAlbum2"></xs:element>
+
+<xs:element name="crearAlbum2Response" type="tns:crearAlbum2Response"></xs:element>
+
 <xs:element name="crearAlbumResponse" type="tns:crearAlbumResponse"></xs:element>
 
 <xs:element name="crearArtista" type="tns:crearArtista"></xs:element>
@@ -507,16 +511,6 @@
 <xs:sequence></xs:sequence>
 </xs:complexType>
 
-<xs:complexType name="listarGeneros">
-<xs:sequence></xs:sequence>
-</xs:complexType>
-
-<xs:complexType name="listarGenerosResponse">
-<xs:sequence>
-<xs:element name="return" type="tns:genero" minOccurs="0" maxOccurs="unbounded"></xs:element>
-</xs:sequence>
-</xs:complexType>
-
 <xs:complexType name="seleccionarArtista">
 <xs:sequence>
 <xs:element name="arg0" type="xs:string" minOccurs="0"></xs:element>
@@ -526,6 +520,16 @@
 <xs:complexType name="seleccionarArtistaResponse">
 <xs:sequence>
 <xs:element name="return" type="tns:artista" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listarGeneros">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listarGenerosResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:genero" minOccurs="0" maxOccurs="unbounded"></xs:element>
 </xs:sequence>
 </xs:complexType>
 
@@ -690,6 +694,18 @@
 </xs:sequence>
 </xs:complexType>
 
+<xs:complexType name="buscarAlbum">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarAlbumResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:album" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
 <xs:complexType name="crearListaDefecto">
 <xs:sequence>
 <xs:element name="arg0" type="tns:dataListaReproduccion" minOccurs="0"></xs:element>
@@ -701,16 +717,15 @@
 <xs:sequence></xs:sequence>
 </xs:complexType>
 
-<xs:complexType name="buscarAlbum">
+<xs:complexType name="crearAlbum2">
 <xs:sequence>
 <xs:element name="arg0" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="arg1" type="tns:album" minOccurs="0"></xs:element>
 </xs:sequence>
 </xs:complexType>
 
-<xs:complexType name="buscarAlbumResponse">
-<xs:sequence>
-<xs:element name="return" type="tns:album" minOccurs="0"></xs:element>
-</xs:sequence>
+<xs:complexType name="crearAlbum2Response">
+<xs:sequence></xs:sequence>
 </xs:complexType>
 
 <xs:complexType name="crearListaParticular">
