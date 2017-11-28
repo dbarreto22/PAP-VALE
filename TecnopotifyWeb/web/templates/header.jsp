@@ -59,8 +59,9 @@
                        role="button" aria-haspopup="true" aria-expanded="false">Temas <span class="caret"></span></a>
                         <% %>
                     <ul class="dropdown-menu">
-                        <% if (tipo != null && tipo.contains("Cliente")) {%>
-                        <li><a href="<%= request.getContextPath()%>/Tema">Agregar tema a lista</a></li>
+                        <% if (tipo != null && tipo.contains("Cliente")) {
+                        comando="agregarTemaLista";%>
+                        <li><a href="<%= request.getContextPath()%>/Tema?comando=<%=comando%>">Agregar tema a lista</a></li>
                             <%}%>
                             <%%>                                                    
 

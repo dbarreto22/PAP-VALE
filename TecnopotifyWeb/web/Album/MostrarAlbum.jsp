@@ -22,9 +22,9 @@
             <% List<Temas> lstTemas=(List<Temas>)request.getAttribute("lstTemas");
             if(lstTemas!=null){
                 for(Temas oTema:lstTemas){%>
-                    <li><%= oTema.getPosicion()%></li>
-                    <li><%= oTema.getNombre()%></li>
-                    <li><%= oTema.getDuracion()%></li>
+                    <li>Pos:<%= oTema.getPosicion()%>
+                    Tema:<%= oTema.getNombre()%>
+                    Duración:<%= oTema.getDuracion()%></li>
 
                 <%}
             }else{%>

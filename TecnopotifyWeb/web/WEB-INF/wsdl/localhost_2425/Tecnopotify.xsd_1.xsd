@@ -276,18 +276,6 @@
 <xs:sequence></xs:sequence>
 </xs:complexType>
 
-<xs:complexType name="getTema">
-<xs:sequence>
-<xs:element name="arg0" type="xs:string" minOccurs="0"></xs:element>
-</xs:sequence>
-</xs:complexType>
-
-<xs:complexType name="getTemaResponse">
-<xs:sequence>
-<xs:element name="return" type="tns:temas" minOccurs="0"></xs:element>
-</xs:sequence>
-</xs:complexType>
-
 <xs:complexType name="agregarFavorito">
 <xs:sequence>
 <xs:element name="arg0" type="xs:boolean"></xs:element>
@@ -300,6 +288,18 @@
 
 <xs:complexType name="agregarFavoritoResponse">
 <xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getTema">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getTemaResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:temas" minOccurs="0"></xs:element>
+</xs:sequence>
 </xs:complexType>
 
 <xs:complexType name="buscarGenero">
@@ -427,6 +427,17 @@
 </xs:sequence>
 </xs:complexType>
 
+<xs:complexType name="seguirUsuario">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="arg1" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="seguirUsuarioResponse">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
 <xs:complexType name="eliminarFavorito">
 <xs:sequence>
 <xs:element name="arg0" type="xs:boolean"></xs:element>
@@ -438,17 +449,6 @@
 </xs:complexType>
 
 <xs:complexType name="eliminarFavoritoResponse">
-<xs:sequence></xs:sequence>
-</xs:complexType>
-
-<xs:complexType name="seguirUsuario">
-<xs:sequence>
-<xs:element name="arg0" type="xs:string" minOccurs="0"></xs:element>
-<xs:element name="arg1" type="xs:string" minOccurs="0"></xs:element>
-</xs:sequence>
-</xs:complexType>
-
-<xs:complexType name="seguirUsuarioResponse">
 <xs:sequence></xs:sequence>
 </xs:complexType>
 
@@ -527,9 +527,17 @@
 <xs:sequence></xs:sequence>
 </xs:complexType>
 
+<xs:complexType name="listarGeneros">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listarGenerosResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:genero" minOccurs="0" maxOccurs="unbounded"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
 <xs:complexType name="seleccionarArtista">
-<<<<<<< HEAD
-=======
 <xs:sequence>
 <xs:element name="arg0" type="xs:string" minOccurs="0"></xs:element>
 </xs:sequence>
@@ -538,39 +546,6 @@
 <xs:complexType name="seleccionarArtistaResponse">
 <xs:sequence>
 <xs:element name="return" type="tns:artista" minOccurs="0"></xs:element>
-</xs:sequence>
-</xs:complexType>
-
-<xs:complexType name="listarGeneros">
-<xs:sequence></xs:sequence>
-</xs:complexType>
-
-<xs:complexType name="listarGenerosResponse">
-<xs:sequence>
-<xs:element name="return" type="tns:genero" minOccurs="0" maxOccurs="unbounded"></xs:element>
-</xs:sequence>
-</xs:complexType>
-
-<xs:complexType name="getUsuario">
->>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
-<xs:sequence>
-<xs:element name="arg0" type="xs:string" minOccurs="0"></xs:element>
-</xs:sequence>
-</xs:complexType>
-
-<xs:complexType name="getUsuarioResponse">
-<xs:sequence>
-<xs:element name="return" type="tns:usuario" minOccurs="0"></xs:element>
-</xs:sequence>
-</xs:complexType>
-
-<xs:complexType name="listarGeneros">
-<xs:sequence></xs:sequence>
-</xs:complexType>
-
-<xs:complexType name="listarGenerosResponse">
-<xs:sequence>
-<xs:element name="return" type="tns:genero" minOccurs="0" maxOccurs="unbounded"></xs:element>
 </xs:sequence>
 </xs:complexType>
 
@@ -584,14 +559,16 @@
 </xs:sequence>
 </xs:complexType>
 
-<xs:complexType name="setTema">
+<xs:complexType name="getUsuario">
 <xs:sequence>
-<xs:element name="arg0" type="tns:temas" minOccurs="0"></xs:element>
+<xs:element name="arg0" type="xs:string" minOccurs="0"></xs:element>
 </xs:sequence>
 </xs:complexType>
 
-<xs:complexType name="setTemaResponse">
-<xs:sequence></xs:sequence>
+<xs:complexType name="getUsuarioResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:usuario" minOccurs="0"></xs:element>
+</xs:sequence>
 </xs:complexType>
 
 <xs:complexType name="dejarDeSeguirUsuario">
@@ -602,6 +579,16 @@
 </xs:complexType>
 
 <xs:complexType name="dejarDeSeguirUsuarioResponse">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setTema">
+<xs:sequence>
+<xs:element name="arg0" type="tns:temas" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setTemaResponse">
 <xs:sequence></xs:sequence>
 </xs:complexType>
 
@@ -723,6 +710,17 @@
 </xs:sequence>
 </xs:complexType>
 
+<xs:complexType name="crearListaDefecto">
+<xs:sequence>
+<xs:element name="arg0" type="tns:dataListaReproduccion" minOccurs="0"></xs:element>
+<xs:element name="arg1" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="crearListaDefectoResponse">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
 <xs:complexType name="buscarAlbum">
 <xs:sequence>
 <xs:element name="arg0" type="xs:string" minOccurs="0"></xs:element>
@@ -733,17 +731,6 @@
 <xs:sequence>
 <xs:element name="return" type="tns:album" minOccurs="0"></xs:element>
 </xs:sequence>
-</xs:complexType>
-
-<xs:complexType name="crearListaDefecto">
-<xs:sequence>
-<xs:element name="arg0" type="tns:dataListaReproduccion" minOccurs="0"></xs:element>
-<xs:element name="arg1" type="xs:string" minOccurs="0"></xs:element>
-</xs:sequence>
-</xs:complexType>
-
-<xs:complexType name="crearListaDefectoResponse">
-<xs:sequence></xs:sequence>
 </xs:complexType>
 
 <xs:complexType name="crearAlbum2">
@@ -887,18 +874,6 @@
 <xs:sequence></xs:sequence>
 </xs:complexType>
 
-<xs:complexType name="consultarAlbumPorGenero">
-<xs:sequence>
-<xs:element name="arg0" type="tns:dataGenero" minOccurs="0"></xs:element>
-</xs:sequence>
-</xs:complexType>
-
-<xs:complexType name="consultarAlbumPorGeneroResponse">
-<xs:sequence>
-<xs:element name="return" type="tns:album" minOccurs="0" maxOccurs="unbounded"></xs:element>
-</xs:sequence>
-</xs:complexType>
-
 <xs:complexType name="altaTema">
 <xs:sequence>
 <xs:element name="arg0" type="tns:dataTemas" minOccurs="0"></xs:element>
@@ -931,6 +906,18 @@
 
 <xs:complexType name="altaTemaResponse">
 <xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="consultarAlbumPorGenero">
+<xs:sequence>
+<xs:element name="arg0" type="tns:dataGenero" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="consultarAlbumPorGeneroResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:album" minOccurs="0" maxOccurs="unbounded"></xs:element>
+</xs:sequence>
 </xs:complexType>
 
 <xs:complexType name="quitarTemaLista">

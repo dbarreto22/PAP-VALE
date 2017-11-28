@@ -20,7 +20,6 @@ import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
 
 //************************WEB********************************
-import edu.tecnopotify.interfaces.DataAlbum;
 import edu.tecnopotify.interfaces.Album;
 import edu.tecnopotify.interfaces.Artista;
 import edu.tecnopotify.interfaces.Genero;

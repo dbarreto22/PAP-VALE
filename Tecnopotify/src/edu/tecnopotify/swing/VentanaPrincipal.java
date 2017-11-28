@@ -31,7 +31,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
      */
     public VentanaPrincipal() {
         initComponents();
-       // ctr.cargarDatos();
+        ctr.cargarDatos();
         ctr.publicar();
     }
 

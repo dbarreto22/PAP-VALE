@@ -227,21 +227,13 @@ public class ControladorWeb {
         return port.getSeguidos(arg0);
     }
 
-<<<<<<< HEAD
     public void crearAlbum2(java.lang.String arg0, edu.tecnopotify.interfaces.Album arg1) {
         port.crearAlbum2(arg0, arg1);
     }
 
-=======
     public  void crearListaParticularClase(boolean arg0, java.lang.String arg1, edu.tecnopotify.interfaces.ListaParticular arg2) {
        
         port.crearListaParticularClase(arg0, arg1, arg2);
     }
 
-
-
->>>>>>> bc954be358dcf9b65b7b441d86de749201a6bce7
-    
-    
-    
 }

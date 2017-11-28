@@ -8,10 +8,12 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <jsp:include page="/templates/csss.jsp" />
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
     </head>
     <body>
+        <jsp:include page="/templates/header.jsp" />
         <div id="capa">
             <div class="container">
             <form action="<%= request.getContextPath()%>/Temas"  METHOD = "post" onsubmit="return validarDatos()">
