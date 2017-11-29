@@ -45,9 +45,11 @@ public class consultarArtistaJInternalFrame extends javax.swing.JInternalFrame {
         Fabrica fabrica = Fabrica.getInstance();
         crl = fabrica.getInstancia();
         List<Artista> a = crl.listarArtistas();
-        Iterator<Artista> it = a.iterator();
-        while (it.hasNext()) {
-            jComboNick.addItem(it.next().getNickname());
+
+        for (Artista aa : a) {
+            if (aa.getStatus()) {
+                jComboNick.addItem(aa.getNickname());
+            }
         }
 
     }
@@ -302,17 +304,17 @@ public class consultarArtistaJInternalFrame extends javax.swing.JInternalFrame {
         Iterator<Album> it = album.iterator();
         Object rowDataA[] = new Object[2];
         DefaultTableModel model = (DefaultTableModel) jTableAlbums.getModel();
-        for(int j = 0; j< album.size();j++) {
+        for (int j = 0; j < album.size(); j++) {
             rowDataA[0] = album.get(j).getNombre();
             rowDataA[1] = album.get(j).getAnioCreado();
             model.addRow(rowDataA);
         }
 
         List<Usuario> u = artista.getLstSeguidos();
-  
+
         Object rowDataU[] = new Object[3];
         DefaultTableModel modelU = (DefaultTableModel) jTableSeguidores.getModel();
-        for(int k = 0; k< u.size(); k++) {
+        for (int k = 0; k < u.size(); k++) {
             rowDataU[0] = u.get(k).getNickname();
             rowDataU[1] = u.get(k).getNombre();
             rowDataU[2] = u.get(k).getMail();

@@ -75,6 +75,12 @@ public class ConsultarAlbumJInternalFrame extends javax.swing.JInternalFrame {
             }
         });
 
+        comboBNombre.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                comboBNombreActionPerformed(evt);
+            }
+        });
+
         jLabel1.setText("        Temas");
 
         jLabel2.setText("        Genero");
@@ -186,6 +192,10 @@ public class ConsultarAlbumJInternalFrame extends javax.swing.JInternalFrame {
             modelG.addRow(rowDataG);
         }
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void comboBNombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboBNombreActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_comboBNombreActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

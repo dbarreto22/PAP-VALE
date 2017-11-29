@@ -31,7 +31,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
      */
     public VentanaPrincipal() {
         initComponents();
-       // ctr.cargarDatos();
+        // ctr.cargarDatos();
         ctr.publicar();
     }
 
@@ -233,6 +233,28 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         }
     }
 
+    protected void crateEliminarArtista() {
+        EliminarArtistaJInternalFrame frame = new EliminarArtistaJInternalFrame();
+        frame.setVisible(true);
+        this.Desktop.add(frame);
+        try {
+            frame.setSelected(true);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+    }
+
+    protected void crateConsultarArtistasEliminados() {
+        ConsultarArtistasEliminadosJInternalFrame frame = new ConsultarArtistasEliminadosJInternalFrame();
+        frame.setVisible(true);
+        this.Desktop.add(frame);
+        try {
+            frame.setSelected(true);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+    }
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -266,6 +288,8 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         jMenuPublicarLista = new javax.swing.JMenuItem();
         jMenuConsutlarListaRep = new javax.swing.JMenuItem();
         controlNavegacion = new javax.swing.JMenuItem();
+        jMenuItem1 = new javax.swing.JMenuItem();
+        jMenuItem3 = new javax.swing.JMenuItem();
         jMenu5 = new javax.swing.JMenu();
 
         jMenu12.setText("jMenu12");
@@ -418,6 +442,22 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         });
         jMenu3.add(controlNavegacion);
 
+        jMenuItem1.setText("Eliminar Artistas");
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1ActionPerformed(evt);
+            }
+        });
+        jMenu3.add(jMenuItem1);
+
+        jMenuItem3.setText("Consultar Artistas Eliminados");
+        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem3ActionPerformed(evt);
+            }
+        });
+        jMenu3.add(jMenuItem3);
+
         jMenuBar3.add(jMenu3);
 
         jMenu5.setText("Edit");
@@ -534,6 +574,18 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         crateControlNavegacion();
     }//GEN-LAST:event_controlNavegacionActionPerformed
 
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+        // TODO add your handling code here:
+        crateEliminarArtista();
+
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
+
+    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+        // TODO add your handling code here:
+        
+        crateConsultarArtistasEliminados();
+    }//GEN-LAST:event_jMenuItem3ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -586,7 +638,9 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuConsultarArtista;
     private javax.swing.JMenuItem jMenuConsultarCliente;
     private javax.swing.JMenuItem jMenuConsutlarListaRep;
+    private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuModificarSuscripcion;
     private javax.swing.JMenuItem jMenuPublicarLista;

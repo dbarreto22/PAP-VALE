@@ -369,3 +369,33 @@ Caused by: java.lang.IllegalArgumentException: The main resource set specified [
 28-Nov-2017 21:47:35.959 INFO [http-nio-8080-exec-107] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor /home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46/conf/Catalina/localhost/Tecnopotify.xml
 28-Nov-2017 21:47:38.373 INFO [http-nio-8080-exec-107] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor /home/diego/NetBeansProjects/PAP-VALE/apache-tomcat-8.0.46/conf/Catalina/localhost/Tecnopotify.xml has finished in 2,414 ms
 28-Nov-2017 21:47:38.512 INFO [http-nio-8080-exec-110] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Tecnopotify]] after start() had already been called. The second call will be ignored.
+28-Nov-2017 22:35:59.335 INFO [http-nio-8080-exec-124] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] has started
+28-Nov-2017 22:36:07.086 INFO [253] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] is completed
+28-Nov-2017 22:37:22.095 INFO [http-nio-8080-exec-127] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] has started
+28-Nov-2017 22:37:24.999 INFO [http-nio-8080-exec-127] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] is completed
+28-Nov-2017 22:43:51.059 INFO [http-nio-8080-exec-137] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] has started
+28-Nov-2017 22:43:53.578 INFO [http-nio-8080-exec-137] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] is completed
+28-Nov-2017 22:43:59.581 INFO [http-nio-8080-exec-134] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] has started
+28-Nov-2017 22:44:02.010 INFO [http-nio-8080-exec-134] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] is completed
+28-Nov-2017 22:44:31.979 INFO [http-nio-8080-exec-141] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] has started
+28-Nov-2017 22:44:35.756 INFO [http-nio-8080-exec-141] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] is completed
+28-Nov-2017 22:44:36.783 INFO [http-nio-8080-exec-130] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] has started
+28-Nov-2017 22:44:40.538 INFO [271] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] is completed
+28-Nov-2017 22:47:01.326 INFO [http-nio-8080-exec-144] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] has started
+28-Nov-2017 22:47:05.305 INFO [http-nio-8080-exec-144] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] is completed
+28-Nov-2017 22:47:06.930 INFO [http-nio-8080-exec-139] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] has started
+28-Nov-2017 22:47:10.388 INFO [http-nio-8080-exec-139] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] is completed
+28-Nov-2017 23:37:45.828 INFO [http-nio-8080-exec-164] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] has started
+28-Nov-2017 23:37:51.702 INFO [http-nio-8080-exec-164] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] is completed
+28-Nov-2017 23:37:52.568 INFO [http-nio-8080-exec-160] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] has started
+28-Nov-2017 23:37:54.978 INFO [http-nio-8080-exec-160] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] is completed
+28-Nov-2017 23:49:30.965 INFO [http-nio-8080-exec-170] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] has started
+28-Nov-2017 23:49:33.459 INFO [331] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] is completed
+28-Nov-2017 23:49:44.076 INFO [http-nio-8080-exec-167] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] has started
+28-Nov-2017 23:49:46.974 INFO [http-nio-8080-exec-167] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] is completed
+28-Nov-2017 23:50:52.781 INFO [http-nio-8080-exec-181] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] has started
+28-Nov-2017 23:50:55.543 INFO [http-nio-8080-exec-181] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] is completed
+28-Nov-2017 23:58:54.194 INFO [http-nio-8080-exec-193] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] has started
+28-Nov-2017 23:58:59.149 INFO [http-nio-8080-exec-193] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] is completed
+28-Nov-2017 23:59:02.876 INFO [http-nio-8080-exec-195] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] has started
+28-Nov-2017 23:59:07.260 INFO [http-nio-8080-exec-195] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] is completed
