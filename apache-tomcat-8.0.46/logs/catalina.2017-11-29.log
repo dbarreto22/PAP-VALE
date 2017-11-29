@@ -36,3 +36,7 @@
 29-Nov-2017 00:54:13.967 INFO [http-nio-8080-exec-283] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] is completed
 29-Nov-2017 00:56:33.631 INFO [http-nio-8080-exec-290] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] has started
 29-Nov-2017 00:56:37.126 INFO [http-nio-8080-exec-290] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] is completed
+29-Nov-2017 01:06:51.500 INFO [http-nio-8080-exec-306] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] has started
+29-Nov-2017 01:06:59.319 INFO [http-nio-8080-exec-306] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] is completed
+29-Nov-2017 01:07:02.501 INFO [http-nio-8080-exec-313] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] has started
+29-Nov-2017 01:07:04.916 INFO [http-nio-8080-exec-313] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] is completed
