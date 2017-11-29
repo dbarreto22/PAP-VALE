@@ -23,44 +23,21 @@
         <jsp:include page="/templates/header.jsp" />
         <title>Agregar Tema a Lista</title>
         <form name="FormCombos" method="post" 
-              action="<%=request.getContextPath()%>/Temas">
+              action="<%=request.getContextPath()%>/consultarListas">
             <div>
-                <% List<Temas> lstTemas=(List<Temas>)request.getAttribute("lstTema");
-                Cliente user=(Cliente) request.getSession().getAttribute("user");
+                <% Cliente user=(Cliente) request.getSession().getAttribute("user");
                 ControladorWeb webCtr = new ControladorWeb();
-                List <ListaReproduccion> lAux = webCtr.listarListaRepr();
-                List <ListaReproduccion> lstRep= new ArrayList<ListaReproduccion>();
-                for (ListaReproduccion aux : lAux)
-                {
-                    if( aux.getClass().toString().contains("Particular"))
-                    {
-                         ListaParticular lAux2=(ListaParticular) aux;
-                         if(!lAux2.isEsPrivada())
-                         {
-                             lstRep.add(aux);
-                         }
-                    }
-                    else
-                        lstRep.add(aux);
-                }
+                List <ListaParticular> lAux = user.getListasReprParticular();
                 %>
                     Listas de Reproduccion:
                     <select id="listRep" name="listRep">
                        <option value=""> </option>
-                       <% if (lstRep != null)
-                            for (ListaReproduccion aux : lstRep) {%>
+                       <% if (lAux != null)
+                            for (ListaReproduccion aux : lAux) {%>
                                 <option value="<%=aux.getNombre()%>"><%=aux.getNombre()%></option>
                             <%}%>>
                 </select>
-                Album:
-                <select id="temaSelect" name="temaSelect">
-                       <option value=""> </option>
-                       <% if (lstTemas != null)
-                            for (Temas aux2 : lstTemas) {%>
-                                <option value="<%=aux2.getNombre()%>"><%=aux2.getNombre()%></option>
-                            <%}%>
-                </select>
-                <input type="hidden" name="comando" value="agregarTema">
+                <input type="hidden" name="comando" value="PublicarLista">
                 <input type="submit" value="Enviar" />
             </div>
         </form>

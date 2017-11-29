@@ -5,6 +5,9 @@
  */
 package Serlvets;
 
+import Webservices.ControladorWeb;
+import edu.tecnopotify.interfaces.ListaReproduccion;
+import edu.tecnopotify.interfaces.Usuario;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -17,6 +20,7 @@ import javax.servlet.http.HttpServletResponse;
  * @author root
  */
 public class ServletConsultarListas extends HttpServlet {
+    private ControladorWeb webCtr;
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -30,18 +34,6 @@ public class ServletConsultarListas extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
-            /*            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet ServletCnsultarListas</title>");
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Servlet ServletCnsultarListas at " + request.getContextPath() + "</h1>");
-            out.println("</body>");
-            out.println("</html>");*/
-        }
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -71,6 +63,20 @@ public class ServletConsultarListas extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         processRequest(request, response);
+        webCtr=new ControladorWeb();
+        String comando= request.getParameter("comando");
+        String path = "/ppal.jsp";
+        if(comando != null && comando.equals("PublicarLista"))
+        {
+            Usuario usr = (Usuario) request.getSession().getAttribute("user");
+            String oLstRep= (String) request.getParameter("listRep");
+            if (!oLstRep.equals("")) {
+                ListaReproduccion lstRep=webCtr.getlr(oLstRep);
+                webCtr.publicarLista(usr.getNickname(), oLstRep);
+            }
+        }
+    request.getRequestDispatcher(path).forward(request, response);
+
     }
 
     /**

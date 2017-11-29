@@ -393,34 +393,6 @@
 <xs:sequence></xs:sequence>
 </xs:complexType>
 
-<<<<<<< HEAD
-=======
-<xs:complexType name="seleccionarArtistaPorNombre">
-<xs:sequence>
-<xs:element name="arg0" type="xs:string" minOccurs="0"></xs:element>
-</xs:sequence>
-</xs:complexType>
-
-<xs:complexType name="seleccionarArtistaPorNombreResponse">
-<xs:sequence>
-<xs:element name="return" type="tns:artista" minOccurs="0"></xs:element>
-</xs:sequence>
-</xs:complexType>
-
-<xs:complexType name="artista">
-<xs:complexContent>
-<xs:extension base="tns:usuario">
-<xs:sequence>
-<xs:element name="biografia" type="xs:string" minOccurs="0"></xs:element>
-<xs:element name="link" type="xs:string" minOccurs="0"></xs:element>
-<xs:element name="status" type="xs:boolean" minOccurs="0"></xs:element>
-<xs:element name="listAlbum" type="tns:album" nillable="true" minOccurs="0" maxOccurs="unbounded"></xs:element>
-</xs:sequence>
-</xs:extension>
-</xs:complexContent>
-</xs:complexType>
-
->>>>>>> 09b321811cedcb9866f7ea8fe271598f81f5d046
 <xs:complexType name="mostrarListaGenero">
 <xs:sequence></xs:sequence>
 </xs:complexType>
@@ -599,16 +571,6 @@
 <xs:sequence></xs:sequence>
 </xs:complexType>
 
-<xs:complexType name="listarGeneros">
-<xs:sequence></xs:sequence>
-</xs:complexType>
-
-<xs:complexType name="listarGenerosResponse">
-<xs:sequence>
-<xs:element name="return" type="tns:genero" minOccurs="0" maxOccurs="unbounded"></xs:element>
-</xs:sequence>
-</xs:complexType>
-
 <xs:complexType name="seleccionarArtista">
 <xs:sequence>
 <xs:element name="arg0" type="xs:string" minOccurs="0"></xs:element>
@@ -618,6 +580,16 @@
 <xs:complexType name="seleccionarArtistaResponse">
 <xs:sequence>
 <xs:element name="return" type="tns:artista" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listarGeneros">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listarGenerosResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:genero" minOccurs="0" maxOccurs="unbounded"></xs:element>
 </xs:sequence>
 </xs:complexType>
 

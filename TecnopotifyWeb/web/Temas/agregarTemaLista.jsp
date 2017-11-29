@@ -53,7 +53,7 @@
                                 <option value="<%=aux.getNombre()%>"><%=aux.getNombre()%></option>
                             <%}%>>
                 </select>
-                Album:
+                Temas:
                 <select id="temaSelect" name="temaSelect">
                        <option value=""> </option>
                        <% if (lstTemas != null)

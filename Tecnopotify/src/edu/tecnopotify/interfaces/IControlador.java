@@ -17,7 +17,6 @@ import edu.tecnopotify.entidades.RegistroUsuarios;
 import edu.tecnopotify.entidades.Temas;
 import edu.tecnopotify.entidades.Usuario;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 import javax.persistence.EntityManagerFactory;
 

@@ -52,6 +52,7 @@
                         <li><a href="<%= request.getContextPath()%>/contratarSuscripcion.jsp">Contratar Suscripción</a></li>
                         <li><a href="<%= request.getContextPath()%>/actualizarSuscripcion.jsp">Actualizar Suscripción</a></li>
                         <li><a href="<%= request.getContextPath()%>/crearListaReproduccion.jsp">Crear Lista Particular</a></li>
+                        <li><a href="<%= request.getContextPath()%>/PublicarLista.jsp">Publicar lista de reproducción</a></li>
                         <%      }
                         %>
                     </ul>
