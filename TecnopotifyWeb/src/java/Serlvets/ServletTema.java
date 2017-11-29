@@ -12,13 +12,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import Webservices.ControladorWeb;
-import edu.tecnopotify.interfaces.Album;
 import edu.tecnopotify.interfaces.Cliente;
-import edu.tecnopotify.interfaces.DataListaParticular;
 import edu.tecnopotify.interfaces.ListaParticular;
-import edu.tecnopotify.interfaces.ListaReproduccion;
 import edu.tecnopotify.interfaces.Temas;
-import java.util.Iterator;
 import java.util.List;
 
 /**

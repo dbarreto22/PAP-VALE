@@ -25,6 +25,7 @@ import javax.persistence.Persistence;
 import edu.tecnopotify.controladores.UsuarioJpaController;
 import edu.tecnopotify.controladores.exceptions.PreexistingEntityException;
 import edu.tecnopotify.controladores.ExtJpaCliente;
+import edu.tecnopotify.controladores.ExtJpaTemas;
 import edu.tecnopotify.datatypes.dataAlbum;
 import edu.tecnopotify.datatypes.dataArtista;
 import edu.tecnopotify.datatypes.dataFecha;
@@ -739,9 +740,9 @@ public class Controlador implements IControlador {
 
     @WebMethod
     public void setImageArt(Artista art) {
-        ArtistaJpaController ctrCli = new ArtistaJpaController(fact);
+        ExtJpaSrtista ctrCli = new ExtJpaSrtista(fact);
         try {
-            ctrCli.edit(art);
+            ctrCli.editImagen(art);
         } catch (Exception ex) {
             Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -749,9 +750,9 @@ public class Controlador implements IControlador {
 
     @WebMethod
     public void setImage(Album aux) {
-        AlbumJpaController ctr = new AlbumJpaController(fact);
+        ExtJpaAlbum ctr = new ExtJpaAlbum(fact);
         try {
-            ctr.edit(aux);
+            ctr.editImagen(aux);
         } catch (Exception ex) {
             Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -759,9 +760,9 @@ public class Controlador implements IControlador {
 
     @WebMethod
     public void setTema(Temas aux) {
-        TemasJpaController ctr = new TemasJpaController(fact);
+        ExtJpaTemas ctr = new ExtJpaTemas(fact);
         try {
-            ctr.edit(aux);
+            ctr.editLink(aux);
         } catch (Exception ex) {
             Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, ex);
         }

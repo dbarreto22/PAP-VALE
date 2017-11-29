@@ -7,6 +7,7 @@ package edu.tecnopotify.controladores;
 
 import edu.tecnopotify.controladores.exceptions.PreexistingEntityException;
 import edu.tecnopotify.entidades.Album;
+import edu.tecnopotify.entidades.Artista;
 import edu.tecnopotify.entidades.Genero;
 import edu.tecnopotify.entidades.Temas;
 import java.util.List;
@@ -21,6 +22,23 @@ public class ExtJpaAlbum extends AlbumJpaController{
     
     public ExtJpaAlbum(EntityManagerFactory emf) {
         super(emf);
+    }
+    
+        public void editImagen(Album cli) throws PreexistingEntityException, PreexistingEntityException, PreexistingEntityException, PreexistingEntityException {
+        EntityManager em = null;
+        try {
+            em = getEntityManager();
+            em.getTransaction().begin();
+            em.merge(cli);
+            em.getTransaction().commit();
+        } catch (Exception e) {
+            throw new PreexistingEntityException("seguidor " + cli.getNombre() + cli.getNombre() + " no se pudo agregar hijo.", e);
+
+        } finally {
+            if (em != null) {
+                em.close();
+            }
+        }
     }
     
     public void agregarTema(Album padre, Temas tema) throws PreexistingEntityException{

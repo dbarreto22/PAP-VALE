@@ -6,16 +6,17 @@
  *       the last modified time of the source file after
  *       generation to assist with modification tracking.
  */
-package org.apache.jsp.templates;
+package org.apache.jsp;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
-import edu.tecnopotify.entidades.Usuario;
-import edu.tecnopotify.fabrica.Fabrica;
-import edu.tecnopotify.interfaces.IControlador;
+import edu.tecnopotify.interfaces.Usuario;
+import java.util.Iterator;
+import java.util.ArrayList;
+import java.util.List;
 
-public final class scripts_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class Guest_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent,
                  org.apache.jasper.runtime.JspSourceImports {
 
@@ -34,9 +35,10 @@ public final class scripts_jsp extends org.apache.jasper.runtime.HttpJspBase
     _jspx_imports_packages.add("javax.servlet.http");
     _jspx_imports_packages.add("javax.servlet.jsp");
     _jspx_imports_classes = new java.util.HashSet<>();
-    _jspx_imports_classes.add("edu.tecnopotify.entidades.Usuario");
-    _jspx_imports_classes.add("edu.tecnopotify.fabrica.Fabrica");
-    _jspx_imports_classes.add("edu.tecnopotify.interfaces.IControlador");
+    _jspx_imports_classes.add("java.util.List");
+    _jspx_imports_classes.add("java.util.Iterator");
+    _jspx_imports_classes.add("edu.tecnopotify.interfaces.Usuario");
+    _jspx_imports_classes.add("java.util.ArrayList");
   }
 
   private volatile javax.el.ExpressionFactory _el_expressionfactory;
@@ -117,79 +119,75 @@ return;
       out.write("\n");
       out.write("\n");
       out.write("\n");
-      out.write("<script src=\"");
-      out.print( request.getContextPath());
-      out.write("/bower_components/jquery/dist/jquery.js\" type=\"text/javascript\" ></script>\n");
-      out.write("<script src=\"");
-      out.print( request.getContextPath());
-      out.write("/bower_components/bootstrap/dist/js/bootstrap.js\" type=\"text/javascript\" ></script>\n");
-      out.write("<script>\n");
-      out.write("    function buscarAjax() {\n");
-      out.write("        var queryStr = $(\"#buscar-query\").val();\n");
-      out.write("        $.get(\"");
-      out.print( request.getContextPath());
-      out.write("/buscar?query=\" + queryStr, function (data) {\n");
-      out.write("            console.info(\"El texto buscado fue... \" + data);\n");
-      out.write("        });\n");
-      out.write("    }\n");
-      out.write("</script>\n");
       out.write("\n");
-      out.write("<script>\n");
-      out.write("    function validarDatos() {\n");
-      out.write("        var esCorrecto = true;\n");
-      out.write("        var nickname = $('#nickname').val();\n");
-      out.write("        if (nickname === '') {\n");
-      out.write("            alert(\"Ingrese Nickname\");\n");
-      out.write("            esCorrecto = false;\n");
-      out.write("        }\n");
-      out.write("        var valcontrasenia = $('#validarContrasenia').val();\n");
-      out.write("        if (valcontrasenia === '') {\n");
-      out.write("            alert(\"Ingrese Contraseña\");\n");
-      out.write("            esCorrecto = false;\n");
-      out.write("        }\n");
-      out.write("        var contrasenia = $('#contrasenia').val();\n");
-      out.write("        if (contrasenia === '') {\n");
-      out.write("            alert(\"Ingrese Contraseña\");\n");
-      out.write("            esCorrecto = false;\n");
-      out.write("        }\n");
-      out.write("        if (contrasenia !== valcontrasenia) {\n");
-      out.write("            alert(\"Contraseña incorrecta, Ingrese nuevamente\");\n");
-      out.write("            esCorrecto = false;\n");
-      out.write("        }\n");
-      out.write("        var nombreL = $('#nombreL').val();\n");
-      out.write("        if (nombreL === '') {\n");
-      out.write("            alert(\"Ingrese nombre\");\n");
-      out.write("            esCorrecto = false;\n");
-      out.write("        }\n");
       out.write("\n");
-      out.write("        var mail = $('#mail').val();\n");
-      out.write("        if (mail === '') {\n");
-      out.write("            alert(\"Ingrese mail\");\n");
-      out.write("            esCorrecto = false;\n");
-      out.write("        }\n");
+      out.write("<!DOCTYPE html>\n");
+      out.write("<html>\n");
+      out.write("    <head>\n");
+      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
+      out.write("        <title>Alta Cliente</title>\n");
+      out.write("        ");
+      org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "/templates/csss.jsp", out, false);
       out.write("\n");
-      out.write("        return esCorrecto;\n");
-      out.write("    }\n");
-      out.write("</script>\n");
+      out.write("    </head>\n");
+      out.write("    <body>\n");
+      out.write("        ");
+      org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "/templates/header.jsp", out, false);
       out.write("\n");
-      out.write("<script type=\"text/javascript\">\n");
-      out.write("    function Combo(tipo) {\n");
-      out.write("        tipo = \"Genero\";\n");
-      out.write("        var index = document.forms[0].elements[0].value;\n");
-      out.write("        if (index === \"\" || index === null)\n");
-      out.write("        {\n");
-      out.write("            var index = document.forms[0].elements[1].value;\n");
-      out.write("            if (index === \"\" || index === null)\n");
-      out.write("            {\n");
-      out.write("                alert(\"Debe seleccionar un album o un genero\");\n");
-      out.write("            } else\n");
-      out.write("                tipo = \"Artista\";\n");
-      out.write("        }\n");
-      out.write("        return index;\n");
+      out.write("        <div class=\"container\">\n");
+      out.write("            <h1>Datos Artista</h1>\n");
+      out.write("        </div>\n");
       out.write("\n");
-      out.write("    }\n");
-      out.write("</script>\n");
       out.write("\n");
+      out.write("        ");
+
+            List<Usuario> users = (List<Usuario>) request.getAttribute("usuarios");
+            Iterator<Usuario> itU = users.iterator();
+            List<String> nickUsr = new ArrayList<>();
+            while (itU.hasNext()) {
+                nickUsr.add(itU.next().getNickname());
+            }
+            Iterator<String> itNU = nickUsr.iterator();
+
+
+        
+      out.write("\n");
+      out.write("\n");
+      out.write("        <form action=\"/Tecnopotify/usuarios?comando=mostrarClienteGuest\" method = \"post\" >\n");
+      out.write("            <input type=\"hidden\"  name=\"comando\" value=\"mostrarClienteGuest\" />\n");
+      out.write("\n");
+      out.write("            <div class=\"container\">\n");
+      out.write("                <select id=\"ArtistaSelect\" name=\"ArtistaSelect\">\n");
+      out.write("                    <option value=\"\"> </option>\n");
+      out.write("                    ");
+ if (nickUsr != null) {
+                            for (String nick : nickUsr) {
+      out.write("\n");
+      out.write("                    <option value=\"");
+      out.print(nick);
+      out.write('"');
+      out.write('>');
+      out.print(nick);
+      out.write("</option>\n");
+      out.write("                    ");
+}
+                    } else {
+      out.write("\n");
+      out.write("                    <h6> No hay Usuarios ingresados </h6>\n");
+      out.write("                    ");
+}
+      out.write("\n");
+      out.write("                </select>\n");
+      out.write("                <input type=\"submit\" value=\"Aceptar\"\n");
+      out.write("            </div>\n");
+      out.write("\n");
+      out.write("        </form>\n");
+      out.write("\n");
+      out.write("        ");
+      org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "/templates/scripts.jsp", out, false);
+      out.write("\n");
+      out.write("    </body>\n");
+      out.write("</html>\n");
     } catch (java.lang.Throwable t) {
       if (!(t instanceof javax.servlet.jsp.SkipPageException)){
         out = _jspx_out;

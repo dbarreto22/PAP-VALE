@@ -60,7 +60,8 @@
                 <%if (!listAl.isEmpty()) {
                         while (itAl.hasNext()) {%> 
                 <ol>
-                    <li> <a href="<%= request.getContextPath()%>/Album/MostrarAlbum.jsp"> <%out.print(itAl.next()); %></a></li> </li>
+                    <% String aux = itAl.next();   %>
+                    <li> <a href="<%= request.getContextPath()%>/Album?comando=mostrarAlbum&idAlbum=<%=aux %>"><%out.print(aux); %></a></li> </li>
                 </ol>
                 <%}
                 } else {%>
