@@ -49,14 +49,15 @@
         }
 
         var dia = $('#dia').val();
-        var mes = $('#dia'.val());
-        var anio = $('#anio'.val());
-        if (mes == 2 || mes == 02) {
-            if (dia > 28) {
+        var mes = $('#mes').val());
+        var anio = $('#anio').val());
+        if (mes == 2 || mes == 02 && dia > 28) {
+
                 alert("Ingrese fecha correcta");
+                esCorrecto = false;
+            
             }
-        }
-        }
+        
 
         return esCorrecto;
     }

@@ -4,11 +4,11 @@
 <xsd:import namespace="http://interfaces.tecnopotify.edu/" schemaLocation="http://localhost:2425/Tecnopotify?xsd=1"></xsd:import>
 </xsd:schema>
 </types>
-<message name="seleccionarLista">
-<part name="parameters" element="tns:seleccionarLista"></part>
+<message name="consultarAlbumPorGenero">
+<part name="parameters" element="tns:consultarAlbumPorGenero"></part>
 </message>
-<message name="seleccionarListaResponse">
-<part name="parameters" element="tns:seleccionarListaResponse"></part>
+<message name="consultarAlbumPorGeneroResponse">
+<part name="parameters" element="tns:consultarAlbumPorGeneroResponse"></part>
 </message>
 <message name="crearAlbum2">
 <part name="parameters" element="tns:crearAlbum2"></part>
@@ -46,11 +46,11 @@
 <message name="consultarAlbumPorArtistaResponse">
 <part name="parameters" element="tns:consultarAlbumPorArtistaResponse"></part>
 </message>
-<message name="consultarAlbumPorGenero">
-<part name="parameters" element="tns:consultarAlbumPorGenero"></part>
+<message name="seleccionarLista">
+<part name="parameters" element="tns:seleccionarLista"></part>
 </message>
-<message name="consultarAlbumPorGeneroResponse">
-<part name="parameters" element="tns:consultarAlbumPorGeneroResponse"></part>
+<message name="seleccionarListaResponse">
+<part name="parameters" element="tns:seleccionarListaResponse"></part>
 </message>
 <message name="agregarTemaListaClase">
 <part name="parameters" element="tns:agregarTemaListaClase"></part>
@@ -353,9 +353,9 @@
 <part name="parameters" element="tns:artistaEliminadosResponse"></part>
 </message>
 <portType name="Controlador">
-<operation name="seleccionarLista">
-<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/seleccionarListaRequest" message="tns:seleccionarLista"></input>
-<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/seleccionarListaResponse" message="tns:seleccionarListaResponse"></output>
+<operation name="consultarAlbumPorGenero">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/consultarAlbumPorGeneroRequest" message="tns:consultarAlbumPorGenero"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/consultarAlbumPorGeneroResponse" message="tns:consultarAlbumPorGeneroResponse"></output>
 </operation>
 <operation name="crearAlbum2">
 <input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/crearAlbum2Request" message="tns:crearAlbum2"></input>
@@ -381,9 +381,9 @@
 <input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/consultarAlbumPorArtistaRequest" message="tns:consultarAlbumPorArtista"></input>
 <output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/consultarAlbumPorArtistaResponse" message="tns:consultarAlbumPorArtistaResponse"></output>
 </operation>
-<operation name="consultarAlbumPorGenero">
-<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/consultarAlbumPorGeneroRequest" message="tns:consultarAlbumPorGenero"></input>
-<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/consultarAlbumPorGeneroResponse" message="tns:consultarAlbumPorGeneroResponse"></output>
+<operation name="seleccionarLista">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/seleccionarListaRequest" message="tns:seleccionarLista"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/seleccionarListaResponse" message="tns:seleccionarListaResponse"></output>
 </operation>
 <operation name="agregarTemaListaClase">
 <input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/agregarTemaListaClaseRequest" message="tns:agregarTemaListaClase"></input>
@@ -588,7 +588,7 @@
 </portType>
 <binding name="ControladorPortBinding" type="tns:Controlador">
 <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"></soap:binding>
-<operation name="seleccionarLista">
+<operation name="consultarAlbumPorGenero">
 <soap:operation soapAction=""></soap:operation>
 <input>
 <soap:body use="literal"></soap:body>
@@ -651,7 +651,7 @@
 <soap:body use="literal"></soap:body>
 </output>
 </operation>
-<operation name="consultarAlbumPorGenero">
+<operation name="seleccionarLista">
 <soap:operation soapAction=""></soap:operation>
 <input>
 <soap:body use="literal"></soap:body>
