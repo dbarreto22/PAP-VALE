@@ -110,3 +110,7 @@
 29-Nov-2017 17:56:51.028 INFO [http-nio-8080-exec-51] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
 29-Nov-2017 17:57:17.426 INFO [http-nio-8080-exec-52] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
 29-Nov-2017 17:59:08.496 INFO [http-nio-8080-exec-49] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+29-Nov-2017 18:23:18.659 INFO [http-nio-8080-exec-51] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+29-Nov-2017 18:23:18.962 INFO [http-nio-8080-exec-55] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+29-Nov-2017 18:23:22.555 INFO [http-nio-8080-exec-56] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+29-Nov-2017 18:23:22.704 INFO [http-nio-8080-exec-55] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/Tecnopotify'

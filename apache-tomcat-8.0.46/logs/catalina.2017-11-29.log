@@ -472,3 +472,5 @@ Caused by: java.lang.IllegalArgumentException: The main resource set specified [
 29-Nov-2017 17:41:09.901 INFO [http-nio-8080-exec-33] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/Tecnopotify]] after start() had already been called. The second call will be ignored.
 29-Nov-2017 17:42:14.660 INFO [http-nio-8080-exec-42] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] has started
 29-Nov-2017 17:42:18.703 INFO [http-nio-8080-exec-42] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] is completed
+29-Nov-2017 18:23:22.704 INFO [http-nio-8080-exec-55] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] has started
+29-Nov-2017 18:23:27.621 INFO [http-nio-8080-exec-55] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/Tecnopotify] is completed

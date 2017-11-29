@@ -14,6 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 import Webservices.ControladorWeb;
 import edu.tecnopotify.interfaces.Cliente;
 import edu.tecnopotify.interfaces.ListaParticular;
+import edu.tecnopotify.interfaces.ListaReproduccion;
 import edu.tecnopotify.interfaces.Temas;
 import java.util.List;
 
@@ -101,24 +102,13 @@ public class ServletTema extends HttpServlet {
         }
         else if(comando != null && comando.equals("agregarTema"))
         {
-            String lstRep = (String)request.getParameter("listRep");
             String tema = (String)request.getParameter("temaSelect");
-            ListaParticular oLstPart=new ListaParticular();
-            boolean encontre=false;
-            if (!lstRep.equals("") && !tema.equals("")) {
-                Cliente cli=(Cliente)request.getSession().getAttribute("user");
-                List<ListaParticular> lstPart=cli.getListasReprParticular();
-                for(ListaParticular aux : lstPart){
-                    if(aux.getNombre().equals(lstRep))
-                    {
-                       oLstPart= aux;
-                       webCtr.agregarTemaListaClase(tema, oLstPart);
-                    }
-                }
-
+            String oLstRep= (String) request.getParameter("listRep");
+            if (!oLstRep.equals("") && !tema.equals("")) {
+                ListaReproduccion lstRep=webCtr.getlr(oLstRep);
+                webCtr.agregarTemaListaClase(tema, lstRep);
             }
-            path="/ppal.jsp";
-            }
+        }
         request.getRequestDispatcher(path).forward(request, response);
     }
 

@@ -1,17 +1,16 @@
 <%-- 
-    Document   : agregarTemaLista
-    Created on : 27/11/2017, 11:40:22 PM
+    Document   : PublicarLista
+    Created on : 29/11/2017, 05:56:23 PM
     Author     : Carlox
 --%>
 
-<%@page import="java.util.ArrayList"%>
-<%@page import="edu.tecnopotify.interfaces.ListaReproduccion"%>
 <%@page import="edu.tecnopotify.interfaces.ListaParticular"%>
-<%@page import="edu.tecnopotify.interfaces.Cliente"%>
-<%@page import="edu.tecnopotify.interfaces.Album"%>
-<%@page import="edu.tecnopotify.interfaces.Temas"%>
 <%@page import="Webservices.ControladorWeb"%>
+<%@page import="edu.tecnopotify.interfaces.Cliente"%>
+<%@page import="edu.tecnopotify.interfaces.Temas"%>
+<%@page import="java.util.ArrayList"%>
 <%@page import="java.util.List"%>
+<%@page import="edu.tecnopotify.interfaces.ListaReproduccion"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -67,3 +66,4 @@
         </form>
     </body>
 </html>
+
