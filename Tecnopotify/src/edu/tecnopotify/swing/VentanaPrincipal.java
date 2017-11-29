@@ -2,11 +2,6 @@ package edu.tecnopotify.swing;
 
 import edu.tecnopotify.fabrica.Fabrica;
 import edu.tecnopotify.interfaces.IControlador;
-import static edu.tecnopotify.swing.AltaGeneroJInternalFrame.xOffset;
-import java.awt.Component;
-import javax.swing.JDesktopPane;
-import javax.swing.JFrame;
-import javax.swing.SwingUtilities;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -31,7 +26,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
      */
     public VentanaPrincipal() {
         initComponents();
-        // ctr.cargarDatos();
+        ctr.cargarDatos();
         ctr.publicar();
     }
 
