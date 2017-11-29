@@ -612,3 +612,4 @@ Stacktrace:] with root cause
 28-Nov-2017 20:44:12.221 INFO [http-nio-8080-exec-58] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
 28-Nov-2017 20:44:12.221 INFO [http-nio-8080-exec-58] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
 28-Nov-2017 20:44:12.676 INFO [http-nio-8080-exec-58] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+28-Nov-2017 20:51:33.550 INFO [http-nio-8080-exec-64] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:Initializing filter

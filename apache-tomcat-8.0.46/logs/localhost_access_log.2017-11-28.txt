@@ -365,3 +365,14 @@
 0:0:0:0:0:0:0:1 - - [28/Nov/2017:20:43:40 -0300] "GET /Tecnopotify/navbar-fixed-top.css HTTP/1.1" 404 1058
 0:0:0:0:0:0:0:1 - - [28/Nov/2017:20:43:46 -0300] "GET /Tecnopotify/altaArtista.jsp HTTP/1.1" 200 6666
 0:0:0:0:0:0:0:1 - - [28/Nov/2017:20:44:12 -0300] "POST /Tecnopotify/usuarios?comando=altaArtista HTTP/1.1" 200 6101
+127.0.0.1 - - [28/Nov/2017:20:51:25 -0300] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - - [28/Nov/2017:20:51:25 -0300] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - - [28/Nov/2017:20:51:25 -0300] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - SA [28/Nov/2017:20:51:25 -0300] "GET /manager/text/list HTTP/1.1" 200 463
+127.0.0.1 - - [28/Nov/2017:20:51:25 -0300] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - - [28/Nov/2017:20:51:29 -0300] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - - [28/Nov/2017:20:51:29 -0300] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - - [28/Nov/2017:20:51:29 -0300] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - SA [28/Nov/2017:20:51:29 -0300] "GET /manager/text/list HTTP/1.1" 200 463
+127.0.0.1 - SA [28/Nov/2017:20:51:33 -0300] "GET /manager/text/reload?path=/Tecnopotify HTTP/1.1" 200 66
+127.0.0.1 - - [28/Nov/2017:20:51:33 -0300] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
