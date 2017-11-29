@@ -318,9 +318,28 @@ public class Controlador implements IControlador {
         ListaReproduccionJpaController ctrListaReproduccion = new ListaReproduccionJpaController(fact);
         Temas aux = ctrTema.findTemas(idTema);
         ListaReproduccion Laux = ctrListaReproduccion.findListaReproduccion(listaR.getNombre());
+        aux.getListaR().put(listaR.getNombre(), Laux);
         Laux.getListaTemas().add(aux);
         try {
             ctrListaReproduccion.edit(Laux);
+            ctrTema.edit(aux);
+        } catch (Exception ex) {
+            Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+    }
+
+    @WebMethod
+    public void agregarTemaListaClase(String idTema, ListaReproduccion listaR) {
+
+        TemasJpaController ctrTema = new TemasJpaController(fact);
+        ListaReproduccionJpaController ctrListaReproduccion = new ListaReproduccionJpaController(fact);
+        Temas aux = ctrTema.findTemas(idTema);
+        listaR.getListaTemas().add(aux);
+        aux.getListaR().put(listaR.getNombre(), listaR);
+        try {
+            ctrListaReproduccion.edit(listaR);
+            ctrTema.edit(aux);
         } catch (Exception ex) {
             Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, ex);
         }

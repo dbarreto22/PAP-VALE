@@ -12,13 +12,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import Webservices.ControladorWeb;
-import edu.tecnopotify.interfaces.Album;
 import edu.tecnopotify.interfaces.Cliente;
-import edu.tecnopotify.interfaces.DataListaParticular;
 import edu.tecnopotify.interfaces.ListaParticular;
-import edu.tecnopotify.interfaces.ListaReproduccion;
 import edu.tecnopotify.interfaces.Temas;
-import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -57,12 +53,18 @@ public class ServletTema extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         processRequest(request, response);
+        webCtr=new ControladorWeb();
         String comando = request.getParameter("comando");
-        String destino="/ppal.jsp";
-        if (comando != null && comando.equals("altaAlbum")) {
-        }else{
+        String path="/ppal.jsp";
+        if(comando != null && comando.equals("agregarTemaLista"))
+        {
+            List<Temas> lstTema = webCtr.listarTemas();
+            request.setAttribute("lstTema", lstTema);
+            path="/Temas/agregarTemaLista.jsp";
+        }
+        else{
         }    
-        request.getRequestDispatcher(destino).forward(request, response);
+        request.getRequestDispatcher(path).forward(request, response);
 
     }
 
@@ -97,29 +99,23 @@ public class ServletTema extends HttpServlet {
             request.setAttribute("idAlbum",idAlbum);
             path="/Temas/subirTema.jsp";
         }
-        else if(comando != null && comando.equals("agregarTemaLista"))
-        {
-            List<Temas> lstTema = webCtr.listarTemas();
-            request.setAttribute("lstTema", lstTema);
-            path="/Temas/agregarTemaLista.jsp";
-        }
         else if(comando != null && comando.equals("agregarTema"))
         {
             String lstRep = (String)request.getParameter("listRep");
             String tema = (String)request.getParameter("temaSelect");
+            ListaParticular oLstPart=new ListaParticular();
+            boolean encontre=false;
             if (!lstRep.equals("") && !tema.equals("")) {
                 Cliente cli=(Cliente)request.getSession().getAttribute("user");
                 List<ListaParticular> lstPart=cli.getListasReprParticular();
-                Iterator<ListaParticular> ite = lstPart.iterator();
-                while(ite.hasNext() && !ite.getClass().getName().equals(lstRep))
-                    ite.next();
-                ListaParticular oLstPart = (ListaParticular) ite;
-                DataListaParticular oDtl=null;
-                oDtl.setNombre(oLstPart.getNombre());
-                oDtl.setCliente(oLstPart.getNombre());
-                oDtl.setEsPrivada(oLstPart.isEsPrivada());
-                oDtl.setImagen(oLstPart.getImagen());
-                webCtr.agregarTemaLista(tema, oDtl);
+                for(ListaParticular aux : lstPart){
+                    if(aux.getNombre().equals(lstRep))
+                    {
+                       oLstPart= aux;
+                       webCtr.agregarTemaListaClase(tema, oLstPart);
+                    }
+                }
+
             }
             path="/ppal.jsp";
             }
