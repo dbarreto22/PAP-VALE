@@ -49,6 +49,7 @@ import edu.tecnopotify.entidades.Temas;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.function.UnaryOperator;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.jws.WebMethod;
@@ -330,6 +331,9 @@ public class Controlador implements IControlador {
         TemasJpaController ctrTema = new TemasJpaController(fact);
         ListaReproduccionJpaController ctrListaReproduccion = new ListaReproduccionJpaController(fact);
         Temas aux = ctrTema.findTemas(idTema);
+        List<Temas> listaTemas = new ArrayList<Temas>();
+        if(listaR.getListaTemas()==null)
+            listaR.setListaTemas(listaTemas);
         listaR.getListaTemas().add(aux);
         aux.getListaR().put(listaR.getNombre(), listaR);
         try {
