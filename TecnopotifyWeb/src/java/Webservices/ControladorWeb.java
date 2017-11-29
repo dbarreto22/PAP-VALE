@@ -242,6 +242,10 @@ public class ControladorWeb {
         port.crearArtistaClase(arg0, arg1, arg2);
     }
 
+    public void agregarTemaListaClase(java.lang.String arg0, edu.tecnopotify.interfaces.ListaReproduccion arg1) {
+        port.agregarTemaListaClase(arg0, arg1);
+    }
+
 
 
 

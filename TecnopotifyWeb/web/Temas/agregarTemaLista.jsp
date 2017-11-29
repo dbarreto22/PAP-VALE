@@ -42,7 +42,7 @@
                                 <option value="<%=aux2.getNombre()%>"><%=aux2.getNombre()%></option>
                             <%}%>
                 </select>
-                <input type="hidden" name="comando" value="AgregarTema">
+                <input type="hidden" name="comando" value="agregarTema">
                 <input type="submit" value="Enviar" />
             </div>
         </form>

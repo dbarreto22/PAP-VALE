@@ -76,6 +76,8 @@ public interface IControlador {
     public void quitarTemaLista(String idTema, dataListaReproduccion listaR);
 
     public void agregarTemaLista(String idTema, dataListaReproduccion listaR);
+    
+    public void agregarTemaListaClase(String idTema, ListaReproduccion listaR);
 
     public void crearListaDefecto(dataListaReproduccion listaD, String nombreGenero);
 

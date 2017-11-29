@@ -65,7 +65,7 @@
                         <li><a href="<%= request.getContextPath()%>/Album/AltaAlbum.jsp">Crear album</a></li>
                             <%}
                              %>   
-                        <li><a href="<%= request.getContextPath()%>/Album">album</a></li>
+                        <li><a href="<%= request.getContextPath()%>/Album">Mostrar album</a></li>
                     </ul>
                 </li>
                 <li class="Temas">
@@ -75,7 +75,7 @@
                     <ul class="dropdown-menu">
                         <% if (tipo != null && tipo.contains("Cliente")) {
                         comando="agregarTemaLista";%>
-                        <li><a href="<%= request.getContextPath()%>/Tema?comando=<%=comando%>">Agregar tema a lista</a></li>
+                        <li><a href="<%= request.getContextPath()%>/Temas?comando=<%=comando%>">Agregar tema a lista</a></li>
                             <%}%>
                             <%%>                                                    
 
