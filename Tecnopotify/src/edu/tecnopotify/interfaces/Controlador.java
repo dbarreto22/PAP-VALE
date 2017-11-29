@@ -24,7 +24,8 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import edu.tecnopotify.controladores.UsuarioJpaController;
 import edu.tecnopotify.controladores.exceptions.PreexistingEntityException;
-import edu.tecnopotify.controladores.extJpaCliente;
+import edu.tecnopotify.controladores.ExtJpaCliente;
+import edu.tecnopotify.controladores.ExtJpaTemas;
 import edu.tecnopotify.datatypes.dataAlbum;
 import edu.tecnopotify.datatypes.dataArtista;
 import edu.tecnopotify.datatypes.dataFecha;
@@ -480,7 +481,7 @@ public class Controlador implements IControlador {
     @WebMethod
     public void agregarFavorito(boolean tema, boolean lista, boolean album, String idCliente, String idElemento) {
         ExtJpaFavoritos fav = new ExtJpaFavoritos(fact);
-        extJpaCliente clictrl = new extJpaCliente(fact);
+        ExtJpaCliente clictrl = new ExtJpaCliente(fact);
         Cliente oCliente = clictrl.findCliente(idCliente);
         if (tema) {//Si voy a agregar un tema
             TemasJpaController temactrl = new TemasJpaController(fact);
@@ -720,9 +721,9 @@ public class Controlador implements IControlador {
 
     @WebMethod
     public void setImageArt(Artista art) {
-        ArtistaJpaController ctrCli = new ArtistaJpaController(fact);
+        ExtJpaSrtista ctrCli = new ExtJpaSrtista(fact);
         try {
-            ctrCli.edit(art);
+            ctrCli.editImagen(art);
         } catch (Exception ex) {
             Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -730,9 +731,9 @@ public class Controlador implements IControlador {
 
     @WebMethod
     public void setImage(Album aux) {
-        AlbumJpaController ctr = new AlbumJpaController(fact);
+        ExtJpaAlbum ctr = new ExtJpaAlbum(fact);
         try {
-            ctr.edit(aux);
+            ctr.editImagen(aux);
         } catch (Exception ex) {
             Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -740,9 +741,9 @@ public class Controlador implements IControlador {
 
     @WebMethod
     public void setTema(Temas aux) {
-        TemasJpaController ctr = new TemasJpaController(fact);
+        ExtJpaTemas ctr = new ExtJpaTemas(fact);
         try {
-            ctr.edit(aux);
+            ctr.editLink(aux);
         } catch (Exception ex) {
             Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, ex);
         }
