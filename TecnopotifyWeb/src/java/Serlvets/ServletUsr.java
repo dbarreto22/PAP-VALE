@@ -5,7 +5,6 @@
  */
 package Serlvets;
 
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -16,7 +15,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import org.apache.tomcat.util.http.fileupload.servlet.ServletFileUpload;
-
 
 //**************************WEB**************************
 import edu.tecnopotify.interfaces.DataArtista;
@@ -43,7 +41,6 @@ public class ServletUsr extends HttpServlet {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
-
     private static final long serialVersionUID = 1L;
     private ServletFileUpload uploader = null;
     private String fileDirStr = null;
@@ -68,11 +65,11 @@ public class ServletUsr extends HttpServlet {
             throws ServletException, IOException {
 
         response.setContentType("text/html");
-        webCtr=new ControladorWeb();
+        webCtr = new ControladorWeb();
         String comando = request.getParameter("comando");
         if (comando != null && comando.equals("mostrarCliente")) {
 
-         //   String nick = (String) request.getSession().getAttribute("user").;
+            //   String nick = (String) request.getSession().getAttribute("user").;
             Usuario usr = (Usuario) request.getSession().getAttribute("user");
             if (usr.getClass().getName().contains("Cliente")) {
                 Cliente cli = getCli(usr.getNickname());
@@ -159,7 +156,7 @@ public class ServletUsr extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        webCtr=new ControladorWeb();
+        webCtr = new ControladorWeb();
         response.setContentType("text/html");
 
         String comando = request.getParameter("comando");
@@ -170,16 +167,20 @@ public class ServletUsr extends HttpServlet {
             String nombre = request.getParameter("nombre");
             String apellido = request.getParameter("apellido");
             String mail = request.getParameter("mail");
-            int dia = request.getIntHeader("dia");
-            int mes = request.getIntHeader("mes");
-            int anio = request.getIntHeader("anio");
+
+            String d = (String) request.getParameter("dia");
+            String m = (String) request.getParameter("mes");
+            String a = (String) request.getParameter("anio");
+            int dia = Integer.parseInt(d);
+            int mes = Integer.parseInt(m);
+            int anio = Integer.parseInt(a);
             DataFecha fecha = new DataFecha();
             fecha.setAnio(anio);
             fecha.setDia(dia);
             fecha.setMes(mes);
             String contrasenia = request.getParameter("contrasenia");
             DataUsuario cli = new DataUsuario();
-            
+
             cli.setNickname(nickName);
             cli.setNombre(nombre);
             cli.setApellido(apellido);
@@ -202,9 +203,12 @@ public class ServletUsr extends HttpServlet {
             String nombre = request.getParameter("nombre");
             String apellido = request.getParameter("apellido");
             String mail = request.getParameter("mail");
-            int dia = request.getIntHeader("dia");
-            int mes = request.getIntHeader("mes");
-            int anio = request.getIntHeader("anio");
+            String d = (String) request.getParameter("dia");
+            String m = (String) request.getParameter("mes");
+            String a = (String) request.getParameter("anio");
+            int dia = Integer.parseInt(d);
+            int mes = Integer.parseInt(m);
+            int anio = Integer.parseInt(a);
             DataFecha fecha = new DataFecha();
             fecha.setAnio(anio);
             fecha.setDia(dia);
@@ -214,7 +218,7 @@ public class ServletUsr extends HttpServlet {
             String biografia = request.getParameter("biografia");
             String link = request.getParameter("link");
             Usuario cli = new Artista();
-            
+
             cli.setNickname(nickName);
             cli.setNombre(nombre);
             cli.setApellido(apellido);
@@ -222,7 +226,7 @@ public class ServletUsr extends HttpServlet {
             cli.setFNac(fecha);
             cli.setImagen("");
             cli.setContrasenia(contrasenia);
-            
+
             webCtr.crearArtistaClase(biografia, link, cli);
             String altaArt = "altaArt";
 
@@ -285,8 +289,8 @@ public class ServletUsr extends HttpServlet {
 
         if (comando != null && comando.equals("listaRep")) {
 
-            String nombreL = request.getParameter("nombre");           
-            Cliente cli = (Cliente)request.getSession().getAttribute("user");
+            String nombreL = request.getParameter("nombre");
+            Cliente cli = (Cliente) request.getSession().getAttribute("user");
             String nick = cli.getNickname();
             ListaParticular listaP = new ListaParticular();
             listaP.setNombre(nombreL);
@@ -323,7 +327,5 @@ public class ServletUsr extends HttpServlet {
         edu.tecnopotify.interfaces.Controlador port = service.getControladorPort();
         port.crearCliente(arg0);
     }
-
-   
 
 }

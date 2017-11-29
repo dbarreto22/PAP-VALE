@@ -27,6 +27,9 @@
         <%
             Iterator<String> itA = null;
             Iterator<String> itLR = null;
+            String dia = request.getAttribute("dia").toString();
+            String mes  =  request.getAttribute("mes").toString();
+            String anio =  request.getAttribute("anio").toString();
             //List<String> seguidores = (ArrayList) request.getAttribute("litseg");
             //Iterator<String> itS = seguidores.iterator();
             List<String> listPart = (ArrayList) request.getAttribute("repPropia");
@@ -54,9 +57,9 @@
                 <h6>Mail: </h6>
                 <input type="text"  value =<%= request.getAttribute("mail")%> /> <br/>
                 <h6>Fecha de Nacimiento: </h6>
-                <input type="text"  value =<%= request.getAttribute("dia")%> /> / 
-                <input type="text"  value =<%= request.getAttribute("mes")%> />
-                <input type="text"  value =<%= request.getAttribute("anio")%> />
+                <input type="text"  value =<%= dia%> /> / 
+                <input type="text"  value =<%= mes%> />
+                <input type="text"  value =<%= anio%> />
                 <br/>
 
 
