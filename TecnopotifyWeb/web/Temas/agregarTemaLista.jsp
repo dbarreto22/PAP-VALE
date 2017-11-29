@@ -29,8 +29,17 @@
                 <% List<Temas> lstTemas=(List<Temas>)request.getAttribute("lstTema");
                 Cliente user=(Cliente) request.getSession().getAttribute("user");
                 ControladorWeb webCtr = new ControladorWeb();
-                List <ListaReproduccion> aux = new ArrayList<ListaReproduccion>();
-                List <ListaReproduccion> lstRep= webCtr.listarListaRepr();%>
+                List <ListaReproduccion> lAux = webCtr.listarListaRepr();
+                List <ListaReproduccion> lstRep= new ArrayList<ListaReproduccion>();
+                for (ListaReproduccion aux : lAux)
+                {
+                    if( !aux.getClass().toString().contains("Particular")
+                            && !aux. )
+                    {
+                        
+                    }
+                }
+                %>
                     Listas de Reproduccion:
                     <select id="listRep" name="listRep">
                        <option value=""> </option>
