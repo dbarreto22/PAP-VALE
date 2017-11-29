@@ -17,3 +17,5 @@
 29-Nov-2017 00:54:10.221 INFO [http-nio-8080-exec-292] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:Initializing filter
 29-Nov-2017 00:54:13.965 INFO [http-nio-8080-exec-283] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:Initializing filter
 29-Nov-2017 00:56:37.124 INFO [http-nio-8080-exec-290] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:Initializing filter
+29-Nov-2017 01:06:59.310 INFO [http-nio-8080-exec-306] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:Initializing filter
+29-Nov-2017 01:07:04.914 INFO [http-nio-8080-exec-313] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:Initializing filter
