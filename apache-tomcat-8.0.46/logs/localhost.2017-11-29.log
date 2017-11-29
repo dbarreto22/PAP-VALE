@@ -19,3 +19,418 @@
 29-Nov-2017 00:56:37.124 INFO [http-nio-8080-exec-290] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:Initializing filter
 29-Nov-2017 01:06:59.310 INFO [http-nio-8080-exec-306] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:Initializing filter
 29-Nov-2017 01:07:04.914 INFO [http-nio-8080-exec-313] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:Initializing filter
+29-Nov-2017 01:24:10.863 INFO [http-nio-8080-exec-318] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:Initializing filter
+29-Nov-2017 01:28:22.306 INFO [http-nio-8080-exec-325] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:Initializing filter
+29-Nov-2017 01:28:36.369 INFO [http-nio-8080-exec-329] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 01:28:36.369 INFO [http-nio-8080-exec-329] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 01:28:39.208 INFO [http-nio-8080-exec-329] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+29-Nov-2017 01:28:40.261 INFO [573] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 01:28:40.261 INFO [573] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 01:28:40.262 INFO [573] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+29-Nov-2017 01:29:31.432 INFO [http-nio-8080-exec-336] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 01:29:31.432 INFO [http-nio-8080-exec-336] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 01:29:31.601 INFO [http-nio-8080-exec-336] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+29-Nov-2017 01:29:31.720 INFO [http-nio-8080-exec-337] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 01:29:31.721 INFO [http-nio-8080-exec-337] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 01:29:31.721 INFO [http-nio-8080-exec-337] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+29-Nov-2017 01:30:19.579 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+29-Nov-2017 01:30:19.579 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+29-Nov-2017 08:32:53.485 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:Initializing filter
+29-Nov-2017 08:32:54.598 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+29-Nov-2017 08:32:54.602 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+29-Nov-2017 08:33:08.465 INFO [http-nio-8080-exec-9] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:Initializing filter
+29-Nov-2017 08:33:43.211 INFO [http-nio-8080-exec-7] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:Initializing filter
+29-Nov-2017 08:33:53.970 INFO [http-nio-8080-exec-12] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 08:33:53.971 INFO [http-nio-8080-exec-12] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 08:33:56.691 INFO [http-nio-8080-exec-12] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+29-Nov-2017 08:34:01.923 INFO [http-nio-8080-exec-2] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 08:34:01.923 INFO [http-nio-8080-exec-2] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 08:34:01.923 INFO [http-nio-8080-exec-2] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+29-Nov-2017 08:34:51.582 INFO [http-nio-8080-exec-14] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 08:34:51.582 INFO [http-nio-8080-exec-14] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 08:34:53.889 INFO [http-nio-8080-exec-14] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+29-Nov-2017 08:34:54.152 INFO [http-nio-8080-exec-15] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 08:34:54.152 INFO [http-nio-8080-exec-15] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 08:34:54.157 INFO [http-nio-8080-exec-15] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+29-Nov-2017 08:34:54.271 INFO [http-nio-8080-exec-16] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 08:34:54.271 INFO [http-nio-8080-exec-16] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 08:34:54.272 INFO [http-nio-8080-exec-16] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+29-Nov-2017 08:34:54.326 INFO [http-nio-8080-exec-17] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 08:34:54.326 INFO [http-nio-8080-exec-17] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 08:34:54.327 INFO [http-nio-8080-exec-17] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+29-Nov-2017 08:34:54.326 INFO [http-nio-8080-exec-18] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 08:34:54.327 INFO [http-nio-8080-exec-18] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 08:34:54.328 INFO [http-nio-8080-exec-18] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+29-Nov-2017 08:35:23.360 INFO [http-nio-8080-exec-5] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 08:35:23.360 INFO [http-nio-8080-exec-5] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 08:35:24.865 INFO [http-nio-8080-exec-5] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+29-Nov-2017 08:35:41.704 INFO [http-nio-8080-exec-19] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 08:35:41.704 INFO [http-nio-8080-exec-19] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 08:35:42.635 INFO [http-nio-8080-exec-19] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+29-Nov-2017 08:35:42.729 INFO [http-nio-8080-exec-14] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 08:35:42.729 INFO [http-nio-8080-exec-14] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 08:35:42.729 INFO [http-nio-8080-exec-14] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+29-Nov-2017 08:36:25.103 INFO [http-nio-8080-exec-15] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 08:36:25.103 INFO [http-nio-8080-exec-15] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 08:36:25.604 INFO [http-nio-8080-exec-15] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+29-Nov-2017 08:36:30.087 INFO [http-nio-8080-exec-16] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 08:36:30.087 INFO [http-nio-8080-exec-16] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 08:36:31.396 INFO [http-nio-8080-exec-16] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+29-Nov-2017 08:36:31.481 INFO [http-nio-8080-exec-17] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 08:36:31.482 INFO [http-nio-8080-exec-17] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 08:36:31.482 INFO [http-nio-8080-exec-17] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+29-Nov-2017 08:36:37.277 INFO [http-nio-8080-exec-18] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 08:36:37.277 INFO [http-nio-8080-exec-18] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 08:36:38.455 INFO [http-nio-8080-exec-18] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+29-Nov-2017 08:40:41.264 INFO [http-nio-8080-exec-20] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 08:40:41.264 INFO [http-nio-8080-exec-20] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 08:40:42.393 SEVERE [http-nio-8080-exec-20] org.apache.catalina.core.ApplicationDispatcher.invoke Servlet.service() for servlet jsp threw exception
+ java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.apache.jsp.mostrarC_jsp._jspService(mostrarC_jsp.java:190)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:716)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:466)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:391)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:318)
+	at Serlvets.ServletUsr.doGet(ServletUsr.java:128)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at Filtros.FiltroPrueba.doFilter(FiltroPrueba.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+29-Nov-2017 08:40:42.396 INFO [http-nio-8080-exec-20] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+29-Nov-2017 08:40:42.396 SEVERE [http-nio-8080-exec-20] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [ServletUsr] in context with path [/Tecnopotify] threw exception [An exception occurred processing JSP page /mostrarC.jsp at line 57
+
+54:                 <h6>Mail: </h6>
+55:                 <input type="text"  value =<%= request.getAttribute("mail")%> /> <br/>
+56:                 <h6>Fecha de Nacimiento: </h6>
+57:                 <input type="text"  value =<%= (String) request.getAttribute("dia")%> /> / 
+58:                 <input type="text"  value =<%= (String) request.getAttribute("mes")%> />
+59:                 <input type="text"  value =<%= (String) request.getAttribute("anio")%> />
+60:                 <br/>
+
+
+Stacktrace:] with root cause
+ java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.apache.jsp.mostrarC_jsp._jspService(mostrarC_jsp.java:190)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:716)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:466)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:391)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:318)
+	at Serlvets.ServletUsr.doGet(ServletUsr.java:128)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at Filtros.FiltroPrueba.doFilter(FiltroPrueba.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+29-Nov-2017 08:41:14.432 INFO [http-nio-8080-exec-19] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 08:41:14.432 INFO [http-nio-8080-exec-19] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 08:41:15.520 INFO [http-nio-8080-exec-19] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+29-Nov-2017 08:42:54.901 INFO [http-nio-8080-exec-19] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 08:42:54.901 INFO [http-nio-8080-exec-19] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 08:42:55.887 INFO [http-nio-8080-exec-19] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+29-Nov-2017 08:42:55.947 INFO [http-nio-8080-exec-14] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 08:42:55.947 INFO [http-nio-8080-exec-14] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 08:42:55.948 INFO [http-nio-8080-exec-14] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+29-Nov-2017 08:42:55.953 INFO [http-nio-8080-exec-15] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 08:42:55.953 INFO [http-nio-8080-exec-15] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 08:42:55.954 INFO [http-nio-8080-exec-15] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+29-Nov-2017 08:42:55.961 INFO [http-nio-8080-exec-16] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 08:42:55.961 INFO [http-nio-8080-exec-16] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 08:42:55.961 INFO [http-nio-8080-exec-16] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+29-Nov-2017 08:42:55.964 INFO [http-nio-8080-exec-18] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 08:42:55.964 INFO [http-nio-8080-exec-18] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 08:42:55.965 INFO [http-nio-8080-exec-18] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+29-Nov-2017 08:43:53.758 INFO [http-nio-8080-exec-22] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 08:43:53.758 INFO [http-nio-8080-exec-22] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 08:43:54.541 SEVERE [http-nio-8080-exec-22] org.apache.catalina.core.ApplicationDispatcher.invoke Servlet.service() for servlet jsp threw exception
+ java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.apache.jsp.mostrarC_jsp._jspService(mostrarC_jsp.java:153)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:716)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:466)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:391)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:318)
+	at Serlvets.ServletUsr.doGet(ServletUsr.java:128)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at Filtros.FiltroPrueba.doFilter(FiltroPrueba.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+29-Nov-2017 08:43:54.543 INFO [http-nio-8080-exec-22] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+29-Nov-2017 08:43:54.543 SEVERE [http-nio-8080-exec-22] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [ServletUsr] in context with path [/Tecnopotify] threw exception [An exception occurred processing JSP page /mostrarC.jsp at line 30
+
+27:         <%
+28:             Iterator<String> itA = null;
+29:             Iterator<String> itLR = null;
+30:             String dia = (String) request.getAttribute("dia");
+31:             String mes  = (String) request.getAttribute("mes");
+32:             String anio = (String) request.getAttribute("anio");
+33:             //List<String> seguidores = (ArrayList) request.getAttribute("litseg");
+
+
+Stacktrace:] with root cause
+ java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+	at org.apache.jsp.mostrarC_jsp._jspService(mostrarC_jsp.java:153)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:716)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:466)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:391)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:318)
+	at Serlvets.ServletUsr.doGet(ServletUsr.java:128)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at Filtros.FiltroPrueba.doFilter(FiltroPrueba.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+29-Nov-2017 08:44:37.206 INFO [http-nio-8080-exec-23] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 08:44:37.207 INFO [http-nio-8080-exec-23] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 08:44:38.089 INFO [http-nio-8080-exec-23] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+29-Nov-2017 08:44:38.144 INFO [http-nio-8080-exec-20] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 08:44:38.144 INFO [http-nio-8080-exec-20] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 08:44:38.145 INFO [http-nio-8080-exec-20] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+29-Nov-2017 08:44:38.149 INFO [http-nio-8080-exec-21] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 08:44:38.150 INFO [http-nio-8080-exec-21] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 08:44:38.150 INFO [http-nio-8080-exec-21] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+29-Nov-2017 08:44:38.152 INFO [http-nio-8080-exec-19] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 08:44:38.152 INFO [http-nio-8080-exec-19] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 08:44:38.152 INFO [http-nio-8080-exec-19] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+29-Nov-2017 08:44:38.154 INFO [http-nio-8080-exec-19] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 08:44:38.154 INFO [http-nio-8080-exec-19] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 08:44:38.154 INFO [http-nio-8080-exec-19] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+29-Nov-2017 08:48:43.216 INFO [http-nio-8080-exec-17] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:Initializing filter
+29-Nov-2017 08:49:12.462 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+29-Nov-2017 08:49:12.463 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+29-Nov-2017 17:21:51.425 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:Initializing filter
+29-Nov-2017 17:21:53.581 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+29-Nov-2017 17:21:53.583 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+29-Nov-2017 17:22:39.507 INFO [http-nio-8080-exec-2] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:Initializing filter
+29-Nov-2017 17:22:47.467 INFO [http-nio-8080-exec-9] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 17:22:47.468 INFO [http-nio-8080-exec-9] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 17:22:51.543 INFO [http-nio-8080-exec-9] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+29-Nov-2017 17:22:56.471 INFO [http-nio-8080-exec-1] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 17:22:56.471 INFO [http-nio-8080-exec-1] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 17:22:56.471 INFO [http-nio-8080-exec-1] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+29-Nov-2017 17:23:06.048 INFO [http-nio-8080-exec-4] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 17:23:06.048 INFO [http-nio-8080-exec-4] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 17:23:06.501 INFO [http-nio-8080-exec-4] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+29-Nov-2017 17:23:06.697 INFO [http-nio-8080-exec-8] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 17:23:06.697 INFO [http-nio-8080-exec-8] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 17:23:06.701 INFO [http-nio-8080-exec-8] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+29-Nov-2017 17:23:06.758 INFO [http-nio-8080-exec-7] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 17:23:06.758 INFO [http-nio-8080-exec-7] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 17:23:06.758 INFO [http-nio-8080-exec-7] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+29-Nov-2017 17:23:06.825 INFO [http-nio-8080-exec-10] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 17:23:06.825 INFO [http-nio-8080-exec-10] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 17:23:06.826 INFO [http-nio-8080-exec-10] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+29-Nov-2017 17:23:06.837 INFO [http-nio-8080-exec-5] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 17:23:06.837 INFO [http-nio-8080-exec-5] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 17:23:06.838 INFO [http-nio-8080-exec-5] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+29-Nov-2017 17:23:29.895 INFO [http-nio-8080-exec-11] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 17:23:29.895 INFO [http-nio-8080-exec-11] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 17:23:30.316 INFO [http-nio-8080-exec-11] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+29-Nov-2017 17:26:53.522 INFO [http-nio-8080-exec-20] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:Initializing filter
+29-Nov-2017 17:27:37.777 INFO [http-nio-8080-exec-26] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:Initializing filter
+29-Nov-2017 17:27:39.957 INFO [http-nio-8080-exec-18] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 17:27:39.959 INFO [http-nio-8080-exec-18] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 17:27:44.348 INFO [http-nio-8080-exec-18] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+29-Nov-2017 17:27:44.579 INFO [http-nio-8080-exec-20] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 17:27:44.579 INFO [http-nio-8080-exec-20] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 17:27:44.580 INFO [http-nio-8080-exec-20] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+29-Nov-2017 17:27:53.378 INFO [http-nio-8080-exec-19] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 17:27:53.378 INFO [http-nio-8080-exec-19] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 17:27:54.409 INFO [http-nio-8080-exec-19] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+29-Nov-2017 17:28:21.292 INFO [http-nio-8080-exec-23] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 17:28:21.292 INFO [http-nio-8080-exec-23] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 17:28:21.491 INFO [http-nio-8080-exec-23] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+29-Nov-2017 17:28:42.172 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+29-Nov-2017 17:28:42.173 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+29-Nov-2017 17:28:55.292 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:Initializing filter
+29-Nov-2017 17:28:55.886 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+29-Nov-2017 17:28:55.886 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+29-Nov-2017 17:29:05.766 INFO [http-nio-8080-exec-4] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:Initializing filter
+29-Nov-2017 17:29:06.894 INFO [http-nio-8080-exec-6] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 17:29:06.897 INFO [http-nio-8080-exec-6] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 17:29:12.158 INFO [http-nio-8080-exec-6] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+29-Nov-2017 17:29:12.342 INFO [http-nio-8080-exec-9] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 17:29:12.342 INFO [http-nio-8080-exec-9] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 17:29:12.343 INFO [http-nio-8080-exec-9] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+29-Nov-2017 17:29:15.839 INFO [http-nio-8080-exec-7] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 17:29:15.839 INFO [http-nio-8080-exec-7] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 17:29:18.001 INFO [http-nio-8080-exec-7] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+29-Nov-2017 17:29:38.891 INFO [http-nio-8080-exec-8] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 17:29:38.891 INFO [http-nio-8080-exec-8] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 17:30:33.215 INFO [http-nio-8080-exec-8] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+29-Nov-2017 17:31:35.673 INFO [http-nio-8080-exec-12] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:Initializing filter
+29-Nov-2017 17:31:37.122 INFO [http-nio-8080-exec-17] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 17:31:37.122 INFO [http-nio-8080-exec-17] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 17:31:38.869 INFO [http-nio-8080-exec-17] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+29-Nov-2017 17:31:39.056 INFO [http-nio-8080-exec-21] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 17:31:39.057 INFO [http-nio-8080-exec-21] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 17:31:39.057 INFO [http-nio-8080-exec-21] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+29-Nov-2017 17:31:42.612 INFO [http-nio-8080-exec-23] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 17:31:42.612 INFO [http-nio-8080-exec-23] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 17:31:43.720 INFO [http-nio-8080-exec-23] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+29-Nov-2017 17:32:03.383 INFO [http-nio-8080-exec-13] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 17:32:03.384 INFO [http-nio-8080-exec-13] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 17:37:52.503 INFO [http-nio-8080-exec-13] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+29-Nov-2017 17:38:48.318 INFO [http-nio-8080-exec-32] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:Initializing filter
+29-Nov-2017 17:38:49.562 INFO [http-nio-8080-exec-28] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 17:38:49.563 INFO [http-nio-8080-exec-28] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 17:38:51.182 INFO [http-nio-8080-exec-28] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+29-Nov-2017 17:38:51.355 INFO [http-nio-8080-exec-34] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 17:38:51.355 INFO [http-nio-8080-exec-34] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 17:38:51.355 INFO [http-nio-8080-exec-34] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+29-Nov-2017 17:38:55.209 INFO [http-nio-8080-exec-26] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 17:38:55.209 INFO [http-nio-8080-exec-26] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 17:38:56.417 INFO [http-nio-8080-exec-26] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+29-Nov-2017 17:39:16.653 INFO [http-nio-8080-exec-25] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 17:39:16.654 INFO [http-nio-8080-exec-25] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 17:39:18.392 INFO [http-nio-8080-exec-25] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+29-Nov-2017 17:39:25.556 INFO [http-nio-8080-exec-29] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 17:39:25.557 INFO [http-nio-8080-exec-29] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 17:39:26.886 INFO [http-nio-8080-exec-29] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+29-Nov-2017 17:39:27.057 INFO [http-nio-8080-exec-23] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 17:39:27.058 INFO [http-nio-8080-exec-23] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 17:39:27.058 INFO [http-nio-8080-exec-23] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+29-Nov-2017 17:39:29.721 INFO [http-nio-8080-exec-31] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 17:39:29.721 INFO [http-nio-8080-exec-31] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 17:39:30.824 INFO [http-nio-8080-exec-31] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+29-Nov-2017 17:39:36.030 INFO [http-nio-8080-exec-32] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 17:39:36.030 INFO [http-nio-8080-exec-32] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 17:39:37.199 INFO [http-nio-8080-exec-32] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+29-Nov-2017 17:39:37.475 INFO [http-nio-8080-exec-33] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 17:39:37.476 INFO [http-nio-8080-exec-33] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 17:39:37.476 INFO [http-nio-8080-exec-33] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+29-Nov-2017 17:39:41.540 INFO [http-nio-8080-exec-35] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
+29-Nov-2017 17:39:41.541 INFO [http-nio-8080-exec-35] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
+29-Nov-2017 17:39:43.120 INFO [http-nio-8080-exec-35] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing

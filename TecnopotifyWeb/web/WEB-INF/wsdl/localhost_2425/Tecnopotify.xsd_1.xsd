@@ -24,6 +24,10 @@
 
 <xs:element name="altaTemaResponse" type="tns:altaTemaResponse"></xs:element>
 
+<xs:element name="artistaEliminados" type="tns:artistaEliminados"></xs:element>
+
+<xs:element name="artistaEliminadosResponse" type="tns:artistaEliminadosResponse"></xs:element>
+
 <xs:element name="buscarAlbum" type="tns:buscarAlbum"></xs:element>
 
 <xs:element name="buscarAlbumResponse" type="tns:buscarAlbumResponse"></xs:element>
@@ -35,6 +39,10 @@
 <xs:element name="buscarUsrMail" type="tns:buscarUsrMail"></xs:element>
 
 <xs:element name="buscarUsrMailResponse" type="tns:buscarUsrMailResponse"></xs:element>
+
+<xs:element name="cambiarStatus" type="tns:cambiarStatus"></xs:element>
+
+<xs:element name="cambiarStatusResponse" type="tns:cambiarStatusResponse"></xs:element>
 
 <xs:element name="consultarAlbumPorArtista" type="tns:consultarAlbumPorArtista"></xs:element>
 
@@ -378,6 +386,7 @@
 <xs:sequence>
 <xs:element name="biografia" type="xs:string" minOccurs="0"></xs:element>
 <xs:element name="link" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="status" type="xs:boolean" minOccurs="0"></xs:element>
 <xs:element name="listAlbum" type="tns:album" nillable="true" minOccurs="0" maxOccurs="unbounded"></xs:element>
 </xs:sequence>
 </xs:extension>
@@ -791,6 +800,16 @@
 <xs:sequence></xs:sequence>
 </xs:complexType>
 
+<xs:complexType name="artistaEliminados">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="artistaEliminadosResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:artista" minOccurs="0" maxOccurs="unbounded"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
 <xs:complexType name="crearListaParticular">
 <xs:sequence>
 <xs:element name="arg0" type="xs:boolean"></xs:element>
@@ -1011,6 +1030,16 @@
 <xs:sequence>
 <xs:element name="return" type="xs:string" minOccurs="0"></xs:element>
 </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="cambiarStatus">
+<xs:sequence>
+<xs:element name="arg0" type="tns:artista" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="cambiarStatusResponse">
+<xs:sequence></xs:sequence>
 </xs:complexType>
 
 <xs:complexType name="crearCliente">
