@@ -343,8 +343,8 @@ cancelar el alta.*/
             if (this.jCheckBoxArtista.isSelected()) {
                 String link = this.jTextFieldLink.getText();
                 String biografia = this.jTextPaneBiografia.getText();
-                dataUsuario art = new dataArtista(link, biografia, nickname, nombre, apellido,
-                        mail, fecha, imagen, contra1);
+                dataUsuario art = new dataArtista(biografia, link, nickname, nombre, apellido,
+                        mail, fecha, contra1, imagen);
                 crl.crearArtista(biografia, link, art);
                 JOptionPane.showMessageDialog(this, "El Artista se ha creado con éxito", "Registrar Artista", JOptionPane.INFORMATION_MESSAGE);
             } else {

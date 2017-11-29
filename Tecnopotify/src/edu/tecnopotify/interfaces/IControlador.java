@@ -142,5 +142,9 @@ public interface IControlador {
     
     public List<RegistroUsuarios> listarRegistroUsuarios ();
     
+    public void cambiarStatus(Artista art);
+    
+    public List<Artista> artistaEliminados();
+    
 }
 

@@ -1596,3 +1596,18 @@ Stacktrace:] with root cause
 28-Nov-2017 21:52:48.037 INFO [http-nio-8080-exec-118] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:doFilter()
 28-Nov-2017 21:52:48.037 INFO [http-nio-8080-exec-118] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoBeforeProcessing
 28-Nov-2017 21:52:48.492 INFO [http-nio-8080-exec-118] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:DoAfterProcessing
+28-Nov-2017 22:36:07.084 INFO [http-nio-8080-exec-124] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:Initializing filter
+28-Nov-2017 22:37:24.993 INFO [http-nio-8080-exec-127] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:Initializing filter
+28-Nov-2017 22:43:53.576 INFO [http-nio-8080-exec-137] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:Initializing filter
+28-Nov-2017 22:44:02.007 INFO [http-nio-8080-exec-134] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:Initializing filter
+28-Nov-2017 22:44:35.752 INFO [http-nio-8080-exec-141] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:Initializing filter
+28-Nov-2017 22:44:40.536 INFO [271] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:Initializing filter
+28-Nov-2017 22:47:05.302 INFO [http-nio-8080-exec-144] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:Initializing filter
+28-Nov-2017 22:47:10.387 INFO [http-nio-8080-exec-139] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:Initializing filter
+28-Nov-2017 23:37:51.700 INFO [http-nio-8080-exec-164] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:Initializing filter
+28-Nov-2017 23:37:54.975 INFO [http-nio-8080-exec-160] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:Initializing filter
+28-Nov-2017 23:49:33.457 INFO [http-nio-8080-exec-170] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:Initializing filter
+28-Nov-2017 23:49:46.967 INFO [http-nio-8080-exec-167] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:Initializing filter
+28-Nov-2017 23:50:55.541 INFO [http-nio-8080-exec-181] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:Initializing filter
+28-Nov-2017 23:58:59.148 INFO [http-nio-8080-exec-193] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:Initializing filter
+28-Nov-2017 23:59:07.252 INFO [http-nio-8080-exec-195] org.apache.catalina.core.ApplicationContext.log FiltroPrueba:Initializing filter

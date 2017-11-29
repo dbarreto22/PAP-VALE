@@ -104,7 +104,7 @@ public class Controlador implements IControlador {
             Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-    
+
     @WebMethod
     public void crearArtistaClase(String biografia, String link,
             Usuario usuario) {
@@ -116,8 +116,6 @@ public class Controlador implements IControlador {
             Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-    
-    
 
     @WebMethod
     public String obtenerEstadoSuscripcion(String nickCliente) {
@@ -794,7 +792,7 @@ public class Controlador implements IControlador {
         RegistroUsuarios reg = new RegistroUsuarios(ip, url, browser);
         RegistroUsuariosJpaController ctr = new RegistroUsuariosJpaController(fact);
         try {
-            
+
             if (ctr.findRegistroUsuariosEntities().size() < 10000) {
                 ctr.create(reg);
             }
@@ -802,15 +800,36 @@ public class Controlador implements IControlador {
             Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, e);
         }
     }
-    
-    public List<RegistroUsuarios> listarRegistroUsuarios (){
-        List<RegistroUsuarios> reg = new  ArrayList();
+
+    public List<RegistroUsuarios> listarRegistroUsuarios() {
+        List<RegistroUsuarios> reg = new ArrayList();
         RegistroUsuariosJpaController ctr = new RegistroUsuariosJpaController(fact);
         reg = ctr.findRegistroUsuariosEntities();
         return reg;
     }
 
-   
+    public void cambiarStatus(Artista art) {
+        ExtJpaSrtista ctrCli = new ExtJpaSrtista(fact);
+        try {
+            ctrCli.editImagen(art);
+        } catch (Exception ex) {
+            Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+    public List<Artista> artistaEliminados() {
+        ArtistaJpaController ctrA = new ArtistaJpaController(fact);
+        List<Artista> todos = ctrA.findArtistaEntities();
+        List<Artista> aux = new ArrayList() ;
+        Iterator<Artista> it = todos.iterator();
+        
+        for(Artista a : todos){
+            if(!a.getStatus()){
+                aux.add(a);              
+            }
+        }
+        return aux;
+    }
 
     @WebMethod(exclude = true)
     public void cargarDatos() {

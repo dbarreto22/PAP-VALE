@@ -14,6 +14,7 @@ public class Artista extends Usuario implements Serializable {
 
     private String biografia;
     private String link;
+    private Boolean status;
     @OneToMany
     private List<Album> listAlbum;
 
@@ -22,6 +23,7 @@ public class Artista extends Usuario implements Serializable {
         super(usuario);
         this.biografia = biografia;
         this.link = link;
+        this.status = true;
 
     }
 
@@ -30,7 +32,7 @@ public class Artista extends Usuario implements Serializable {
         super(usuario);
         this.biografia = biografia;
         this.link = link;
-
+        this.status = true;
     }
 
     public Artista() {
@@ -59,6 +61,14 @@ public class Artista extends Usuario implements Serializable {
 
     public List<Album> getListAlbum() {
         return listAlbum;
+    }
+
+    public Boolean getStatus() {
+        return status;
+    }
+
+    public void setStatus(Boolean status) {
+        this.status = status;
     }
 
 }
