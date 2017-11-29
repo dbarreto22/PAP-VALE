@@ -7,6 +7,7 @@ package Serlvets;
 
 
 
+import edu.tecnopotify.interfaces.Artista;
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -50,8 +51,16 @@ public class ServletAutenticacion extends HttpServlet {
                 } else {
                     usr = getUsuario(user);
                 }
+                boolean entrar=true;
                 //consultar a la logica
-                if (pass.equals(usr.getContrasenia())) {
+                if (usr.getClass().getName().contains("Artista")){
+                    Artista aux = (Artista) usr;
+                    if(!aux.isStatus())
+                        entrar = false;
+                }    
+                    
+                
+                if (pass.equals(usr.getContrasenia()) && entrar) {
                     request.getSession().setAttribute("user", usr);
                     request.getSession().setAttribute("tipoUser", usr.getClass().getName());
                     request.getRequestDispatcher("/ppal.jsp").forward(request, response);

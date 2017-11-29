@@ -458,3 +458,9 @@
 127.0.0.1 - SA [29/Nov/2017:18:23:22 -0300] "GET /manager/text/list HTTP/1.1" 200 463
 127.0.0.1 - SA [29/Nov/2017:18:23:27 -0300] "GET /manager/text/reload?path=/Tecnopotify HTTP/1.1" 200 66
 127.0.0.1 - - [29/Nov/2017:18:23:27 -0300] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - - [29/Nov/2017:18:42:42 -0300] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - - [29/Nov/2017:18:42:42 -0300] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - - [29/Nov/2017:18:42:42 -0300] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - SA [29/Nov/2017:18:42:42 -0300] "GET /manager/text/list HTTP/1.1" 200 463
+127.0.0.1 - SA [29/Nov/2017:18:42:45 -0300] "GET /manager/text/reload?path=/Tecnopotify HTTP/1.1" 200 66
+127.0.0.1 - - [29/Nov/2017:18:42:45 -0300] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
