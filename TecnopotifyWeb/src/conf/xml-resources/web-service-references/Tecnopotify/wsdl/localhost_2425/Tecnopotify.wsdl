@@ -4,17 +4,39 @@
 <xsd:import namespace="http://interfaces.tecnopotify.edu/" schemaLocation="http://localhost:2425/Tecnopotify?xsd=1"></xsd:import>
 </xsd:schema>
 </types>
+<<<<<<< HEAD
 <message name="setImage">
 <part name="parameters" element="tns:setImage"></part>
+=======
+<<<<<<< HEAD
+<message name="consultarAlbumPorGenero">
+<part name="parameters" element="tns:consultarAlbumPorGenero"></part>
+=======
+<<<<<<< HEAD
+<message name="listarClientes">
+<part name="parameters" element="tns:listarClientes"></part>
+>>>>>>> ea4bb1bf3c8e0ea3089c1b4bf3f63c63eeb548c8
 </message>
 <message name="setImageResponse">
 <part name="parameters" element="tns:setImageResponse"></part>
 </message>
+<<<<<<< HEAD
 <message name="crearCliente">
 <part name="parameters" element="tns:crearCliente"></part>
 </message>
 <message name="crearClienteResponse">
 <part name="parameters" element="tns:crearClienteResponse"></part>
+=======
+<message name="listarGeneros">
+<part name="parameters" element="tns:listarGeneros"></part>
+=======
+<message name="seleccionarLista">
+<part name="parameters" element="tns:seleccionarLista"></part>
+>>>>>>> 82e65de6bd8cda556c154640bfe4f3f04eef11c7
+</message>
+<message name="consultarAlbumPorGeneroResponse">
+<part name="parameters" element="tns:consultarAlbumPorGeneroResponse"></part>
+>>>>>>> ea4bb1bf3c8e0ea3089c1b4bf3f63c63eeb548c8
 </message>
 <message name="publicar">
 <part name="parameters" element="tns:publicar"></part>
@@ -76,8 +98,34 @@
 <message name="mostrarListaGeneroResponse">
 <part name="parameters" element="tns:mostrarListaGeneroResponse"></part>
 </message>
+<<<<<<< HEAD
 <message name="seleccionarCliente">
 <part name="parameters" element="tns:seleccionarCliente"></part>
+=======
+<<<<<<< HEAD
+<message name="seleccionarLista">
+<part name="parameters" element="tns:seleccionarLista"></part>
+=======
+<<<<<<< HEAD
+<message name="modificarSuscripcion">
+<part name="parameters" element="tns:modificarSuscripcion"></part>
+=======
+<message name="consultarAlbumPorGenero">
+<part name="parameters" element="tns:consultarAlbumPorGenero"></part>
+>>>>>>> 82e65de6bd8cda556c154640bfe4f3f04eef11c7
+</message>
+<message name="seleccionarListaResponse">
+<part name="parameters" element="tns:seleccionarListaResponse"></part>
+</message>
+<message name="agregarTemaListaClase">
+<part name="parameters" element="tns:agregarTemaListaClase"></part>
+</message>
+<message name="agregarTemaListaClaseResponse">
+<part name="parameters" element="tns:agregarTemaListaClaseResponse"></part>
+</message>
+<message name="getTema">
+<part name="parameters" element="tns:getTema"></part>
+>>>>>>> ea4bb1bf3c8e0ea3089c1b4bf3f63c63eeb548c8
 </message>
 <message name="seleccionarClienteResponse">
 <part name="parameters" element="tns:seleccionarClienteResponse"></part>
@@ -353,9 +401,55 @@
 <part name="parameters" element="tns:getTemaResponse"></part>
 </message>
 <portType name="Controlador">
+<<<<<<< HEAD
 <operation name="setImage">
 <input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/setImageRequest" message="tns:setImage"></input>
 <output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/setImageResponse" message="tns:setImageResponse"></output>
+=======
+<operation name="consultarAlbumPorGenero">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/consultarAlbumPorGeneroRequest" message="tns:consultarAlbumPorGenero"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/consultarAlbumPorGeneroResponse" message="tns:consultarAlbumPorGeneroResponse"></output>
+</operation>
+<operation name="crearAlbum2">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/crearAlbum2Request" message="tns:crearAlbum2"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/crearAlbum2Response" message="tns:crearAlbum2Response"></output>
+</operation>
+<operation name="eliminarFavorito">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/eliminarFavoritoRequest" message="tns:eliminarFavorito"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/eliminarFavoritoResponse" message="tns:eliminarFavoritoResponse"></output>
+</operation>
+<operation name="crearArtistaClase">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/crearArtistaClaseRequest" message="tns:crearArtistaClase"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/crearArtistaClaseResponse" message="tns:crearArtistaClaseResponse"></output>
+</operation>
+<operation name="obtenerPagoSuscripcion">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/obtenerPagoSuscripcionRequest" message="tns:obtenerPagoSuscripcion"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/obtenerPagoSuscripcionResponse" message="tns:obtenerPagoSuscripcionResponse"></output>
+</operation>
+<operation name="consultarListaRep">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/consultarListaRepRequest" message="tns:consultarListaRep"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/consultarListaRepResponse" message="tns:consultarListaRepResponse"></output>
+</operation>
+<operation name="consultarAlbumPorArtista">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/consultarAlbumPorArtistaRequest" message="tns:consultarAlbumPorArtista"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/consultarAlbumPorArtistaResponse" message="tns:consultarAlbumPorArtistaResponse"></output>
+</operation>
+<operation name="seleccionarLista">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/seleccionarListaRequest" message="tns:seleccionarLista"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/seleccionarListaResponse" message="tns:seleccionarListaResponse"></output>
+</operation>
+<operation name="agregarTemaListaClase">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/agregarTemaListaClaseRequest" message="tns:agregarTemaListaClase"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/agregarTemaListaClaseResponse" message="tns:agregarTemaListaClaseResponse"></output>
+</operation>
+<operation name="getTema">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/getTemaRequest" message="tns:getTema"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/getTemaResponse" message="tns:getTemaResponse"></output>
+</operation>
+<operation name="listarListaRepr">
+<input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/listarListaReprRequest" message="tns:listarListaRepr"></input>
+<output wsam:Action="http://interfaces.tecnopotify.edu/Controlador/listarListaReprResponse" message="tns:listarListaReprResponse"></output>
+>>>>>>> ea4bb1bf3c8e0ea3089c1b4bf3f63c63eeb548c8
 </operation>
 <operation name="crearCliente">
 <input wsam:Action="http://interfaces.tecnopotify.edu/Controlador/crearClienteRequest" message="tns:crearCliente"></input>
@@ -588,7 +682,19 @@
 </portType>
 <binding name="ControladorPortBinding" type="tns:Controlador">
 <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"></soap:binding>
+<<<<<<< HEAD
 <operation name="setImage">
+=======
+<<<<<<< HEAD
+<operation name="consultarAlbumPorGenero">
+=======
+<<<<<<< HEAD
+<operation name="listarClientes">
+=======
+<operation name="seleccionarLista">
+>>>>>>> 09b321811cedcb9866f7ea8fe271598f81f5d046
+>>>>>>> 82e65de6bd8cda556c154640bfe4f3f04eef11c7
+>>>>>>> ea4bb1bf3c8e0ea3089c1b4bf3f63c63eeb548c8
 <soap:operation soapAction=""></soap:operation>
 <input>
 <soap:body use="literal"></soap:body>
@@ -651,7 +757,19 @@
 <soap:body use="literal"></soap:body>
 </output>
 </operation>
+<<<<<<< HEAD
 <operation name="getCli">
+=======
+<<<<<<< HEAD
+<operation name="seleccionarLista">
+=======
+<<<<<<< HEAD
+<operation name="crearListaParticular">
+=======
+<operation name="consultarAlbumPorGenero">
+>>>>>>> 09b321811cedcb9866f7ea8fe271598f81f5d046
+>>>>>>> 82e65de6bd8cda556c154640bfe4f3f04eef11c7
+>>>>>>> ea4bb1bf3c8e0ea3089c1b4bf3f63c63eeb548c8
 <soap:operation soapAction=""></soap:operation>
 <input>
 <soap:body use="literal"></soap:body>
